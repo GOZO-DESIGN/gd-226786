@@ -65,7 +65,7 @@ const Schulungen = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-secondary via-background to-gold-light relative overflow-hidden">
+        <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-secondary via-background to-gold-light relative overflow-hidden animate-fade-in">
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
           <div className="container-narrow mx-auto text-center relative z-10">
@@ -80,7 +80,7 @@ const Schulungen = () => {
               Praxisnahe Fortbildungen für Pflegepersonal, Betreuungspersonen, Ehrenamtliche und alle, die mit Menschen mit Demenz arbeiten.
             </p>
             <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <Phone className="h-4 w-4 mr-2" />
                 Anfrage senden
               </Button>
@@ -89,15 +89,15 @@ const Schulungen = () => {
         </section>
 
         {/* Für wen */}
-        <section className="section-padding bg-background">
+        <section className="section-padding bg-background animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14 animate-fade-in">
               Für wen sind die Schulungen?
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {targetGroups.map((group) => (
-                <div key={group.title} className="border border-border rounded-2xl p-6 text-center card-hover bg-card">
-                  <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              {targetGroups.map((group, index) => (
+                <div key={group.title} className="group border border-border rounded-2xl p-6 text-center card-hover bg-card animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
+                  <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
                     <group.icon className="h-7 w-7 text-accent" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-primary mb-2">{group.title}</h3>
@@ -109,18 +109,18 @@ const Schulungen = () => {
         </section>
 
         {/* Schulungsinhalte */}
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-secondary animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4 animate-fade-in">
               Schulungsinhalte
             </h2>
-            <p className="text-muted-foreground text-center mb-12">
+            <p className="text-muted-foreground text-center mb-12 animate-fade-in" style={{ animationDelay: "100ms" }}>
               Alle Themen werden praxisnah und interaktiv vermittelt.
             </p>
             <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 max-w-3xl mx-auto">
-              {schulungsinhalte.map((item) => (
-                <div key={item.text} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+              {schulungsinhalte.map((item, index) => (
+                <div key={item.text} className="group flex items-center gap-3 animate-fade-in" style={{ animationDelay: `${index * 60}ms` }}>
+                  <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
                     <item.icon className="h-5 w-5 text-accent" />
                   </div>
                   <span className="text-foreground font-medium">{item.text}</span>
@@ -131,12 +131,12 @@ const Schulungen = () => {
         </section>
 
         {/* Formate */}
-        <section className="section-padding bg-background">
+        <section className="section-padding bg-background animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14">Formate</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14 animate-fade-in">Formate</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="border border-border rounded-2xl p-8 card-hover bg-card">
-                <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-5">
+              <div className="group border border-border rounded-2xl p-8 card-hover bg-card animate-fade-in" style={{ animationDelay: "0ms" }}>
+                <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
                   <Globe className="h-7 w-7 text-accent" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-primary mb-2">Online-Workshops</h3>
@@ -149,8 +149,8 @@ const Schulungen = () => {
                   ))}
                 </ul>
               </div>
-              <div className="border border-border rounded-2xl p-8 card-hover bg-card">
-                <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-5">
+              <div className="group border border-border rounded-2xl p-8 card-hover bg-card animate-fade-in" style={{ animationDelay: "100ms" }}>
+                <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
                   <MapPin className="h-7 w-7 text-accent" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-primary mb-2">Vor-Ort-Seminare</h3>
@@ -168,12 +168,12 @@ const Schulungen = () => {
         </section>
 
         {/* Referenzen */}
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-secondary animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14">Referenzen</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14 animate-fade-in">Referenzen</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonials.map((t, i) => (
-                <div key={i} className="bg-card border border-border rounded-2xl p-8 relative">
+                <div key={i} className="bg-card border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
                   <Quote className="h-8 w-8 text-accent/30 mb-4" />
                   <p className="text-foreground leading-relaxed mb-6 italic">"{t.quote}"</p>
                   <div>
@@ -187,20 +187,20 @@ const Schulungen = () => {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-primary text-primary-foreground">
+        <section className="section-padding bg-primary text-primary-foreground animate-fade-in">
           <div className="container-narrow mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
               Individuelle Schulung für Ihre Organisation
             </h2>
-            <p className="text-primary-foreground/70 max-w-xl mx-auto mb-10 text-lg">
+            <p className="text-primary-foreground/70 max-w-xl mx-auto mb-10 text-lg animate-fade-in" style={{ animationDelay: "100ms" }}>
               Ich erstelle ein maßgeschneidertes Schulungskonzept für Ihre Einrichtung. Kontaktieren Sie mich für ein unverbindliches Angebot.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <Phone className="h-4 w-4 mr-2" />
                 Anfrage senden
               </Button>
-              <a href="tel:+436645477490" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors font-medium border border-primary-foreground/20 rounded-full px-8 py-3">
+              <a href="tel:+436645477490" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-all duration-300 hover:scale-105 font-medium border border-primary-foreground/20 rounded-full px-8 py-3">
                 +43 664 5477490
               </a>
             </div>
