@@ -39,12 +39,12 @@ export const TargetGroups = () => {
 
         {/* Cards Grid */}
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {groups.map((group, index) => (
-            <Card 
-              key={group.title} 
-              className="group bg-background border-border hover:border-accent/50 card-hover"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+           {groups.map((group, index) => (
+             <Card 
+               key={group.title} 
+               className="group bg-background border-border hover:border-accent/50 card-hover animate-fade-in"
+               style={{ animationDelay: `${index * 100}ms` }}
+             >
               <CardContent className="p-8">
                 <div className="flex items-center justify-center w-16 h-16 bg-accent/10 rounded-2xl mb-6 group-hover:bg-accent/20 transition-colors">
                   <group.icon className="h-8 w-8 text-accent" />
