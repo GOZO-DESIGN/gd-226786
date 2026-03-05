@@ -14,7 +14,7 @@ const challenges = [
   {
     icon: Heart,
     title: "Schuldgefühle und emotionale Last",
-    description: "„Bin ich eine schlechte Tochter/Sohn?" Diese Gedanken plagen Sie, besonders wenn Sie an Ihre Grenzen stoßen.",
+    description: "Bin ich eine schlechte Tochter/Sohn? Diese Gedanken plagen Sie, besonders wenn Sie an Ihre Grenzen stoßen.",
   },
   {
     icon: ShieldAlert,
