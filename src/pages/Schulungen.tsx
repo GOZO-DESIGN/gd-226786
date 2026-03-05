@@ -57,6 +57,11 @@ const testimonials = [
 const Schulungen = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Demenz-Schulungen & Workshops"
+        description="Praxisnahe Demenz-Fortbildungen für Pflegepersonal, 24h-Betreuungsagenturen und Ehrenamtliche. Online-Workshops & Vor-Ort-Seminare in Österreich."
+        canonical="https://www.fokusdemenz.at/demenz-schulungen"
+      />
       <Header />
       <main>
         {/* Hero */}
