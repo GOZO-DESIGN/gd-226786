@@ -9,7 +9,7 @@ const navItems = [
   { label: "24h-Betreuung", href: "/24h-betreuung", isHash: false },
   { label: "Schulungen", href: "/demenz-schulungen", isHash: false },
   { label: "Über mich", href: "/ueber-mich", isHash: false },
-  { label: "Kontakt", href: "/#kontakt", isHash: true },
+  { label: "Kontakt", href: "/kontakt", isHash: false },
 ];
 
 export const Header = () => {

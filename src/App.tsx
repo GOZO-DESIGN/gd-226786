@@ -28,6 +28,7 @@ const App = () => (
               <Route path="/demenz-schulungen" element={<Schulungen />} />
               <Route path="/24h-betreuung" element={<Betreuung24h />} />
               <Route path="/ueber-mich" element={<UeberMich />} />
+              <Route path="/kontakt" element={<Kontakt />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
