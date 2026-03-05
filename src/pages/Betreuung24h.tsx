@@ -64,27 +64,29 @@ const Betreuung24h = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary/50 to-background">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary/50 to-background animate-fade-in">
         <div className="container-narrow mx-auto text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
             24-Stunden-Betreuung
           </span>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
             24-Stunden-Betreuung bei Demenz
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
             Sie haben eine 24h-Betreuung organisiert, aber die Betreuungsperson hat wenig Demenz-Expertise? Ich helfe Ihnen, die Betreuungsqualität zu verbessern.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl">
-            Kostenlose Erstberatung
-          </Button>
+          <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              Kostenlose Erstberatung
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* Problems */}
-      <section className="section-padding">
+      <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
               Warum 24h-Betreuung oft nicht ausreicht
             </h2>
@@ -93,10 +95,10 @@ const Betreuung24h = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {problems.map((problem) => (
-              <Card key={problem.title} className="bg-gradient-to-b from-background to-secondary/20 border-border">
+            {problems.map((problem, index) => (
+              <Card key={problem.title} className="bg-gradient-to-b from-background to-secondary/20 border-border card-hover animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardContent className="p-8 text-center">
-                  <div className="flex items-center justify-center w-14 h-14 bg-destructive/10 rounded-xl mb-6 mx-auto">
+                  <div className="flex items-center justify-center w-14 h-14 bg-destructive/10 rounded-xl mb-6 mx-auto transition-transform duration-300 group-hover:scale-110">
                     <problem.icon className="h-7 w-7 text-destructive" />
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-3">{problem.title}</h3>
@@ -109,9 +111,9 @@ const Betreuung24h = () => {
       </section>
 
       {/* Solutions */}
-      <section className="section-padding bg-secondary/30">
+      <section className="section-padding bg-secondary/30 animate-fade-in">
         <div className="container-narrow mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in">
             <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
               Meine Lösung
             </span>
@@ -120,10 +122,10 @@ const Betreuung24h = () => {
             </h2>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
-            {solutions.map((solution) => (
-              <Card key={solution.title} className="bg-background border-border hover:border-primary/30 transition-colors">
+            {solutions.map((solution, index) => (
+              <Card key={solution.title} className="group bg-background border-border hover:border-primary/30 card-hover animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardContent className="p-8 flex flex-col h-full">
-                  <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-xl mb-6">
+                  <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     <solution.icon className="h-7 w-7 text-primary-foreground" />
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-3">{solution.title}</h3>
@@ -144,16 +146,16 @@ const Betreuung24h = () => {
       </section>
 
       {/* Benefits */}
-      <section className="section-padding">
+      <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
               Ihre Vorteile
             </h2>
           </div>
           <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4">
-            {benefits.map((benefit) => (
-              <div key={benefit} className="flex items-start gap-3 p-4 rounded-xl bg-secondary/30">
+            {benefits.map((benefit, index) => (
+              <div key={benefit} className="flex items-start gap-3 p-4 rounded-xl bg-secondary/30 card-hover animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
                 <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-foreground font-medium">{benefit}</span>
               </div>
@@ -163,14 +165,14 @@ const Betreuung24h = () => {
       </section>
 
       {/* Case Study */}
-      <section className="section-padding bg-secondary/30">
+      <section className="section-padding bg-secondary/30 animate-fade-in">
         <div className="container-narrow mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
               Praxisbeispiel
             </h2>
           </div>
-          <Card className="max-w-3xl mx-auto bg-background border-border">
+          <Card className="max-w-3xl mx-auto bg-background border-border card-hover animate-fade-in" style={{ animationDelay: "100ms" }}>
             <CardContent className="p-8 md:p-10 space-y-6">
               <div>
                 <h3 className="font-display text-lg font-semibold text-primary mb-2">Situation:</h3>
@@ -196,19 +198,19 @@ const Betreuung24h = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding">
+      <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4 animate-fade-in">
             Verbessern Sie Ihre 24h-Betreuung
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
             In einem kostenlosen Erstgespräch analysieren wir Ihre Situation und finden die beste Lösung für Sie und Ihre Betreuungsperson.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               Kostenlose Erstberatung
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 rounded-xl">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <Phone className="mr-2 h-5 w-5" />
               +43 664 5477490
             </Button>
