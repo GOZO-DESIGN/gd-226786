@@ -28,7 +28,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="section-padding" id="angebote">
+    <section className="section-padding animate-fade-in" id="angebote">
       <div className="container-narrow mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -42,12 +42,13 @@ export const Services = () => {
 
         {/* Services Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <Card 
-              key={service.id} 
-              id={service.id}
-              className="group bg-gradient-to-b from-background to-secondary/20 border-border hover:border-primary/30 card-hover overflow-hidden"
-            >
+           {services.map((service) => (
+             <Card 
+               key={service.id} 
+               id={service.id}
+               className="group bg-gradient-to-b from-background to-secondary/20 border-border hover:border-primary/30 card-hover overflow-hidden animate-fade-in"
+               style={{ animationDelay: "0ms" }}
+             >
               <CardContent className="p-8 flex flex-col h-full">
                 <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-xl mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="h-7 w-7 text-primary-foreground" />

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const FreeResource = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding animate-fade-in">
       <div className="container-narrow mx-auto">
         <div className="relative bg-gradient-to-br from-primary via-primary to-indigo-dark rounded-3xl overflow-hidden">
           {/* Decorative Elements */}

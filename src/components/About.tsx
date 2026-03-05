@@ -9,7 +9,7 @@ const credentials = [
 
 export const About = () => {
   return (
-    <section className="section-padding bg-primary text-primary-foreground" id="ueber-mich">
+    <section className="section-padding bg-primary text-primary-foreground animate-fade-in" id="ueber-mich">
       <div className="container-narrow mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Column */}
