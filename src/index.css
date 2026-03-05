@@ -82,7 +82,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:shadow-accent/20;
   }
 
   .gold-underline {
@@ -91,6 +91,24 @@
 
   .gold-underline::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent;
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left;
+  }
+
+  /* Microanimations */
+  .micro-button {
+    @apply transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .micro-link {
+    @apply relative inline-block transition-colors duration-200 hover:text-accent;
+  }
+
+  .micro-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full;
+  }
+
+  .pulse-icon {
+    @apply animate-pulse transition-all duration-300;
   }
 }
