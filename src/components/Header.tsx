@@ -5,8 +5,8 @@ import Logo from "@/assets/logo.svg";
 
 const navItems = [
   { label: "Für Angehörige", href: "#angehoerige" },
-  { label: "24h-Betreuung", href: "#betreuung" },
-  { label: "Schulungen", href: "#schulungen" },
+  { label: "24h-Betreuung", href: "/24h-betreuung" },
+  { label: "Schulungen", href: "/demenz-schulungen" },
   { label: "Über mich", href: "#ueber-mich" },
   { label: "Kontakt", href: "#kontakt" },
 ];
