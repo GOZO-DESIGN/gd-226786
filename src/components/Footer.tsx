@@ -23,14 +23,14 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <Link to="/" aria-label="FokusDemenz – Zur Startseite">
-                <img 
-                  src={Logo} 
-                  alt="" 
-                  className="h-20 w-auto brightness-0 invert"
-                  aria-hidden="true"
-                />
-              </Link>
+             <Link to="/" aria-label="FokusDemenz – Zur Startseite" className="group">
+                 <img 
+                   src={Logo} 
+                   alt="" 
+                   className="h-24 w-auto brightness-0 invert transition-transform duration-300 group-hover:scale-110"
+                   aria-hidden="true"
+                 />
+               </Link>
             </div>
             <blockquote className="text-lg font-display italic text-accent mb-4">
               „Ich übersetze Demenz"

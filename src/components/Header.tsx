@@ -57,15 +57,15 @@ export const Header = () => {
             )}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center">
-            <Button asChild className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-6">
-              <a href="tel:+436645477490">
-                <Phone className="h-4 w-4 mr-2" />
-                Jetzt anrufen
-              </a>
-            </Button>
-          </div>
+           {/* CTA Button */}
+           <div className="hidden lg:flex items-center">
+             <Button asChild className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+               <a href="tel:+436645477490">
+                 <Phone className="h-4 w-4 mr-2 group-hover:animate-pulse" />
+                 Jetzt anrufen
+               </a>
+             </Button>
+           </div>
 
           {/* Mobile Menu Button */}
           <button
