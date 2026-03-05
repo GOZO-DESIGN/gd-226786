@@ -37,13 +37,10 @@ export const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+436645477490" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              <Phone className="h-4 w-4" />
-              +43 664 5477490
-            </a>
-            <Button className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold">
-              Erstberatung anfragen
+          <div className="hidden lg:flex items-center">
+            <Button className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-6">
+              <Phone className="h-4 w-4 mr-2" />
+              Anfrage senden
             </Button>
           </div>
 
