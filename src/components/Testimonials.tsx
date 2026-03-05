@@ -16,7 +16,7 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding bg-secondary/30 animate-fade-in">
       <div className="container-narrow mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">

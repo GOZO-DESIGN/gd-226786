@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const CTA = () => {
   return (
-    <section className="section-padding bg-gold-light" id="kontakt">
+    <section className="section-padding bg-gold-light animate-fade-in" id="kontakt">
       <div className="container-narrow mx-auto text-center">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-6">
           Bereit für den ersten Schritt?

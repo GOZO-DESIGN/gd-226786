@@ -28,7 +28,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="section-padding" id="angebote">
+    <section className="section-padding animate-fade-in" id="angebote">
       <div className="container-narrow mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
