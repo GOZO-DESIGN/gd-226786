@@ -25,10 +25,10 @@ export const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-24 md:h-28">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3" aria-label="FokusDemenz – Zur Startseite">
-            <img src={Logo} alt="FokusDemenz Logo" className="h-20 md:h-24 w-auto" />
-          </Link>
+           {/* Logo */}
+           <Link to="/" className="flex items-center gap-3 group" aria-label="FokusDemenz – Zur Startseite">
+             <img src={Logo} alt="FokusDemenz Logo" className="h-28 md:h-32 w-auto transition-transform duration-300 group-hover:scale-110" />
+           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
