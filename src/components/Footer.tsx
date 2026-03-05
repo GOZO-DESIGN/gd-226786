@@ -25,7 +25,7 @@ export const Footer = () => {
               <img 
                 src={Logo} 
                 alt="FokusDemenz" 
-                className="h-14 w-auto brightness-0 invert"
+                className="h-20 w-auto brightness-0 invert"
               />
             </div>
             <blockquote className="text-lg font-display italic text-accent mb-4">
