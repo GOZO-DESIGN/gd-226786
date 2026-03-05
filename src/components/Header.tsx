@@ -40,7 +40,7 @@ export const Header = () => {
           <div className="hidden lg:flex items-center">
             <Button className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-6">
               <Phone className="h-4 w-4 mr-2" />
-              Anfrage senden
+              Erstberatung anfragen
             </Button>
           </div>
 
@@ -72,7 +72,7 @@ export const Header = () => {
             <div className="pt-4 border-t border-border">
               <Button className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full">
                 <Phone className="h-4 w-4 mr-2" />
-                Anfrage senden
+                Erstberatung anfragen
               </Button>
             </div>
           </nav>
