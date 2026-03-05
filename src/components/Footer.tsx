@@ -18,7 +18,7 @@ export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container-narrow mx-auto section-padding">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="mb-6">
@@ -55,11 +55,28 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Links Columns */}
+          {/* Angebote Column */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Angebote</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <a 
+                    href={link.href} 
+                    className="text-primary-foreground/70 hover:text-accent transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Rechtliches Column */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Rechtliches</h4>
+            <ul className="space-y-2">
+              {legalLinks.map((link) => (
                 <li key={link.label}>
                   <a 
                     href={link.href} 
