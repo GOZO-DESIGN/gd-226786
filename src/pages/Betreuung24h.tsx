@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, AlertTriangle, Tv, MessageSquareWarning, GraduationCap, Users, ClipboardList, CheckCircle, ArrowRight, Quote } from "lucide-react";
@@ -55,6 +56,11 @@ const benefits = [
 const Betreuung24h = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="24-Stunden-Betreuung bei Demenz"
+        description="Schulung und Beratung für 24h-Betreuung bei Menschen mit Demenz. Betreuungsperson schulen, Aktivierungskonzept erstellen, Qualität verbessern."
+        canonical="https://www.fokusdemenz.at/24h-betreuung"
+      />
       <Header />
 
       {/* Hero */}

@@ -3,31 +3,37 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
-import Schulungen from "./pages/Schulungen";
-import Betreuung24h from "./pages/Betreuung24h";
-import UeberMich from "./pages/UeberMich";
-import NotFound from "./pages/NotFound";
+
+const Schulungen = lazy(() => import("./pages/Schulungen"));
+const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
+const UeberMich = lazy(() => import("./pages/UeberMich"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/demenz-schulungen" element={<Schulungen />} />
-          <Route path="/24h-betreuung" element={<Betreuung24h />} />
-          <Route path="/ueber-mich" element={<UeberMich />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Suspense fallback={<div className="min-h-screen bg-background" />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/demenz-schulungen" element={<Schulungen />} />
+              <Route path="/24h-betreuung" element={<Betreuung24h />} />
+              <Route path="/ueber-mich" element={<UeberMich />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

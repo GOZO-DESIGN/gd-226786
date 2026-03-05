@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Phone, Building2, Users, Heart, Landmark, BookOpen, MessageCircle, ShieldAlert, Activity, Scale, UserCheck, Globe, MapPin, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -56,6 +57,11 @@ const testimonials = [
 const Schulungen = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Demenz-Schulungen & Workshops"
+        description="Praxisnahe Demenz-Fortbildungen für Pflegepersonal, 24h-Betreuungsagenturen und Ehrenamtliche. Online-Workshops & Vor-Ort-Seminare in Österreich."
+        canonical="https://www.fokusdemenz.at/demenz-schulungen"
+      />
       <Header />
       <main>
         {/* Hero */}
@@ -67,10 +73,8 @@ const Schulungen = () => {
               Für Organisationen
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 animate-fade-in" style={{ animationDelay: "100ms" }}>
-              Demenz-Schulungen &
-            </h1>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
-              Workshops
+              Demenz-Schulungen &{" "}
+              <span className="text-accent">Workshops</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
               Praxisnahe Fortbildungen für Pflegepersonal, Betreuungspersonen, Ehrenamtliche und alle, die mit Menschen mit Demenz arbeiten.

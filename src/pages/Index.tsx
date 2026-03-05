@@ -1,8 +1,10 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Phone, Calendar, Heart, Home, Building, ArrowRight, Users, BookOpen, GraduationCap, CheckCircle2, Quote, Download, FileText, Award, Globe, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },
@@ -71,6 +73,11 @@ const testimonials = [
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="FokusDemenz – Demenzbegleitung von Radka Eder"
+        description="Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum. Online & vor Ort in Österreich."
+        canonical="https://www.fokusdemenz.at/"
+      />
       <Header />
       <main>
         {/* Hero Section */}

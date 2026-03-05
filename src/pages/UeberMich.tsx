@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, ExternalLink } from "lucide-react";
@@ -29,6 +30,11 @@ const approach = [
 const UeberMich = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Über mich – Radka Eder, Demenzexpertin"
+        description="Diplomierte Gesundheits- und Krankenpflegerin mit über 15 Jahren Erfahrung. Demenztrainerin, Buchautorin und Beraterin im DACH-Raum."
+        canonical="https://www.fokusdemenz.at/ueber-mich"
+      />
       <Header />
 
       {/* Hero */}
