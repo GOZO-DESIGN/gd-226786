@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/assets/logo.svg";
 
 const navItems = [
-  { label: "Für Angehörige", href: "/#angehoerige", isHash: true },
+  { label: "Für Angehörige", href: "/fuer-angehoerige", isHash: false },
   { label: "24h-Betreuung", href: "/24h-betreuung", isHash: false },
   { label: "Schulungen", href: "/demenz-schulungen", isHash: false },
   { label: "Über mich", href: "/ueber-mich", isHash: false },

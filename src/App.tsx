@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
 
+const Angehoerige = lazy(() => import("./pages/Angehoerige"));
 const Schulungen = lazy(() => import("./pages/Schulungen"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
@@ -28,6 +29,7 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/fuer-angehoerige" element={<Angehoerige />} />
               <Route path="/demenz-schulungen" element={<Schulungen />} />
               <Route path="/24h-betreuung" element={<Betreuung24h />} />
               <Route path="/ueber-mich" element={<UeberMich />} />
