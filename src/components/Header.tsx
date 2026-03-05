@@ -70,12 +70,9 @@ export const Header = () => {
               </a>
             ))}
             <div className="pt-4 border-t border-border">
-              <a href="tel:+436645477490" className="flex items-center gap-2 text-muted-foreground mb-4">
-                <Phone className="h-4 w-4" />
-                +43 664 5477490
-              </a>
-              <Button className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold">
-                Erstberatung anfragen
+              <Button className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full">
+                <Phone className="h-4 w-4 mr-2" />
+                Anfrage senden
               </Button>
             </div>
           </nav>
