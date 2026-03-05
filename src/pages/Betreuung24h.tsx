@@ -56,6 +56,11 @@ const benefits = [
 const Betreuung24h = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="24-Stunden-Betreuung bei Demenz"
+        description="Schulung und Beratung für 24h-Betreuung bei Menschen mit Demenz. Betreuungsperson schulen, Aktivierungskonzept erstellen, Qualität verbessern."
+        canonical="https://www.fokusdemenz.at/24h-betreuung"
+      />
       <Header />
 
       {/* Hero */}

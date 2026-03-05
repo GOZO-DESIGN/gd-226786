@@ -30,6 +30,11 @@ const approach = [
 const UeberMich = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Über mich – Radka Eder, Demenzexpertin"
+        description="Diplomierte Gesundheits- und Krankenpflegerin mit über 15 Jahren Erfahrung. Demenztrainerin, Buchautorin und Beraterin im DACH-Raum."
+        canonical="https://www.fokusdemenz.at/ueber-mich"
+      />
       <Header />
 
       {/* Hero */}

@@ -73,6 +73,11 @@ const testimonials = [
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="FokusDemenz – Demenzbegleitung von Radka Eder"
+        description="Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum. Online & vor Ort in Österreich."
+        canonical="https://www.fokusdemenz.at/"
+      />
       <Header />
       <main>
         {/* Hero Section */}
