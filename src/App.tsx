@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 const Schulungen = lazy(() => import("./pages/Schulungen"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
+const Kontakt = lazy(() => import("./pages/Kontakt"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
