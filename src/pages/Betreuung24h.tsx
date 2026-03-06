@@ -78,7 +78,7 @@ const Betreuung24h = () => {
                 Sie haben eine 24h-Betreuung organisiert, aber die Betreuungsperson hat wenig Demenz-Expertise? Ich helfe Ihnen, die Betreuungsqualität zu verbessern.
               </p>
               <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   Kostenlose Erstberatung
                 </Button>
               </div>
