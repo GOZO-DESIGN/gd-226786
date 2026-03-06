@@ -327,11 +327,11 @@ const Kontakt = () => {
                           type="submit"
                           size="lg"
                           disabled={isSubmitting}
-                          className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
+                          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
                         >
                           {isSubmitting ? (
                             <span className="flex items-center gap-2">
-                              <span className="h-4 w-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                              <span className="h-4 w-4 border-2 border-accent-foreground/30 border-t-accent-foreground rounded-full animate-spin" />
                               Wird gesendet…
                             </span>
                           ) : (
@@ -362,7 +362,7 @@ const Kontakt = () => {
                     <Button
                       asChild
                       size="lg"
-                      className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
                     >
                       <a href="tel:+436645477490">
                         <Phone className="h-5 w-5 mr-2" />

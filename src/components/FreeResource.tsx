@@ -24,7 +24,7 @@ export const FreeResource = () => {
                   Laden Sie mein kostenloses PDF mit praktischen Aktivierungsideen herunter. 
                   Sofort umsetzbar und speziell für den Alltag mit Demenz entwickelt.
                 </p>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
                   <Download className="mr-2 h-5 w-5" />
                   Jetzt kostenlos herunterladen
                 </Button>

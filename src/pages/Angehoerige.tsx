@@ -112,13 +112,13 @@ const Angehoerige = () => {
                   Sie pflegen einen Menschen mit Demenz und fühlen sich überfordert? Ich helfe Ihnen, den Alltag zu meistern – mit Verständnis, praktischen Strategien und echter Unterstützung.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <a href="tel:+436645477490">
                       <Phone className="h-4 w-4 mr-2" />
                       Kostenlose Erstberatung
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base border-accent/30 text-accent hover:bg-accent hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base border-accent/30 text-accent-foreground hover:bg-accent hover:text-accent-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <ArrowRight className="h-4 w-4 mr-2" />
                     Angebote entdecken
                   </Button>
@@ -176,7 +176,7 @@ const Angehoerige = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {steps.map((step, index) => (
                 <div key={step.number} className="text-center animate-fade-in" style={{ animationDelay: `${index * 120}ms` }}>
-                  <div className="w-16 h-16 bg-accent text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display transition-transform duration-300 hover:scale-110">
+                  <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display transition-transform duration-300 hover:scale-110">
                     {step.number}
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-2">{step.title}</h3>
@@ -208,7 +208,7 @@ const Angehoerige = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     Mehr erfahren
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
@@ -281,7 +281,7 @@ const Angehoerige = () => {
               In einem kostenlosen 15-Minuten-Gespräch besprechen wir Ihre Situation und finden heraus, wie ich Sie am besten unterstützen kann.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <a href="tel:+436645477490">
                   <Phone className="h-4 w-4 mr-2" />
                   Kostenlose Erstberatung
