@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/assets/logo.svg";
 
 const navItems = [
-  { label: "Für Angehörige", href: "/fuer-angehoerige", isHash: false },
-  { label: "24h-Betreuung", href: "/24h-betreuung", isHash: false },
-  { label: "Schulungen", href: "/demenz-schulungen", isHash: false },
-  { label: "Über mich", href: "/ueber-mich", isHash: false },
-  { label: "Kontakt", href: "/kontakt", isHash: false },
-];
+{ label: "Für Angehörige", href: "/fuer-angehoerige", isHash: false },
+{ label: "24h-Betreuung", href: "/24h-betreuung", isHash: false },
+{ label: "Schulungen", href: "/demenz-schulungen", isHash: false },
+{ label: "Über mich", href: "/ueber-mich", isHash: false },
+{ label: "Kontakt", href: "/kontakt", isHash: false }];
+
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,33 +27,33 @@ export const Header = () => {
         <div className="flex items-center justify-between h-24 md:h-28">
            {/* Logo */}
            <Link to="/" className="flex items-center gap-3 group" aria-label="FokusDemenz – Zur Startseite">
-             <img src={Logo} alt="FokusDemenz Logo" className="h-28 md:h-32 w-auto transition-transform duration-300 group-hover:scale-110" />
+             <img alt="FokusDemenz Logo" className="h-28 md:h-32 w-auto transition-transform duration-300 group-hover:scale-110" src="/lovable-uploads/ce6d0ac2-4d9e-42e6-89da-78b192be8a5d.png" />
            </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
             {navItems.map((item) =>
-              item.isHash ? (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
-                    isActive(item.href) ? "text-primary" : "text-foreground/70"
-                  }`}
-                >
+            item.isHash ?
+            <a
+              key={item.href}
+              href={item.href}
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+              isActive(item.href) ? "text-primary" : "text-foreground/70"}`
+              }>
+              
                   {item.label}
-                </a>
-              ) : (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
-                    isActive(item.href) ? "text-accent font-semibold" : "text-foreground/70"
-                  }`}
-                >
+                </a> :
+
+            <Link
+              key={item.href}
+              to={item.href}
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+              isActive(item.href) ? "text-accent font-semibold" : "text-foreground/70"}`
+              }>
+              
                   {item.label}
                 </Link>
-              )
+
             )}
           </nav>
 
@@ -72,40 +72,40 @@ export const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 text-foreground min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
-            aria-expanded={isMenuOpen}
-          >
+            aria-expanded={isMenuOpen}>
+            
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="lg:hidden bg-background border-t border-border animate-fade-in" role="navigation" aria-label="Mobile Navigation">
+      {isMenuOpen &&
+      <div className="lg:hidden bg-background border-t border-border animate-fade-in" role="navigation" aria-label="Mobile Navigation">
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-2">
             {navItems.map((item) =>
-              item.isHash ? (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-lg font-medium text-foreground/80 hover:text-accent transition-colors py-3 min-h-[44px] flex items-center"
-                >
+          item.isHash ?
+          <a
+            key={item.href}
+            href={item.href}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-lg font-medium text-foreground/80 hover:text-accent transition-colors py-3 min-h-[44px] flex items-center">
+            
                   {item.label}
-                </a>
-              ) : (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`text-lg font-medium transition-colors py-3 min-h-[44px] flex items-center ${
-                    isActive(item.href) ? "text-accent" : "text-foreground/80 hover:text-accent"
-                  }`}
-                >
+                </a> :
+
+          <Link
+            key={item.href}
+            to={item.href}
+            onClick={() => setIsMenuOpen(false)}
+            className={`text-lg font-medium transition-colors py-3 min-h-[44px] flex items-center ${
+            isActive(item.href) ? "text-accent" : "text-foreground/80 hover:text-accent"}`
+            }>
+            
                   {item.label}
                 </Link>
-              )
-            )}
+
+          )}
             <div className="pt-4 border-t border-border">
               <Button asChild className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full min-h-[48px]">
                 <a href="tel:+436645477490">
@@ -116,7 +116,7 @@ export const Header = () => {
             </div>
           </nav>
         </div>
-      )}
-    </header>
-  );
+      }
+    </header>);
+
 };
