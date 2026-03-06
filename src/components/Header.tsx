@@ -58,7 +58,7 @@ export const Header = () => {
 
            {/* CTA Button */}
            <div className="hidden lg:flex items-center">
-             <Button asChild className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+             <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                <a href="tel:+436645477490">
                  <Phone className="h-4 w-4 mr-2 group-hover:animate-pulse" />
                  Jetzt anrufen
