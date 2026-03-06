@@ -68,22 +68,34 @@ const Schulungen = () => {
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-secondary via-background to-gold-light relative overflow-hidden animate-fade-in">
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-          <div className="container-narrow mx-auto text-center relative z-10">
-            <span className="inline-block bg-accent/10 text-accent font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
-              Für Organisationen
-            </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 animate-fade-in" style={{ animationDelay: "100ms" }}>
-              Demenz-Schulungen &{" "}
-              <span className="text-accent">Workshops</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
-              Praxisnahe Fortbildungen für Pflegepersonal, Betreuungspersonen, Ehrenamtliche und alle, die mit Menschen mit Demenz arbeiten.
-            </p>
-            <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                <Phone className="h-4 w-4 mr-2" />
-                Anfrage senden
-              </Button>
+          <div className="container-narrow mx-auto relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="text-center md:text-left">
+                <span className="inline-block bg-accent/10 text-accent font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
+                  Für Organisationen
+                </span>
+                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 animate-fade-in" style={{ animationDelay: "100ms" }}>
+                  Demenz-Schulungen &{" "}
+                  <span className="text-accent">Workshops</span>
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
+                  Praxisnahe Fortbildungen für Pflegepersonal, Betreuungspersonen, Ehrenamtliche und alle, die mit Menschen mit Demenz arbeiten.
+                </p>
+                <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <Phone className="h-4 w-4 mr-2" />
+                    Anfrage senden
+                  </Button>
+                </div>
+              </div>
+              <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
+                <img
+                  src="/images/schulungen-stage.webp"
+                  alt="Radka Eder bei einer Demenz-Schulung auf der Bühne"
+                  className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </section>

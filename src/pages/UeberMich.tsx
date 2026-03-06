@@ -167,9 +167,12 @@ const UeberMich = () => {
                 </Button>
               </div>
               <div className="flex justify-center">
-                <div className="w-40 h-52 bg-gradient-to-br from-accent/20 to-primary/10 rounded-xl flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:rotate-2">
-                  <BookOpen className="h-16 w-16 text-accent/60" />
-                </div>
+                <img
+                  src="/images/buch-cover.webp"
+                  alt="Buch: Oma hat den Montag vergessen – von Radka Eder"
+                  className="w-40 h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2"
+                  loading="lazy"
+                />
               </div>
             </CardContent>
           </Card>

@@ -301,11 +301,12 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-                <div className="bg-background border border-border rounded-2xl p-8 text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-1">
-                  <FileText className="h-16 w-16 text-accent mx-auto mb-4" />
-                  <p className="text-3xl font-bold text-primary mb-1">40 Ideen</p>
-                  <p className="text-muted-foreground">PDF Guide</p>
-                </div>
+                <img
+                  src="/images/radka-laptop.webp"
+                  alt="Radka Eder bei der Online-Beratung"
+                  className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
