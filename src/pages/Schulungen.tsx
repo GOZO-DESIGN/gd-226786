@@ -208,7 +208,7 @@ const Schulungen = () => {
               Ich erstelle ein maßgeschneidertes Schulungskonzept für Ihre Einrichtung. Kontaktieren Sie mich für ein unverbindliches Angebot.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <Phone className="h-4 w-4 mr-2" />
                 Anfrage senden
               </Button>

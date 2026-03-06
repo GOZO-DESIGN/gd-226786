@@ -362,7 +362,7 @@ const Kontakt = () => {
                     <Button
                       asChild
                       size="lg"
-                      className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
                     >
                       <a href="tel:+436645477490">
                         <Phone className="h-5 w-5 mr-2" />

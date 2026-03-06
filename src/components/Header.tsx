@@ -106,7 +106,7 @@ export const Header = () => {
 
           )}
             <div className="pt-4 border-t border-border">
-              <Button asChild className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full min-h-[48px]">
+              <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full min-h-[48px]">
                 <a href="tel:+436645477490">
                   <Phone className="h-4 w-4 mr-2" />
                   Jetzt anrufen
