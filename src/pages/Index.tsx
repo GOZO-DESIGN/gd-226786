@@ -294,7 +294,7 @@ const Index = () => {
                   Laden Sie mein kostenloses PDF mit praktischen Aktivierungsideen herunter. Sofort umsetzbar und speziell für den Alltag mit Demenz entwickelt.
                 </p>
                 <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <Download className="h-4 w-4 mr-2" />
                     Jetzt kostenlos herunterladen
                   </Button>
