@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoSvg from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 const navItems = [
 { label: "Für Angehörige", href: "/fuer-angehoerige", isHash: false },
