@@ -63,9 +63,12 @@ const UeberMich = () => {
               </div>
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-              <Avatar className="w-48 h-48 border-4 border-accent/30 transition-transform duration-300 hover:scale-105">
-                <AvatarFallback className="text-4xl font-display bg-gradient-to-br from-accent/20 to-primary/10 text-primary">RE</AvatarFallback>
-              </Avatar>
+              <img
+                src="/images/radka-glasses.webp"
+                alt="Radka Eder – Demenzexpertin & Trainerin"
+                className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
@@ -164,9 +167,12 @@ const UeberMich = () => {
                 </Button>
               </div>
               <div className="flex justify-center">
-                <div className="w-40 h-52 bg-gradient-to-br from-accent/20 to-primary/10 rounded-xl flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:rotate-2">
-                  <BookOpen className="h-16 w-16 text-accent/60" />
-                </div>
+                <img
+                  src="/images/buch-cover.webp"
+                  alt="Buch: Oma hat den Montag vergessen – von Radka Eder"
+                  className="w-40 h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2"
+                  loading="lazy"
+                />
               </div>
             </CardContent>
           </Card>

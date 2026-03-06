@@ -85,7 +85,8 @@ const Index = () => {
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
           <div className="container-narrow mx-auto relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left">
               <span className="inline-block bg-accent/10 text-accent font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
                 Ich übersetze Demenz
               </span>
@@ -108,6 +109,15 @@ const Index = () => {
                   </Button>
                 </a>
               </div>
+            </div>
+            <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
+              <img
+                src="/images/homepage-einleitung.webp"
+                alt="Radka Eder bei der Demenzbegleitung mit Senioren"
+                className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
+                loading="eager"
+              />
+            </div>
             </div>
 
             {/* Stats */}
@@ -237,17 +247,12 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-                <div className="relative">
-                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="font-display text-3xl font-bold text-primary">RE</span>
-                      </div>
-                      <p className="font-semibold text-primary">Radka Eder</p>
-                      <p className="text-sm text-muted-foreground">Demenzexpertin</p>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src="/images/radka-portrait.webp"
+                  alt="Radka Eder – Demenzexpertin"
+                  className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -296,11 +301,12 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-                <div className="bg-background border border-border rounded-2xl p-8 text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-1">
-                  <FileText className="h-16 w-16 text-accent mx-auto mb-4" />
-                  <p className="text-3xl font-bold text-primary mb-1">40 Ideen</p>
-                  <p className="text-muted-foreground">PDF Guide</p>
-                </div>
+                <img
+                  src="/images/radka-laptop.webp"
+                  alt="Radka Eder bei der Online-Beratung"
+                  className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

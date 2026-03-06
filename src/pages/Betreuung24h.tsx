@@ -65,20 +65,32 @@ const Betreuung24h = () => {
 
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary/50 to-background animate-fade-in">
-        <div className="container-narrow mx-auto text-center">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
-            24-Stunden-Betreuung
-          </span>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
-            24-Stunden-Betreuung bei Demenz
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
-            Sie haben eine 24h-Betreuung organisiert, aber die Betreuungsperson hat wenig Demenz-Expertise? Ich helfe Ihnen, die Betreuungsqualität zu verbessern.
-          </p>
-          <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              Kostenlose Erstberatung
-            </Button>
+        <div className="container-narrow mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
+                24-Stunden-Betreuung
+              </span>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
+                24-Stunden-Betreuung bei Demenz
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto md:mx-0 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
+                Sie haben eine 24h-Betreuung organisiert, aber die Betreuungsperson hat wenig Demenz-Expertise? Ich helfe Ihnen, die Betreuungsqualität zu verbessern.
+              </p>
+              <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  Kostenlose Erstberatung
+                </Button>
+              </div>
+            </div>
+            <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
+              <img
+                src="/images/seniorenbetreuung.webp"
+                alt="Begleitung von Senioren bei der 24-Stunden-Betreuung"
+                className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </section>
