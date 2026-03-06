@@ -82,7 +82,7 @@ const Schulungen = () => {
                   Praxisnahe Fortbildungen für Pflegepersonal, Betreuungspersonen, Ehrenamtliche und alle, die mit Menschen mit Demenz arbeiten.
                 </p>
                 <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <Phone className="h-4 w-4 mr-2" />
                     Anfrage senden
                   </Button>
