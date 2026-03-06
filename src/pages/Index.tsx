@@ -85,7 +85,8 @@ const Index = () => {
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
           <div className="container-narrow mx-auto relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left">
               <span className="inline-block bg-accent/10 text-accent font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
                 Ich übersetze Demenz
               </span>
