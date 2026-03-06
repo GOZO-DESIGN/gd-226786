@@ -98,7 +98,7 @@ const Index = () => {
                 Ich helfe Angehörigen, Betreuungspersonen und Pflegeteams, Demenz besser zu verstehen und den Alltag spürbar zu entlasten.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <Calendar className="h-4 w-4 mr-2" />
                   Kostenlose Erstberatung
                 </Button>
