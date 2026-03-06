@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, ExternalLink } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import radkaGlasses from "@/assets/radka-glasses.webp";
+import buchCover from "@/assets/buch-cover.webp";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },
@@ -64,7 +66,7 @@ const UeberMich = () => {
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
               <img
-                src="/images/radka-glasses.webp"
+                src={radkaGlasses}
                 alt="Radka Eder – Demenzexpertin & Trainerin"
                 className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
                 loading="eager"
@@ -168,7 +170,7 @@ const UeberMich = () => {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/images/buch-cover.webp"
+                  src={buchCover}
                   alt="Buch: Oma hat den Montag vergessen – von Radka Eder"
                   className="w-40 h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2"
                   loading="lazy"

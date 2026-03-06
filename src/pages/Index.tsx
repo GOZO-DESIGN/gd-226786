@@ -5,6 +5,9 @@ import { Phone, Calendar, Heart, Home, Building, ArrowRight, Users, BookOpen, Gr
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import homepageEinleitung from "@/assets/homepage-einleitung.webp";
+import radkaPortrait from "@/assets/radka-portrait.webp";
+import radkaLaptop from "@/assets/radka-laptop.webp";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },
@@ -112,7 +115,7 @@ const Index = () => {
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
               <img
-                src="/images/homepage-einleitung.webp"
+                src={homepageEinleitung}
                 alt="Radka Eder bei der Demenzbegleitung mit Senioren"
                 className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
                 loading="eager"
@@ -248,7 +251,7 @@ const Index = () => {
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
                 <img
-                  src="/images/radka-portrait.webp"
+                  src={radkaPortrait}
                   alt="Radka Eder – Demenzexpertin"
                   className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
                   loading="lazy"
@@ -302,7 +305,7 @@ const Index = () => {
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
                 <img
-                  src="/images/radka-laptop.webp"
+                  src={radkaLaptop}
                   alt="Radka Eder bei der Online-Beratung"
                   className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square transition-transform duration-300 hover:scale-105"
                   loading="lazy"

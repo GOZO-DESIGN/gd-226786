@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Phone, Building2, Users, Heart, Landmark, BookOpen, MessageCircle, ShieldAlert, Activity, Scale, UserCheck, Globe, MapPin, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import schulungenStage from "@/assets/schulungen-stage.webp";
 
 const targetGroups = [
   {
@@ -90,7 +91,7 @@ const Schulungen = () => {
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
                 <img
-                  src="/images/schulungen-stage.webp"
+                  src={schulungenStage}
                   alt="Radka Eder bei einer Demenz-Schulung auf der Bühne"
                   className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
                   loading="eager"
