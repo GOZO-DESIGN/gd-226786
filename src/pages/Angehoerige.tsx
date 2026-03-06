@@ -98,12 +98,15 @@ const Angehoerige = () => {
           <div className="container-narrow mx-auto relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-center md:text-left">
-                <span className="inline-block bg-accent/10 text-accent font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
+                <span className="inline-block bg-primary/10 text-primary font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
                   Für Angehörige
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 animate-fade-in" style={{ animationDelay: "100ms" }}>
                   Demenzbegleitung für{" "}
-                  <span className="text-accent">Angehörige</span>
+                  <span className="relative">
+                    Angehörige
+                    <span className="absolute bottom-1 left-0 w-full h-3 bg-accent/30 -z-10 rounded" />
+                  </span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
                   Sie pflegen einen Menschen mit Demenz und fühlen sich überfordert? Ich helfe Ihnen, den Alltag zu meistern – mit Verständnis, praktischen Strategien und echter Unterstützung.
