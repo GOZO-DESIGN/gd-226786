@@ -63,9 +63,12 @@ const UeberMich = () => {
               </div>
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-              <Avatar className="w-48 h-48 border-4 border-accent/30 transition-transform duration-300 hover:scale-105">
-                <AvatarFallback className="text-4xl font-display bg-gradient-to-br from-accent/20 to-primary/10 text-primary">RE</AvatarFallback>
-              </Avatar>
+              <img
+                src="/images/radka-glasses.webp"
+                alt="Radka Eder – Demenzexpertin & Trainerin"
+                className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
