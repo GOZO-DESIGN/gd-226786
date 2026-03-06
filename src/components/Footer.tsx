@@ -16,7 +16,7 @@ const legalLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground" role="contentinfo">
+    <footer className="bg-primary/85 text-primary-foreground" role="contentinfo">
       <div className="container-narrow mx-auto section-padding">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
            {/* Brand Column */}
