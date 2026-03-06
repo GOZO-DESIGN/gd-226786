@@ -287,7 +287,7 @@ const Angehoerige = () => {
                   Kostenlose Erstberatung
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild className="rounded-full px-8 py-6 text-base border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <a href="tel:+436645477490">
                   +43 664 5477490
                 </a>
