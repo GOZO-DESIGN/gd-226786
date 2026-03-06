@@ -161,7 +161,7 @@ const UeberMich = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Ein praxisnaher Ratgeber für Angehörige von Menschen mit Demenz, basierend auf meiner langjährigen Erfahrung in der Altenpflege. Mit konkreten Tipps und Strategien für den Alltag.
                 </p>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Auf Amazon kaufen
                 </Button>
