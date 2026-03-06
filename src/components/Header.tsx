@@ -27,7 +27,7 @@ export const Header = () => {
         <div className="flex items-center justify-between py-2 md:py-3">
            {/* Logo */}
             <Link to="/" className="flex items-center group" aria-label="FokusDemenz – Zur Startseite">
-               <img alt="FokusDemenz Logo" className="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105" src={logoSvg} />
+               <img alt="FokusDemenz Logo" className="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105" src={logo} />
              </Link>
 
           {/* Desktop Navigation */}
