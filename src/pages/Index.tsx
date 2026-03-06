@@ -203,7 +203,7 @@ const Index = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button variant="ghost" className="group/btn text-primary hover:text-accent p-0 h-auto font-semibold transition-all duration-200">
+                    <Button variant="ghost" className="group/btn text-primary hover:text-primary p-0 h-auto font-semibold transition-all duration-200">
                       Mehr erfahren
                       <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
