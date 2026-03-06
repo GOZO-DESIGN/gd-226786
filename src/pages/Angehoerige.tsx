@@ -269,7 +269,7 @@ const Angehoerige = () => {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-primary text-primary-foreground animate-fade-in">
+        <section className="section-padding bg-primary/85 text-primary-foreground animate-fade-in">
           <div className="container-narrow mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
               Bereit für den ersten Schritt?

@@ -16,20 +16,11 @@ const legalLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground" role="contentinfo">
+    <footer className="bg-primary/85 text-primary-foreground" role="contentinfo">
       <div className="container-narrow mx-auto section-padding">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
            {/* Brand Column */}
            <div className="lg:col-span-2">
-             <div className="mb-6">
-              <Link to="/" aria-label="FokusDemenz – Zur Startseite" className="group inline-block">
-                  <img 
-                    src="/lovable-uploads/ce6d0ac2-4d9e-42e6-89da-78b192be8a5d.png" 
-                    alt="FokusDemenz Logo" 
-                    className="h-20 w-auto transition-transform duration-300 group-hover:scale-105"
-                  />
-                </Link>
-             </div>
             <blockquote className="text-lg font-display italic text-accent mb-4">
               „Ich übersetze Demenz"
             </blockquote>
