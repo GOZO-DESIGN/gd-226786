@@ -19,7 +19,7 @@ export const About = () => {
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent/20 rounded-full blur-xl" />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-full blur-xl" />
               <img
-                src="/images/radka-brain-models.webp"
+                src={radkaBrainModels}
                 alt="Radka Eder mit Gehirnmodellen"
                 className="relative rounded-2xl w-full object-cover aspect-[4/3] shadow-xl"
                 loading="lazy"

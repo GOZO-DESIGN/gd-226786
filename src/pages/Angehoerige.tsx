@@ -127,7 +127,7 @@ const Angehoerige = () => {
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
                 <img
-                  src="/images/homepage-alternative.webp"
+                  src={homepageAlternative}
                   alt="Einfühlsame Begleitung für Angehörige von Menschen mit Demenz"
                   className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
                   loading="eager"

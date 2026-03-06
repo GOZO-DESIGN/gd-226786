@@ -86,7 +86,7 @@ const Betreuung24h = () => {
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
               <img
-                src="/images/seniorenbetreuung.webp"
+                src={seniorenbetreuung}
                 alt="Begleitung von Senioren bei der 24-Stunden-Betreuung"
                 className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
                 loading="eager"

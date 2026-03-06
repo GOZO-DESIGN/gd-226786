@@ -170,7 +170,7 @@ const UeberMich = () => {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/images/buch-cover.webp"
+                  src={buchCover}
                   alt="Buch: Oma hat den Montag vergessen – von Radka Eder"
                   className="w-40 h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2"
                   loading="lazy"

@@ -305,7 +305,7 @@ const Index = () => {
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
                 <img
-                  src="/images/radka-laptop.webp"
+                  src={radkaLaptop}
                   alt="Radka Eder bei der Online-Beratung"
                   className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square transition-transform duration-300 hover:scale-105"
                   loading="lazy"
