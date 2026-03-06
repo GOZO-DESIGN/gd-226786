@@ -1,5 +1,6 @@
 import { Award, BookOpen, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import radkaBrainModels from "@/assets/radka-brain-models.webp";
 
 const credentials = [
   { icon: Award, label: "Dipl. Gesundheits- und Krankenpflegerin" },

@@ -4,6 +4,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, AlertTriangle, Tv, MessageSquareWarning, GraduationCap, Users, ClipboardList, CheckCircle, ArrowRight, Quote } from "lucide-react";
+import seniorenbetreuung from "@/assets/seniorenbetreuung.webp";
 
 const problems = [
   {

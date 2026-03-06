@@ -5,6 +5,9 @@ import { Phone, Calendar, Heart, Home, Building, ArrowRight, Users, BookOpen, Gr
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import homepageEinleitung from "@/assets/homepage-einleitung.webp";
+import radkaPortrait from "@/assets/radka-portrait.webp";
+import radkaLaptop from "@/assets/radka-laptop.webp";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },

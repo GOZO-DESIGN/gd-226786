@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, ExternalLink } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import radkaGlasses from "@/assets/radka-glasses.webp";
+import buchCover from "@/assets/buch-cover.webp";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },

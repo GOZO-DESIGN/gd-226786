@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Phone, Building2, Users, Heart, Landmark, BookOpen, MessageCircle, ShieldAlert, Activity, Scale, UserCheck, Globe, MapPin, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import schulungenStage from "@/assets/schulungen-stage.webp";
 
 const targetGroups = [
   {
