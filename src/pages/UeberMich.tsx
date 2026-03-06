@@ -56,7 +56,7 @@ const UeberMich = () => {
                 Demenz ist komplex. Ich übersetze medizinisches und pflegerisches Wissen in verständliche, alltagstaugliche Lösungen, die entlasten und Sicherheit geben.
               </p>
               <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-xl px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <Phone className="mr-2 h-4 w-4" />
                   Kontakt aufnehmen
                 </Button>
