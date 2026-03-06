@@ -326,10 +326,12 @@ const Index = () => {
                 <Calendar className="h-4 w-4 mr-2" />
                 Kostenlose Erstberatung
               </Button>
-              <a href="tel:+436645477490" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-all duration-300 hover:scale-105 font-medium border border-primary-foreground/20 rounded-full px-8 py-3">
-                <Phone className="h-4 w-4" />
-                +43 664 5477490
-              </a>
+              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <a href="tel:+436645477490">
+                  <Phone className="h-4 w-4 mr-2" />
+                  +43 664 5477490
+                </a>
+              </Button>
             </div>
           </div>
         </section>

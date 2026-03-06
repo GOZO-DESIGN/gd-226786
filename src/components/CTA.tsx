@@ -18,7 +18,7 @@ export const CTA = () => {
             <Calendar className="mr-2 h-5 w-5" />
             Kostenlose Erstberatung
           </Button>
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-lg px-8 py-6">
+          <Button size="lg" variant="outline" className="border-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground font-semibold text-lg px-8 py-6">
             <Phone className="mr-2 h-5 w-5" />
             +43 664 5477490
           </Button>
