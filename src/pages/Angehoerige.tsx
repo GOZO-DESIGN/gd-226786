@@ -287,7 +287,7 @@ const Angehoerige = () => {
                   Kostenlose Erstberatung
                 </a>
               </Button>
-              <a href="tel:+436645477490" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-all duration-300 hover:scale-105 font-medium border border-primary-foreground/20 rounded-full px-8 py-3">
+              <a href="tel:+436645477490" className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-all duration-300 hover:scale-105 font-medium border border-primary-foreground/20 hover:border-primary-foreground/50 rounded-full px-8 py-3">
                 +43 664 5477490
               </a>
             </div>
