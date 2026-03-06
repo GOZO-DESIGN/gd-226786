@@ -1,6 +1,5 @@
 import { Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import Logo from "@/assets/logo.svg";
 
 const quickLinks = [
   { label: "Für Angehörige", href: "/#angehoerige", isRoute: false },
