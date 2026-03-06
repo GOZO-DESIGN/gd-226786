@@ -212,6 +212,7 @@ const Kontakt = () => {
                         </p>
                         <Button
                           variant="outline"
+                          className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                           onClick={() => {
                             setIsSubmitted(false);
                             setFormData({ name: "", email: "", phone: "", subject: "", message: "" });

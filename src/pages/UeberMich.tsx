@@ -209,10 +209,10 @@ const UeberMich = () => {
             In einem kostenlosen Erstgespräch lernen wir uns kennen und besprechen, wie ich Sie am besten unterstützen kann.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               Erstgespräch vereinbaren
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105">
+            <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <Phone className="mr-2 h-5 w-5" />
               +43 664 5477490
             </Button>

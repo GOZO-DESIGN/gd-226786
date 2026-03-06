@@ -219,10 +219,10 @@ const Betreuung24h = () => {
             In einem kostenlosen Erstgespräch analysieren wir Ihre Situation und finden die beste Lösung für Sie und Ihre Betreuungsperson.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               Kostenlose Erstberatung
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <Phone className="mr-2 h-5 w-5" />
               +43 664 5477490
             </Button>
