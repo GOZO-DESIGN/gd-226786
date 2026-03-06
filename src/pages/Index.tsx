@@ -247,17 +247,12 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-                <div className="relative">
-                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="font-display text-3xl font-bold text-primary">RE</span>
-                      </div>
-                      <p className="font-semibold text-primary">Radka Eder</p>
-                      <p className="text-sm text-muted-foreground">Demenzexpertin</p>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src="/images/radka-portrait.webp"
+                  alt="Radka Eder – Demenzexpertin"
+                  className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
