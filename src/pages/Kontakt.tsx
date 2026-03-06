@@ -327,7 +327,7 @@ const Kontakt = () => {
                           type="submit"
                           size="lg"
                           disabled={isSubmitting}
-                          className="w-full bg-accent hover:bg-accent/90 text-primary-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
+                          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
                         >
                           {isSubmitting ? (
                             <span className="flex items-center gap-2">
