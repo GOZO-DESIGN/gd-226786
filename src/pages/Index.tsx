@@ -110,6 +110,15 @@ const Index = () => {
                 </a>
               </div>
             </div>
+            <div className="flex justify-center animate-scale-in" style={{ animationDelay: "400ms" }}>
+              <img
+                src="/images/homepage-einleitung.webp"
+                alt="Radka Eder bei der Demenzbegleitung mit Senioren"
+                className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[4/3]"
+                loading="eager"
+              />
+            </div>
+            </div>
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-16 animate-fade-in" style={{ animationDelay: "400ms" }}>
