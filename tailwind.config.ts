@@ -19,8 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"],
+        display: ["Quicksand", "sans-serif"],
+        sans: ["Quicksand", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,9 +60,9 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
         },
-        indigo: {
-          light: "hsl(var(--indigo-light))",
-          dark: "hsl(var(--indigo-dark))",
+        purple: {
+          light: "hsl(var(--purple-light))",
+          dark: "hsl(var(--purple-dark))",
         },
       },
       borderRadius: {
