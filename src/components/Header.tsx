@@ -26,9 +26,9 @@ export const Header = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between py-2 md:py-3">
            {/* Logo */}
-           <Link to="/" className="flex items-center group" aria-label="FokusDemenz – Zur Startseite">
-              <img alt="FokusDemenz Logo" className="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/ce6d0ac2-4d9e-42e6-89da-78b192be8a5d.png" />
-            </Link>
+            <Link to="/" className="flex items-center group" aria-label="FokusDemenz – Zur Startseite">
+               <img alt="FokusDemenz Logo" className="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105" src={logoSvg} />
+             </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
