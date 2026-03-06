@@ -118,7 +118,7 @@ const Angehoerige = () => {
                       Kostenlose Erstberatung
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base border-accent/30 text-accent hover:bg-accent hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-base border-accent/30 text-accent-foreground hover:bg-accent hover:text-accent-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <ArrowRight className="h-4 w-4 mr-2" />
                     Angebote entdecken
                   </Button>
