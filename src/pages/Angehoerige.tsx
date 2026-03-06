@@ -208,7 +208,7 @@ const Angehoerige = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     Mehr erfahren
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
