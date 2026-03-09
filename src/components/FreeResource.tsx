@@ -14,7 +14,7 @@ export const FreeResource = () => {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div className="text-primary-foreground">
-                <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+                <span className="inline-block text-sm font-semibold text-primary-foreground/70 uppercase tracking-wider mb-4">
                   Gratis PDF
                 </span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
