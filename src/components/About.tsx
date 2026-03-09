@@ -29,7 +29,7 @@ export const About = () => {
 
           {/* Content Column */}
           <div className="order-1 lg:order-2">
-            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <span className="inline-block text-sm font-semibold text-primary-foreground/70 uppercase tracking-wider mb-4">
               Über mich
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
@@ -39,7 +39,7 @@ export const About = () => {
               Demenzexpertin & Trainerin
             </p>
             
-            <blockquote className="text-2xl font-display italic text-accent mb-6">
+            <blockquote className="text-2xl font-display italic text-primary-foreground/90 mb-6">
               „Ich übersetze Demenz"
             </blockquote>
             
@@ -49,7 +49,7 @@ export const About = () => {
               komplexes Wissen verständlich und gebe praktische Werkzeuge an die Hand.
             </p>
             
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold">
+            <Button size="lg" className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold">
               Mehr über mich
             </Button>
           </div>

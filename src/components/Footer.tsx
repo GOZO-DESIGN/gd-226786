@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
            {/* Brand Column */}
            <div className="lg:col-span-2">
-            <blockquote className="text-lg font-display italic text-accent mb-4">
+            <blockquote className="text-lg font-display italic text-primary-foreground/90 mb-4">
               „Ich übersetze Demenz"
             </blockquote>
             <p className="text-primary-foreground/70 leading-relaxed">

@@ -14,7 +14,7 @@ export const FreeResource = () => {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div className="text-primary-foreground">
-                <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+                <span className="inline-block text-sm font-semibold text-primary-foreground/70 uppercase tracking-wider mb-4">
                   Gratis PDF
                 </span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
@@ -24,7 +24,7 @@ export const FreeResource = () => {
                   Laden Sie mein kostenloses PDF mit praktischen Aktivierungsideen herunter. 
                   Sofort umsetzbar und speziell für den Alltag mit Demenz entwickelt.
                 </p>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+                <Button size="lg" className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold">
                   <Download className="mr-2 h-5 w-5" />
                   Jetzt kostenlos herunterladen
                 </Button>
@@ -36,8 +36,8 @@ export const FreeResource = () => {
                   <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-xl transform rotate-6" />
                   <div className="relative bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center">
-                        <FileText className="h-8 w-8 text-primary" />
+                      <div className="w-16 h-16 bg-primary-foreground/20 rounded-xl flex items-center justify-center">
+                        <FileText className="h-8 w-8 text-primary-foreground" />
                       </div>
                       <div>
                         <div className="text-3xl font-bold text-primary-foreground">40</div>

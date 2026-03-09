@@ -283,7 +283,7 @@ const Index = () => {
         </section>
 
         {/* Gratis PDF */}
-        <section className="section-padding bg-gold-light animate-fade-in" id="ressourcen">
+        <section className="section-padding bg-secondary animate-fade-in" id="ressourcen">
           <div className="container-narrow mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
               <div>
@@ -325,11 +325,11 @@ const Index = () => {
               In einem kostenlosen 15-Minuten-Gespräch besprechen wir Ihre Situation und finden heraus, wie ich Sie am besten unterstützen kann.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <Button size="lg" className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <Calendar className="h-4 w-4 mr-2" />
                 Kostenlose Erstberatung
               </Button>
-              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <a href="tel:+436645477490">
                   <Phone className="h-4 w-4 mr-2" />
                   +43 664 5477490

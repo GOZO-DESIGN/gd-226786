@@ -374,7 +374,7 @@ const Kontakt = () => {
                 </Card>
 
                 {/* Availability Info */}
-                <Card className="bg-gold-light border-none">
+                <Card className="bg-secondary border-none">
                   <CardContent className="p-8">
                     <Clock className="h-8 w-8 text-accent mb-4" />
                     <h3 className="font-display text-xl font-bold text-primary mb-3">
