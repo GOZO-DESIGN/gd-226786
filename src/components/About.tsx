@@ -29,7 +29,7 @@ export const About = () => {
 
           {/* Content Column */}
           <div className="order-1 lg:order-2">
-            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <span className="inline-block text-sm font-semibold text-primary-foreground/70 uppercase tracking-wider mb-4">
               Über mich
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
