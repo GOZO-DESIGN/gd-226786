@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    /* FokusDemenz Brand Colors - #9B26B6 (Lila) & #F4D552 (Gold) */
+    /* FokusDemenz Brand Colors – optimierte Palette */
     --background: 0 0% 100%;
-    --foreground: 0 0% 6%;
+    --foreground: 240 28% 14%; /* #1A1A2E */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 6%;
+    --card-foreground: 240 28% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 6%;
+    --popover-foreground: 240 28% 14%;
 
-    /* Primary: Lila #9B26B6 */
-    --primary: 276 75% 51%;
+    /* Primary: Tiefes Violett #7B2FBE */
+    --primary: 272 60% 47%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Light purple tint */
-    --secondary: 276 75% 95%;
-    --secondary-foreground: 276 75% 51%;
+    /* Secondary: Lavendel #F0E8FF */
+    --secondary: 264 100% 96%;
+    --secondary-foreground: 272 60% 47%;
 
     /* Muted */
     --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 46%;
+    --muted-foreground: 240 20% 35%; /* #4A4A6A */
 
-    /* Accent: Gold #F4D552 */
-    --accent: 47 97% 61%;
-    --accent-foreground: 0 0% 6%;
+    /* Accent: Dunkles Gold #C8960A */
+    --accent: 43 90% 41%;
+    --accent-foreground: 240 28% 14%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 276 75% 51%;
+    --ring: 272 60% 47%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gold: 47 97% 61%;
-    --gold-light: 47 97% 95%;
-    --purple-light: 276 75% 95%;
-    --purple-dark: 276 75% 40%;
-    --gray: 0 0% 46%;
-    --black: 0 0% 6%;
+    --gold: 43 90% 41%; /* #C8960A – auf hellem BG */
+    --gold-light: 47 92% 53%; /* #F5C518 – auf dunklem BG */
+    --purple-light: 264 100% 96%; /* #F0E8FF */
+    --purple-dark: 272 64% 34%; /* #5A1F8F */
+    --gray: 240 20% 35%; /* #4A4A6A */
+    --black: 240 28% 14%; /* #1A1A2E */
   }
 }
 
