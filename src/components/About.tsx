@@ -39,7 +39,7 @@ export const About = () => {
               Demenzexpertin & Trainerin
             </p>
             
-            <blockquote className="text-2xl font-display italic text-accent mb-6">
+            <blockquote className="text-2xl font-display italic text-primary-foreground/90 mb-6">
               „Ich übersetze Demenz"
             </blockquote>
             
