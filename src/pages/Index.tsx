@@ -283,7 +283,7 @@ const Index = () => {
         </section>
 
         {/* Gratis PDF */}
-        <section className="section-padding bg-gold-light animate-fade-in" id="ressourcen">
+        <section className="section-padding bg-secondary animate-fade-in" id="ressourcen">
           <div className="container-narrow mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
               <div>

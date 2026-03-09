@@ -49,7 +49,7 @@ export const About = () => {
               komplexes Wissen verständlich und gebe praktische Werkzeuge an die Hand.
             </p>
             
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold">
+            <Button size="lg" className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold">
               Mehr über mich
             </Button>
           </div>

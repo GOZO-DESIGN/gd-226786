@@ -36,8 +36,8 @@ export const FreeResource = () => {
                   <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-xl transform rotate-6" />
                   <div className="relative bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center">
-                        <FileText className="h-8 w-8 text-primary" />
+                      <div className="w-16 h-16 bg-primary-foreground/20 rounded-xl flex items-center justify-center">
+                        <FileText className="h-8 w-8 text-primary-foreground" />
                       </div>
                       <div>
                         <div className="text-3xl font-bold text-primary-foreground">40</div>
