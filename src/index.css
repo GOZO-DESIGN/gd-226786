@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* FokusDemenz Brand Colors – optimierte Palette */
+    /* FokusDemenz Brand Colors – sanfte, edle Palette */
     --background: 0 0% 100%;
     --foreground: 240 28% 14%; /* #1A1A2E */
 
@@ -25,8 +25,8 @@
     --secondary-foreground: 272 60% 47%;
 
     /* Muted */
-    --muted: 0 0% 95%;
-    --muted-foreground: 240 20% 35%; /* #4A4A6A */
+    --muted: 260 20% 96%;
+    --muted-foreground: 240 12% 45%;
 
     /* Accent: Dunkles Gold #C8960A */
     --accent: 43 90% 41%;
@@ -35,19 +35,23 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 260 15% 90%;
+    --input: 260 15% 90%;
     --ring: 272 60% 47%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gold: 43 90% 41%; /* #C8960A – auf hellem BG */
-    --gold-light: 47 92% 53%; /* #F5C518 – auf dunklem BG */
-    --purple-light: 264 100% 96%; /* #F0E8FF */
-    --purple-dark: 272 64% 34%; /* #5A1F8F */
-    --gray: 240 20% 35%; /* #4A4A6A */
-    --black: 240 28% 14%; /* #1A1A2E */
+    --gold: 43 90% 41%;
+    --gold-light: 47 92% 53%;
+    --purple-light: 264 100% 96%;
+    --purple-dark: 272 64% 34%;
+    --gray: 240 12% 45%;
+    --black: 240 28% 14%;
+
+    /* Soft section backgrounds */
+    --section-purple: 264 60% 97%;
+    --footer-bg: 255 25% 18%;
   }
 }
 
@@ -84,7 +88,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:shadow-accent/20;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 
   .gold-underline {
@@ -96,6 +100,20 @@
     @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left;
   }
 
+  /* Section backgrounds */
+  .bg-section-soft {
+    background-color: hsl(var(--section-purple));
+  }
+
+  .bg-footer {
+    background-color: hsl(var(--footer-bg));
+  }
+
+  /* Eyebrow style */
+  .eyebrow {
+    @apply text-sm font-semibold text-primary uppercase tracking-widest mb-4 block;
+  }
+
   /* Microanimations */
   .micro-button {
     @apply transition-all duration-200 hover:scale-105 active:scale-95;
@@ -103,14 +121,5 @@
 
   .micro-link {
     @apply relative inline-block transition-colors duration-200 hover:text-accent;
-  }
-
-  .micro-link::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full;
-  }
-
-  .pulse-icon {
-    @apply animate-pulse transition-all duration-300;
   }
 }

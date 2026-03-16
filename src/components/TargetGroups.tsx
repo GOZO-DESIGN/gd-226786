@@ -25,9 +25,8 @@ const groups = [
 
 export const TargetGroups = () => {
   return (
-    <section className="section-padding bg-secondary/30 animate-fade-in">
+    <section className="section-padding bg-section-soft animate-fade-in">
       <div className="container-narrow mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
             Für wen ist FokusDemenz?
@@ -37,25 +36,22 @@ export const TargetGroups = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-           {groups.map((group, index) => (
-             <Card 
-               key={group.title} 
-               className="group bg-background border-border hover:border-accent/50 card-hover animate-fade-in"
-               style={{ animationDelay: `${index * 100}ms` }}
-             >
+          {groups.map((group, index) => (
+            <Card
+              key={group.title}
+              className="group bg-background border-border hover:border-primary/20 card-hover animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <CardContent className="p-8">
-                <div className="flex items-center justify-center w-16 h-16 bg-accent/10 rounded-2xl mb-6 group-hover:bg-accent/20 transition-colors">
-                  <group.icon className="h-8 w-8 text-accent" />
-                </div>
+                <group.icon className="h-8 w-8 text-primary mb-6" />
                 <h3 className="font-display text-xl font-semibold text-primary mb-3">
                   {group.title}
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {group.description}
                 </p>
-                <Button variant="ghost" className="group/btn text-primary hover:text-accent p-0 h-auto font-semibold">
+                <Button variant="ghost" className="group/btn text-primary hover:text-primary p-0 h-auto font-semibold">
                   Mehr erfahren
                   <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>

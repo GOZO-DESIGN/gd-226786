@@ -16,27 +16,25 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="section-padding bg-secondary/30 animate-fade-in">
+    <section className="section-padding bg-section-soft animate-fade-in">
       <div className="container-narrow mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
             Was Kunden sagen
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-           {testimonials.map((testimonial, index) => (
-             <Card 
-               key={index} 
-               className="bg-background border-border hover:border-accent/30 transition-colors animate-fade-in"
-               style={{ animationDelay: `${index * 100}ms` }}
-             >
+          {testimonials.map((testimonial, index) => (
+            <Card
+              key={index}
+              className="bg-background border-border hover:border-primary/20 transition-colors animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <CardContent className="p-8">
-                <Quote className="h-10 w-10 text-accent/30 mb-4" />
+                <Quote className="h-8 w-8 text-primary/20 mb-4" />
                 <blockquote className="text-lg text-foreground leading-relaxed mb-6">
-                  "{testimonial.quote}"
+                  „{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
