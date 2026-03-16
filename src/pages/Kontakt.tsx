@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageSquare } from "lucide-react";
+import { Mail, MessageCircle, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,7 +32,7 @@ const subjects = [
 const faqs = [
   {
     question: "Wie läuft die Erstberatung ab?",
-    answer: "In einem kostenlosen 15-Minuten-Telefonat besprechen wir Ihre Situation und ich erkläre Ihnen, welche Unterstützung für Sie passend wäre.",
+    answer: "In einem kostenlosen Erstgespräch besprechen wir Ihre Situation und ich erkläre Ihnen, welche Unterstützung für Sie passend wäre. Der Erstkontakt erfolgt per E-Mail oder WhatsApp.",
   },
   {
     question: "Bieten Sie auch Online-Beratung an?",
@@ -45,37 +45,6 @@ const faqs = [
   {
     question: "Kommen Sie auch vor Ort?",
     answer: "Ja, in Österreich biete ich Vor-Ort-Besuche, Schulungen und Begleitung an. Für Deutschland und die Schweiz arbeite ich online.",
-  },
-];
-
-const contactInfo = [
-  {
-    icon: Phone,
-    label: "Telefon",
-    value: "+43 664 5477490",
-    href: "tel:+436645477490",
-    description: "Mo–Fr, 9:00–17:00 Uhr",
-  },
-  {
-    icon: Mail,
-    label: "E-Mail",
-    value: "info@fokusdemenz.at",
-    href: "mailto:info@fokusdemenz.at",
-    description: "Antwort innerhalb von 24 Stunden",
-  },
-  {
-    icon: MapPin,
-    label: "Standort",
-    value: "Österreich",
-    href: undefined,
-    description: "Online im DACH-Raum verfügbar",
-  },
-  {
-    icon: Clock,
-    label: "Erreichbarkeit",
-    value: "Mo–Fr, 9–17 Uhr",
-    href: undefined,
-    description: "Terminvereinbarung auch außerhalb",
   },
 ];
 
@@ -115,10 +84,7 @@ const Kontakt = () => {
     }
 
     setIsSubmitting(true);
-
-    // Simulate form submission (replace with actual backend later)
     await new Promise((resolve) => setTimeout(resolve, 1200));
-
     setIsSubmitting(false);
     setIsSubmitted(true);
     toast({
@@ -131,61 +97,73 @@ const Kontakt = () => {
     <>
       <SEO
         title="Kontakt – Kostenlose Erstberatung"
-        description="Kontaktieren Sie Radka Eder für eine kostenlose Erstberatung zu Demenzbegleitung, 24h-Betreuung oder Schulungen. Telefon: +43 664 5477490"
+        description="Kontaktieren Sie Radka Eder für eine kostenlose Erstberatung zu Demenzbegleitung, 24h-Betreuung oder Schulungen. E-Mail: info@fokusdemenz.at"
         canonical="https://www.fokusdemenz.at/kontakt"
       />
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-secondary via-background to-gold-light animate-fade-in">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-secondary/60 via-background to-background animate-fade-in">
           <div className="container-narrow mx-auto px-4 md:px-8 text-center">
-            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-              Kontakt
-            </span>
+            <span className="eyebrow">Kontakt</span>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
               Sprechen wir darüber
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
               Ob Fragen, Erstberatung oder ein konkretes Anliegen – ich freue mich auf Ihre Nachricht.
+            </p>
+            <p className="text-base text-primary font-medium max-w-xl mx-auto">
+              Der Erstkontakt erfolgt bitte per E-Mail oder WhatsApp-Nachricht. Ich melde mich in der Regel innerhalb von 24 Stunden zurück.
             </p>
           </div>
         </section>
 
-        {/* Contact Info Cards */}
+        {/* Contact Info */}
         <section className="section-padding animate-fade-in">
           <div className="container-narrow mx-auto">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {contactInfo.map((info, index) => (
-                <Card
-                  key={info.label}
-                  className="bg-background border-border hover:border-accent/30 card-hover animate-fade-in"
-                  style={{ animationDelay: `${index * 80}ms` }}
-                >
-                  <CardContent className="p-6 text-center">
-                    <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-xl mx-auto mb-4">
-                      <info.icon className="h-6 w-6 text-accent" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-1">{info.label}</h3>
-                    {info.href ? (
-                      <a
-                        href={info.href}
-                        className="text-accent hover:underline font-medium block mb-1"
-                      >
-                        {info.value}
-                      </a>
-                    ) : (
-                      <span className="text-foreground font-medium block mb-1">{info.value}</span>
-                    )}
-                    <p className="text-sm text-muted-foreground">{info.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              <Card className="bg-background border-border hover:border-primary/20 card-hover animate-fade-in">
+                <CardContent className="p-6 text-center">
+                  <Mail className="h-7 w-7 text-primary mx-auto mb-4" />
+                  <h3 className="font-semibold text-primary mb-1">E-Mail</h3>
+                  <a href="mailto:info@fokusdemenz.at" className="text-primary hover:underline font-medium block mb-1">
+                    info@fokusdemenz.at
+                  </a>
+                  <p className="text-sm text-muted-foreground">Antwort innerhalb von 24 Stunden</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-background border-border hover:border-primary/20 card-hover animate-fade-in" style={{ animationDelay: "80ms" }}>
+                <CardContent className="p-6 text-center">
+                  <MessageCircle className="h-7 w-7 text-primary mx-auto mb-4" />
+                  <h3 className="font-semibold text-primary mb-1">WhatsApp</h3>
+                  <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium block mb-1">
+                    Nachricht senden
+                  </a>
+                  <p className="text-sm text-muted-foreground">Schnell und unkompliziert</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-background border-border hover:border-primary/20 card-hover animate-fade-in" style={{ animationDelay: "160ms" }}>
+                <CardContent className="p-6 text-center">
+                  <Clock className="h-7 w-7 text-primary mx-auto mb-4" />
+                  <h3 className="font-semibold text-primary mb-1">Erreichbarkeit</h3>
+                  <span className="text-foreground font-medium block mb-1">Mo–Fr, 9:00–17:00 Uhr</span>
+                  <p className="text-sm text-muted-foreground">Termine auch außerhalb möglich</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-background border-border hover:border-primary/20 card-hover animate-fade-in" style={{ animationDelay: "240ms" }}>
+                <CardContent className="p-6 text-center">
+                  <MapPin className="h-7 w-7 text-primary mx-auto mb-4" />
+                  <h3 className="font-semibold text-primary mb-1">Standort</h3>
+                  <span className="text-foreground font-medium block mb-1">Österreich</span>
+                  <p className="text-sm text-muted-foreground">Online im DACH-Raum verfügbar</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
 
         {/* Form + Sidebar */}
-        <section className="section-padding bg-secondary/30 animate-fade-in">
+        <section className="section-padding bg-section-soft animate-fade-in">
           <div className="container-narrow mx-auto">
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Form */}
@@ -201,8 +179,8 @@ const Kontakt = () => {
 
                     {isSubmitted ? (
                       <div className="text-center py-12 animate-fade-in">
-                        <div className="flex items-center justify-center w-16 h-16 bg-accent/10 rounded-full mx-auto mb-6">
-                          <CheckCircle className="h-8 w-8 text-accent" />
+                        <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mx-auto mb-6">
+                          <CheckCircle className="h-8 w-8 text-primary" />
                         </div>
                         <h3 className="font-display text-2xl font-bold text-primary mb-3">
                           Vielen Dank!
@@ -319,7 +297,7 @@ const Kontakt = () => {
                           </p>
                         </div>
 
-                        {/* Honeypot field */}
+                        {/* Honeypot */}
                         <div className="hidden" aria-hidden="true">
                           <input type="text" name="website" tabIndex={-1} autoComplete="off" />
                         </div>
@@ -328,11 +306,11 @@ const Kontakt = () => {
                           type="submit"
                           size="lg"
                           disabled={isSubmitting}
-                          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
+                          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-95"
                         >
                           {isSubmitting ? (
                             <span className="flex items-center gap-2">
-                              <span className="h-4 w-4 border-2 border-accent-foreground/30 border-t-accent-foreground rounded-full animate-spin" />
+                              <span className="h-4 w-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
                               Wird gesendet…
                             </span>
                           ) : (
@@ -350,48 +328,69 @@ const Kontakt = () => {
 
               {/* Sidebar */}
               <div className="lg:col-span-2 space-y-8">
-                {/* Direct Contact Card */}
-                <Card className="bg-primary text-primary-foreground border-none">
+                {/* Direct Contact */}
+                <Card className="bg-background border-border">
                   <CardContent className="p-8">
-                    <MessageSquare className="h-8 w-8 text-accent mb-4" />
-                    <h3 className="font-display text-xl font-bold mb-3">
-                      Lieber direkt sprechen?
+                    <Mail className="h-7 w-7 text-primary mb-4" />
+                    <h3 className="font-display text-xl font-bold text-primary mb-3">
+                      Direkter Kontakt
                     </h3>
-                    <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                      In einem kostenlosen 15-Minuten-Gespräch besprechen wir Ihre Situation persönlich.
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Der Erstkontakt erfolgt bitte per E-Mail oder WhatsApp-Nachricht. Ich melde mich in der Regel innerhalb von 24 Stunden zurück.
                     </p>
-                    <Button
-                      asChild
-                      size="lg"
-                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
-                    >
-                      <a href="tel:+436645477490">
-                        <Phone className="h-5 w-5 mr-2" />
-                        Jetzt anrufen
-                      </a>
-                    </Button>
+                    <div className="space-y-3">
+                      <Button
+                        asChild
+                        size="lg"
+                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+                      >
+                        <a href="mailto:info@fokusdemenz.at">
+                          <Mail className="h-5 w-5 mr-2" />
+                          Per E-Mail anfragen
+                        </a>
+                      </Button>
+                      <Button
+                        asChild
+                        size="lg"
+                        variant="outline"
+                        className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
+                      >
+                        <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
+                          <MessageCircle className="h-5 w-5 mr-2" />
+                          Nachricht via WhatsApp
+                        </a>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
 
-                {/* Availability Info */}
-                <Card className="bg-secondary border-none">
+                {/* Availability */}
+                <Card className="bg-background border-border">
                   <CardContent className="p-8">
-                    <Clock className="h-8 w-8 text-accent mb-4" />
+                    <Clock className="h-7 w-7 text-primary mb-4" />
                     <h3 className="font-display text-xl font-bold text-primary mb-3">
-                      Antwortzeit
+                      Erreichbarkeit
                     </h3>
                     <ul className="space-y-3 text-foreground/80">
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>E-Mails: innerhalb von 24 Stunden</span>
+                        <CheckCircle className="h-5 w-5 text-primary/60 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <span className="font-medium text-foreground">Montag – Freitag</span>
+                          <br />
+                          <span className="text-sm text-muted-foreground">9:00 – 17:00 Uhr</span>
+                        </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                        <span>Telefonisch: Mo–Fr, 9–17 Uhr</span>
+                        <CheckCircle className="h-5 w-5 text-primary/60 flex-shrink-0 mt-0.5" />
+                        <span>Antwort innerhalb von 24 Stunden</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-5 w-5 text-primary/60 flex-shrink-0 mt-0.5" />
                         <span>Erstberatung: kostenlos & unverbindlich</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-primary/60 flex-shrink-0 mt-0.5" />
+                        <span>Termine nach Vereinbarung auch außerhalb der Bürozeiten</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -401,13 +400,11 @@ const Kontakt = () => {
           </div>
         </section>
 
-        {/* FAQ Section */}
+        {/* FAQ */}
         <section className="section-padding animate-fade-in">
           <div className="container-narrow mx-auto">
             <div className="text-center mb-12">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-                Häufige Fragen
-              </span>
+              <span className="eyebrow">Häufige Fragen</span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">
                 Noch Fragen?
               </h2>
@@ -417,7 +414,7 @@ const Kontakt = () => {
               {faqs.map((faq, index) => (
                 <Card
                   key={index}
-                  className="bg-background border-border hover:border-accent/30 card-hover animate-fade-in"
+                  className="bg-background border-border hover:border-primary/20 card-hover animate-fade-in"
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <CardContent className="p-6">

@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { Phone, Heart, Brain, ShieldAlert, Users, ArrowRight, CheckCircle2, Quote, ChevronDown, Zap, Target, Smile } from "lucide-react";
+import { Mail, MessageCircle, Heart, Brain, ShieldAlert, Users, ArrowRight, CheckCircle2, Quote, ChevronDown, Zap, Target, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import homepageAlternative from "@/assets/homepage-alternative.webp";
@@ -93,35 +93,29 @@ const Angehoerige = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-secondary via-background to-gold-light relative overflow-hidden animate-fade-in">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+        <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary/60 via-background to-background relative overflow-hidden animate-fade-in">
           <div className="container-narrow mx-auto relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-center md:text-left">
-                <span className="inline-block bg-primary/10 text-primary font-medium text-sm px-4 py-1.5 rounded-full mb-6 animate-fade-in">
-                  Für Angehörige
-                </span>
-                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 animate-fade-in" style={{ animationDelay: "100ms" }}>
-                  Demenzbegleitung für{" "}
-                  <span className="relative">
-                    Angehörige
-                    <span className="absolute bottom-1 left-0 w-full h-3 bg-accent/30 -z-10 rounded" />
-                  </span>
+                <span className="eyebrow">Für Angehörige</span>
+                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
+                  Demenzbegleitung für Angehörige
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
                   Sie pflegen einen Menschen mit Demenz und fühlen sich überfordert? Ich helfe Ihnen, den Alltag zu meistern – mit Verständnis, praktischen Strategien und echter Unterstützung.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
-                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="tel:+436645477490">
-                      <Phone className="h-4 w-4 mr-2" />
-                      Kostenlose Erstberatung
+                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="mailto:info@fokusdemenz.at">
+                      <Mail className="h-4 w-4 mr-2" />
+                      Per E-Mail anfragen
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <ArrowRight className="h-4 w-4 mr-2" />
-                    Angebote entdecken
+                  <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      Nachricht via WhatsApp
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -129,7 +123,7 @@ const Angehoerige = () => {
                 <img
                   src={homepageAlternative}
                   alt="Einfühlsame Begleitung für Angehörige von Menschen mit Demenz"
-                  className="rounded-3xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
+                  className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[3/4]"
                   loading="eager"
                 />
               </div>
@@ -140,18 +134,16 @@ const Angehoerige = () => {
         {/* Herausforderungen */}
         <section className="section-padding bg-background animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4 animate-fade-in">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4">
               Kennen Sie diese Herausforderungen?
             </h2>
-            <p className="text-muted-foreground text-center mb-14 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <p className="text-muted-foreground text-center mb-14 max-w-2xl mx-auto">
               Sie sind nicht allein. Viele pflegende Angehörige kämpfen mit denselben Problemen.
             </p>
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {challenges.map((item, index) => (
                 <div key={item.title} className="group border border-border rounded-2xl p-6 card-hover bg-card animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                  <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
-                    <item.icon className="h-7 w-7 text-accent" />
-                  </div>
+                  <item.icon className="h-7 w-7 text-primary mb-5" />
                   <h3 className="font-display text-lg font-semibold text-primary mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
@@ -161,23 +153,21 @@ const Angehoerige = () => {
         </section>
 
         {/* Mein Ansatz */}
-        <section className="section-padding bg-secondary animate-fade-in">
+        <section className="section-padding bg-section-soft animate-fade-in">
           <div className="container-narrow mx-auto">
             <div className="text-center mb-14">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2 animate-fade-in">
-                Mein Ansatz
-              </h2>
-              <p className="font-display text-xl text-accent animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <span className="eyebrow">Mein Ansatz</span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2">
                 Wie ich Angehörige begleite
-              </p>
-              <p className="text-muted-foreground mt-4 max-w-xl mx-auto animate-fade-in" style={{ animationDelay: "150ms" }}>
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
                 „Ich übersetze Demenz" – Ich mache komplexes Wissen verständlich und gebe Ihnen praktische Werkzeuge für den Alltag.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {steps.map((step, index) => (
                 <div key={step.number} className="text-center animate-fade-in" style={{ animationDelay: `${index * 120}ms` }}>
-                  <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display transition-transform duration-300 hover:scale-110">
+                  <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display">
                     {step.number}
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-2">{step.title}</h3>
@@ -191,10 +181,10 @@ const Angehoerige = () => {
         {/* Angebote */}
         <section className="section-padding bg-background animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4 animate-fade-in">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-4">
               Meine Angebote für Angehörige
             </h2>
-            <p className="text-muted-foreground text-center mb-14 animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <p className="text-muted-foreground text-center mb-14">
               Wählen Sie das Format, das am besten zu Ihrer Situation passt.
             </p>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -205,13 +195,15 @@ const Angehoerige = () => {
                   <ul className="space-y-3 mb-8">
                     {angebot.features.map((f) => (
                       <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" /> {f}
+                        <CheckCircle2 className="h-4 w-4 text-primary/60 flex-shrink-0" /> {f}
                       </li>
                     ))}
                   </ul>
-                  <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    Mehr erfahren
-                    <ArrowRight className="h-4 w-4 ml-2" />
+                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="mailto:info@fokusdemenz.at">
+                      Mehr erfahren
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </a>
                   </Button>
                 </div>
               ))}
@@ -220,16 +212,16 @@ const Angehoerige = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="section-padding bg-secondary animate-fade-in">
+        <section className="section-padding bg-section-soft animate-fade-in">
           <div className="container-narrow mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14 animate-fade-in">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-14">
               Was Angehörige sagen
             </h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonials.map((t, i) => (
-                <div key={i} className="bg-card border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                  <Quote className="h-8 w-8 text-accent/30 mb-4" />
-                  <p className="text-foreground leading-relaxed mb-6 italic">"{t.quote}"</p>
+                <div key={i} className="bg-background border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
+                  <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                  <p className="text-foreground leading-relaxed mb-6 italic">„{t.quote}"</p>
                   <div>
                     <p className="font-semibold text-primary">{t.name}</p>
                     <p className="text-sm text-muted-foreground">{t.role}</p>
@@ -243,12 +235,10 @@ const Angehoerige = () => {
         {/* FAQ */}
         <section className="section-padding bg-background animate-fade-in">
           <div className="container-narrow mx-auto max-w-3xl">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-2 animate-fade-in">
-              Häufige Fragen
-            </h2>
-            <p className="text-muted-foreground text-center mb-12 animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <span className="eyebrow text-center">Häufige Fragen</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mb-12">
               FAQ für Angehörige
-            </p>
+            </h2>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <div
@@ -261,7 +251,7 @@ const Angehoerige = () => {
                     className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors duration-200"
                   >
                     <span className="font-display text-base font-semibold text-primary pr-4">{faq.question}</span>
-                    <ChevronDown className={`h-5 w-5 text-accent flex-shrink-0 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`h-5 w-5 text-primary/40 flex-shrink-0 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`} />
                   </button>
                   <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
                     <p className="px-6 pb-6 text-muted-foreground leading-relaxed">{faq.answer}</p>
@@ -273,24 +263,25 @@ const Angehoerige = () => {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-primary/85 text-primary-foreground animate-fade-in">
+        <section className="section-padding bg-section-soft animate-fade-in">
           <div className="container-narrow mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
               Bereit für den ersten Schritt?
             </h2>
-            <p className="text-primary-foreground/70 max-w-xl mx-auto mb-10 text-lg animate-fade-in" style={{ animationDelay: "100ms" }}>
-              In einem kostenlosen 15-Minuten-Gespräch besprechen wir Ihre Situation und finden heraus, wie ich Sie am besten unterstützen kann.
+            <p className="text-muted-foreground max-w-xl mx-auto mb-10 text-lg">
+              Schreiben Sie mir – ich melde mich in der Regel innerhalb von 24 Stunden persönlich bei Ihnen.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <Button size="lg" asChild className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                <a href="tel:+436645477490">
-                  <Phone className="h-4 w-4 mr-2" />
-                  Kostenlose Erstberatung
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <a href="mailto:info@fokusdemenz.at">
+                  <Mail className="h-4 w-4 mr-2" />
+                  Per E-Mail anfragen
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                <a href="tel:+436645477490">
-                  +43 664 5477490
+              <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Nachricht via WhatsApp
                 </a>
               </Button>
             </div>

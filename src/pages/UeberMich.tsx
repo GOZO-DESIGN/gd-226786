@@ -3,8 +3,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, ExternalLink } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Mail, MessageCircle, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, Download, ShoppingCart } from "lucide-react";
 import radkaGlasses from "@/assets/radka-glasses.webp";
 import buchCover from "@/assets/buch-cover.webp";
 
@@ -44,31 +43,37 @@ const UeberMich = () => {
         <div className="container-narrow mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
-                Über mich
-              </span>
+              <span className="eyebrow">Über mich</span>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-primary mb-2 leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
                 Radka Eder
               </h1>
-              <p className="text-accent font-semibold text-lg mb-6 animate-fade-in" style={{ animationDelay: "150ms" }}>Demenzexpertin & Trainerin</p>
-              <div className="bg-secondary/50 rounded-xl px-6 py-3 mb-6 inline-block animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <p className="text-primary/70 font-semibold text-lg mb-6 animate-fade-in" style={{ animationDelay: "150ms" }}>Demenzexpertin & Trainerin</p>
+              <div className="bg-section-soft rounded-xl px-6 py-3 mb-6 inline-block animate-fade-in" style={{ animationDelay: "200ms" }}>
                 <p className="font-display text-lg text-primary italic">„Ich übersetze Demenz"</p>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-8 animate-fade-in" style={{ animationDelay: "250ms" }}>
                 Demenz ist komplex. Ich übersetze medizinisches und pflegerisches Wissen in verständliche, alltagstaugliche Lösungen, die entlasten und Sicherheit geben.
               </p>
-              <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Kontakt aufnehmen
+              <div className="flex flex-col sm:flex-row gap-3 animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <a href="mailto:info@fokusdemenz.at">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Per E-Mail anfragen
+                  </a>
+                </Button>
+                <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    Nachricht via WhatsApp
+                  </a>
                 </Button>
               </div>
             </div>
             <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
               <img
                 src={radkaGlasses}
-                alt="Radka Eder – Demenzexpertin & Trainerin"
-                className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-xl transition-transform duration-300 hover:scale-105"
+                alt="Radka Eder – Demenzexpertin und Trainerin"
+                className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-lg"
                 loading="eager"
               />
             </div>
@@ -77,12 +82,12 @@ const UeberMich = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-12 bg-secondary/30 animate-fade-in">
+      <section className="py-12 bg-section-soft animate-fade-in">
         <div className="container-narrow mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={stat.label} className="animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
-                <p className="font-display text-4xl font-bold text-accent">{stat.value}</p>
+                <p className="font-display text-4xl font-bold text-primary">{stat.value}</p>
                 <p className="text-muted-foreground text-sm mt-1">{stat.label}</p>
               </div>
             ))}
@@ -93,7 +98,7 @@ const UeberMich = () => {
       {/* Bio */}
       <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-8 text-center animate-fade-in">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
             Mein Weg zur Demenzexpertin
           </h2>
           <div className="prose prose-lg text-muted-foreground space-y-6">
@@ -114,18 +119,16 @@ const UeberMich = () => {
       </section>
 
       {/* Qualifications */}
-      <section className="section-padding bg-secondary/30 animate-fade-in">
+      <section className="section-padding bg-section-soft animate-fade-in">
         <div className="container-narrow mx-auto">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-12 text-center animate-fade-in">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
             Qualifikationen & Erfahrung
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {qualifications.slice(0, 3).map((q, index) => (
               <Card key={q.title} className="group bg-background border-border card-hover animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-xl mb-4 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
-                    <q.icon className="h-6 w-6 text-accent" />
-                  </div>
+                  <q.icon className="h-7 w-7 text-primary mb-4" />
                   <h3 className="font-display text-base font-semibold text-primary mb-2">{q.title}</h3>
                   <p className="text-muted-foreground text-sm">{q.description}</p>
                 </CardContent>
@@ -136,9 +139,7 @@ const UeberMich = () => {
             {qualifications.slice(3).map((q, index) => (
               <Card key={q.title} className="group bg-background border-border card-hover animate-fade-in" style={{ animationDelay: `${(index + 3) * 80}ms` }}>
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-xl mb-4 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
-                    <q.icon className="h-6 w-6 text-accent" />
-                  </div>
+                  <q.icon className="h-7 w-7 text-primary mb-4" />
                   <h3 className="font-display text-base font-semibold text-primary mb-2">{q.title}</h3>
                   <p className="text-muted-foreground text-sm">{q.description}</p>
                 </CardContent>
@@ -151,48 +152,63 @@ const UeberMich = () => {
       {/* Book */}
       <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto">
-          <Card className="max-w-3xl mx-auto bg-gradient-to-r from-accent/5 to-primary/5 border-accent/20 overflow-hidden card-hover animate-fade-in">
-            <CardContent className="p-8 md:p-10 grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <span className="inline-block text-xs font-semibold text-accent uppercase tracking-wider mb-3">
-                  Mein Buch
-                </span>
-                <h3 className="font-display text-2xl font-bold text-primary mb-4">
-                  "Oma hat den Montag vergessen"
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Ein praxisnaher Ratgeber für Angehörige von Menschen mit Demenz, basierend auf meiner langjährigen Erfahrung in der Altenpflege. Mit konkreten Tipps und Strategien für den Alltag.
-                </p>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Auf Amazon kaufen
-                </Button>
-              </div>
-              <div className="flex justify-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-2 flex justify-center">
                 <img
                   src={buchCover}
-                  alt="Buch: Oma hat den Montag vergessen – von Radka Eder"
-                  className="w-40 h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2"
+                  alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren, mit liebevollen Illustrationen für Familie, Kita und Schule'
+                  className="w-48 md:w-56 h-auto rounded-xl shadow-lg"
                   loading="lazy"
                 />
               </div>
-            </CardContent>
-          </Card>
+              <div className="md:col-span-3">
+                <span className="eyebrow">Mein Buch</span>
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
+                  Oma hat den Montag vergessen
+                </h2>
+                <p className="text-muted-foreground font-medium mb-4">
+                  Zehn Geschichten über Demenz für Kinder und Familien.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  <em>Oma hat den Montag vergessen</em> begleitet Kinder ab 5 Jahren mit zehn liebevoll illustrierten Geschichten durch die Welt der Demenz: einfühlsam, kindgerecht und ohne falsche Schönfärberei. Das Buch fördert Empathie, gibt Eltern einen sanften Einstieg in schwierige Gespräche und eignet sich zum Vorlesen zuhause wie auch in Kita und Schule.
+                </p>
+                <p className="text-primary font-medium italic mb-4">
+                  Weil Verstehen der erste Schritt zum Mitgefühl ist.
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Lernen Sie das Buch kennen — ganz ohne Risiko. Laden Sie sich jetzt zwei Geschichten kostenlos herunter oder bestellen Sie das Buch direkt auf Amazon.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="#" onClick={(e) => e.preventDefault()}>
+                      <Download className="h-4 w-4 mr-2" />
+                      Zwei Geschichten gratis herunterladen
+                    </a>
+                  </Button>
+                  <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="https://www.amazon.de/dp/B0DZ2Q19VG" target="_blank" rel="noopener noreferrer">
+                      <ShoppingCart className="h-4 w-4 mr-2" />
+                      Jetzt auf Amazon bestellen
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Approach */}
-      <section className="section-padding bg-secondary/30 animate-fade-in">
+      <section className="section-padding bg-section-soft animate-fade-in">
         <div className="container-narrow mx-auto">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-12 text-center animate-fade-in">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
             Mein Ansatz
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
             {approach.map((a, index) => (
               <div key={a.title} className="group animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <div className="flex items-center justify-center w-14 h-14 bg-accent/10 rounded-full mb-4 mx-auto group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
-                  <a.icon className="h-7 w-7 text-accent" />
-                </div>
+                <a.icon className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-display text-lg font-semibold text-primary mb-2">{a.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{a.description}</p>
               </div>
@@ -202,21 +218,26 @@ const UeberMich = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-primary/85 text-primary-foreground animate-fade-in">
+      <section className="section-padding animate-fade-in">
         <div className="container-narrow mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
-            Lassen Sie uns sprechen
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+            Lassen Sie uns ins Gespräch kommen
           </h2>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
-            In einem kostenlosen Erstgespräch lernen wir uns kennen und besprechen, wie ich Sie am besten unterstützen kann.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Schreiben Sie mir – ich melde mich in der Regel innerhalb von 24 Stunden persönlich bei Ihnen.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <Button size="lg" className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              Erstgespräch vereinbaren
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <a href="mailto:info@fokusdemenz.at">
+                <Mail className="mr-2 h-5 w-5" />
+                Per E-Mail anfragen
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <Phone className="mr-2 h-5 w-5" />
-              +43 664 5477490
+            <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+              <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Nachricht via WhatsApp
+              </a>
             </Button>
           </div>
         </div>
