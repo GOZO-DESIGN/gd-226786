@@ -198,7 +198,7 @@ const Index = () => {
                     <ul className="space-y-2 mb-6">
                       {service.features.map((f) => (
                         <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <CheckCircle2 className="h-4 w-4 text-primary/60 flex-shrink-0" />
+                          <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" />
                           {f}
                         </li>
                       ))}
