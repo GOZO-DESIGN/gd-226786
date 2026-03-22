@@ -295,7 +295,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="md:col-span-3">
-                  <span className="eyebrow">Mein Buch</span>
+                  <span className="eyebrow text-accent">Mein Buch</span>
                   <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
                     Oma hat den Montag vergessen
                   </h2>

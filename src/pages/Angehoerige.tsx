@@ -167,7 +167,7 @@ const Angehoerige = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {steps.map((step, index) => (
                 <div key={step.number} className="text-center animate-fade-in" style={{ animationDelay: `${index * 120}ms` }}>
-                  <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display">
+                  <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display">
                     {step.number}
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-2">{step.title}</h3>
