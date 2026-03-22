@@ -128,7 +128,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-16 animate-fade-in" style={{ animationDelay: "400ms" }}>
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}
@@ -198,7 +198,7 @@ const Index = () => {
                     <ul className="space-y-2 mb-6">
                       {service.features.map((f) => (
                         <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <CheckCircle2 className="h-4 w-4 text-primary/60 flex-shrink-0" />
+                          <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" />
                           {f}
                         </li>
                       ))}
@@ -226,7 +226,7 @@ const Index = () => {
                   Radka Eder
                 </h2>
                 <p className="text-muted-foreground font-medium mb-6 animate-fade-in" style={{ animationDelay: "150ms" }}>Demenzexpertin & Trainerin</p>
-                <blockquote className="font-display text-xl italic text-primary/80 mb-6 border-l-4 border-accent pl-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
+                <blockquote className="font-display text-xl italic text-primary/80 mb-6 border-l-4 border-gold pl-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
                   „Ich übersetze Demenz"
                 </blockquote>
                 <p className="text-muted-foreground leading-relaxed mb-6 animate-fade-in" style={{ animationDelay: "250ms" }}>
@@ -269,7 +269,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonials.map((t, i) => (
                 <div key={i} className="bg-card border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                  <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                  <Quote className="h-8 w-8 text-accent/40 mb-4" />
                   <p className="text-foreground leading-relaxed mb-6 italic">„{t.quote}"</p>
                   <div>
                     <p className="font-semibold text-primary">{t.name}</p>
@@ -295,7 +295,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="md:col-span-3">
-                  <span className="eyebrow">Mein Buch</span>
+                  <span className="eyebrow text-accent">Mein Buch</span>
                   <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
                     Oma hat den Montag vergessen
                   </h2>
@@ -305,20 +305,20 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     <em>Oma hat den Montag vergessen</em> begleitet Kinder ab 5 Jahren mit zehn liebevoll illustrierten Geschichten durch die Welt der Demenz: einfühlsam, kindgerecht und ohne falsche Schönfärberei. Das Buch fördert Empathie, gibt Eltern einen sanften Einstieg in schwierige Gespräche und eignet sich zum Vorlesen zuhause wie auch in Kita und Schule.
                   </p>
-                  <p className="text-primary font-medium italic mb-4">
+                  <p className="text-accent font-medium italic mb-4">
                     Weil Verstehen der erste Schritt zum Mitgefühl ist.
                   </p>
                   <p className="text-muted-foreground mb-6">
                     Lernen Sie das Buch kennen — ganz ohne Risiko. Laden Sie sich jetzt zwei Geschichten kostenlos herunter oder bestellen Sie das Buch direkt auf Amazon.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                      <a href="#" onClick={(e) => e.preventDefault()}>
+                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                      <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
                         <Download className="h-4 w-4 mr-2" />
-                        Zwei Geschichten gratis herunterladen
+                        Leseprobe herunterladen
                       </a>
                     </Button>
-                    <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                       <a href="https://www.amazon.de/dp/B0DZ2Q19VG" target="_blank" rel="noopener noreferrer">
                         <ShoppingCart className="h-4 w-4 mr-2" />
                         Jetzt auf Amazon bestellen
@@ -336,16 +336,18 @@ const Index = () => {
           <div className="container-narrow mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
               <div>
-                <span className="eyebrow">Gratis PDF</span>
+                <span className="eyebrow text-accent">Kostenloser Download</span>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-4">
-                  40 Aktivierungsideen für Menschen mit Demenz
+                  Der 7-Tage-Aktivierungs-Kompass
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Laden Sie mein kostenloses PDF mit praktischen Aktivierungsideen herunter. Sofort umsetzbar und speziell für den Alltag mit Demenz entwickelt.
+                  Sieben Tage, sieben erprobte Aktivierungsideen – kompakt, verständlich und sofort umsetzbar. Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
                 </p>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <Download className="h-4 w-4 mr-2" />
-                  Jetzt kostenlos herunterladen
+                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <a href="#aktivierungs-kompass" target="_blank" rel="noopener noreferrer">
+                    <Download className="h-4 w-4 mr-2" />
+                    Jetzt kostenlos herunterladen
+                  </a>
                 </Button>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>

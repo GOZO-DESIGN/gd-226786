@@ -87,7 +87,7 @@ const UeberMich = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={stat.label} className="animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
-                <p className="font-display text-4xl font-bold text-primary">{stat.value}</p>
+                <p className="font-display text-4xl font-bold text-accent">{stat.value}</p>
                 <p className="text-muted-foreground text-sm mt-1">{stat.label}</p>
               </div>
             ))}
@@ -163,7 +163,7 @@ const UeberMich = () => {
                 />
               </div>
               <div className="md:col-span-3">
-                <span className="eyebrow">Mein Buch</span>
+                <span className="eyebrow text-accent">Mein Buch</span>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
                   Oma hat den Montag vergessen
                 </h2>
@@ -173,20 +173,20 @@ const UeberMich = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   <em>Oma hat den Montag vergessen</em> begleitet Kinder ab 5 Jahren mit zehn liebevoll illustrierten Geschichten durch die Welt der Demenz: einfühlsam, kindgerecht und ohne falsche Schönfärberei. Das Buch fördert Empathie, gibt Eltern einen sanften Einstieg in schwierige Gespräche und eignet sich zum Vorlesen zuhause wie auch in Kita und Schule.
                 </p>
-                <p className="text-primary font-medium italic mb-4">
+                <p className="text-accent font-medium italic mb-4">
                   Weil Verstehen der erste Schritt zum Mitgefühl ist.
                 </p>
                 <p className="text-muted-foreground mb-6">
                   Lernen Sie das Buch kennen — ganz ohne Risiko. Laden Sie sich jetzt zwei Geschichten kostenlos herunter oder bestellen Sie das Buch direkt auf Amazon.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="#" onClick={(e) => e.preventDefault()}>
+                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
                       <Download className="h-4 w-4 mr-2" />
-                      Zwei Geschichten gratis herunterladen
+                      Leseprobe herunterladen
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <a href="https://www.amazon.de/dp/B0DZ2Q19VG" target="_blank" rel="noopener noreferrer">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Jetzt auf Amazon bestellen

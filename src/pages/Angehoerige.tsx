@@ -167,7 +167,7 @@ const Angehoerige = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {steps.map((step, index) => (
                 <div key={step.number} className="text-center animate-fade-in" style={{ animationDelay: `${index * 120}ms` }}>
-                  <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display">
+                  <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold font-display">
                     {step.number}
                   </div>
                   <h3 className="font-display text-xl font-semibold text-primary mb-2">{step.title}</h3>
@@ -195,7 +195,7 @@ const Angehoerige = () => {
                   <ul className="space-y-3 mb-8">
                     {angebot.features.map((f) => (
                       <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="h-4 w-4 text-primary/60 flex-shrink-0" /> {f}
+                        <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" /> {f}
                       </li>
                     ))}
                   </ul>
@@ -220,7 +220,7 @@ const Angehoerige = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonials.map((t, i) => (
                 <div key={i} className="bg-background border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                  <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                  <Quote className="h-8 w-8 text-accent/40 mb-4" />
                   <p className="text-foreground leading-relaxed mb-6 italic">„{t.quote}"</p>
                   <div>
                     <p className="font-semibold text-primary">{t.name}</p>
