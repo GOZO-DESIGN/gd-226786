@@ -220,7 +220,7 @@ const Angehoerige = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonials.map((t, i) => (
                 <div key={i} className="bg-background border border-border rounded-2xl p-8 relative card-hover animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                  <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                  <Quote className="h-8 w-8 text-accent/40 mb-4" />
                   <p className="text-foreground leading-relaxed mb-6 italic">„{t.quote}"</p>
                   <div>
                     <p className="font-semibold text-primary">{t.name}</p>

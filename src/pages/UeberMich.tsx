@@ -173,7 +173,7 @@ const UeberMich = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   <em>Oma hat den Montag vergessen</em> begleitet Kinder ab 5 Jahren mit zehn liebevoll illustrierten Geschichten durch die Welt der Demenz: einfühlsam, kindgerecht und ohne falsche Schönfärberei. Das Buch fördert Empathie, gibt Eltern einen sanften Einstieg in schwierige Gespräche und eignet sich zum Vorlesen zuhause wie auch in Kita und Schule.
                 </p>
-                <p className="text-primary font-medium italic mb-4">
+                <p className="text-accent font-medium italic mb-4">
                   Weil Verstehen der erste Schritt zum Mitgefühl ist.
                 </p>
                 <p className="text-muted-foreground mb-6">
