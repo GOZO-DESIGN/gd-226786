@@ -180,13 +180,13 @@ const UeberMich = () => {
                   Lernen Sie das Buch kennen — ganz ohne Risiko. Laden Sie sich jetzt zwei Geschichten kostenlos herunter oder bestellen Sie das Buch direkt auf Amazon.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="#" onClick={(e) => e.preventDefault()}>
+                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
                       <Download className="h-4 w-4 mr-2" />
-                      Zwei Geschichten gratis herunterladen
+                      Leseprobe herunterladen
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <a href="https://www.amazon.de/dp/B0DZ2Q19VG" target="_blank" rel="noopener noreferrer">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Jetzt auf Amazon bestellen
