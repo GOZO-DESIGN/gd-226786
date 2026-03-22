@@ -226,7 +226,7 @@ const Index = () => {
                   Radka Eder
                 </h2>
                 <p className="text-muted-foreground font-medium mb-6 animate-fade-in" style={{ animationDelay: "150ms" }}>Demenzexpertin & Trainerin</p>
-                <blockquote className="font-display text-xl italic text-primary/80 mb-6 border-l-4 border-accent pl-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
+                <blockquote className="font-display text-xl italic text-primary/80 mb-6 border-l-4 border-gold pl-4 animate-fade-in" style={{ animationDelay: "200ms" }}>
                   „Ich übersetze Demenz"
                 </blockquote>
                 <p className="text-muted-foreground leading-relaxed mb-6 animate-fade-in" style={{ animationDelay: "250ms" }}>
