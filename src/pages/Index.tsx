@@ -128,7 +128,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-16 animate-fade-in" style={{ animationDelay: "400ms" }}>
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}

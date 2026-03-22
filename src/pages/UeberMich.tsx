@@ -87,7 +87,7 @@ const UeberMich = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={stat.label} className="animate-fade-in" style={{ animationDelay: `${index * 80}ms` }}>
-                <p className="font-display text-4xl font-bold text-primary">{stat.value}</p>
+                <p className="font-display text-4xl font-bold text-accent">{stat.value}</p>
                 <p className="text-muted-foreground text-sm mt-1">{stat.label}</p>
               </div>
             ))}
