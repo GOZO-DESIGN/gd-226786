@@ -336,16 +336,18 @@ const Index = () => {
           <div className="container-narrow mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
               <div>
-                <span className="eyebrow">Gratis PDF</span>
+                <span className="eyebrow text-accent">Kostenloser Download</span>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-4">
-                  40 Aktivierungsideen für Menschen mit Demenz
+                  Der 7-Tage-Aktivierungs-Kompass
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Laden Sie mein kostenloses PDF mit praktischen Aktivierungsideen herunter. Sofort umsetzbar und speziell für den Alltag mit Demenz entwickelt.
+                  Sieben Tage, sieben erprobte Aktivierungsideen – kompakt, verständlich und sofort umsetzbar. Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
                 </p>
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <Download className="h-4 w-4 mr-2" />
-                  Jetzt kostenlos herunterladen
+                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <a href="#aktivierungs-kompass" target="_blank" rel="noopener noreferrer">
+                    <Download className="h-4 w-4 mr-2" />
+                    Jetzt kostenlos herunterladen
+                  </a>
                 </Button>
               </div>
               <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
