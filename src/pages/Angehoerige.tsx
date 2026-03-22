@@ -195,7 +195,7 @@ const Angehoerige = () => {
                   <ul className="space-y-3 mb-8">
                     {angebot.features.map((f) => (
                       <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="h-4 w-4 text-primary/60 flex-shrink-0" /> {f}
+                        <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" /> {f}
                       </li>
                     ))}
                   </ul>
