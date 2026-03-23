@@ -12,7 +12,7 @@ const Datenschutz = () => {
       />
       <Header />
       <main id="main-content" className="min-h-screen bg-background">
-        <section className="section-padding">
+        <section className="section-padding pt-32">
           <div className="container-narrow mx-auto max-w-3xl">
             <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">Datenschutzerklärung</h1>
 
