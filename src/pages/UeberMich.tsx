@@ -75,6 +75,9 @@ const UeberMich = () => {
                 alt="Radka Eder – Demenzexpertin und Trainerin"
                 className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-lg"
                 loading="eager"
+                fetchPriority="high"
+                width={320}
+                height={384}
               />
             </div>
           </div>
