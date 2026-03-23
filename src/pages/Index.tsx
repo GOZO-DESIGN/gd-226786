@@ -294,9 +294,11 @@ const Index = () => {
                 <div className="md:col-span-2 flex justify-center">
                   <img
                     src={buchCover}
-                    alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren, mit liebevollen Illustrationen für Familie, Kita und Schule'
+                    alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren'
                     className="w-48 md:w-56 h-auto rounded-xl shadow-lg"
                     loading="lazy"
+                    width={224}
+                    height={320}
                   />
                 </div>
                 <div className="md:col-span-3">
