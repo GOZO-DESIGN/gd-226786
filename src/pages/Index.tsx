@@ -120,6 +120,9 @@ const Index = () => {
                   alt="Radka Eder bei der Demenzbegleitung mit Senioren"
                   className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
                   loading="eager"
+                  fetchPriority="high"
+                  width={448}
+                  height={336}
                 />
               </div>
             </div>
