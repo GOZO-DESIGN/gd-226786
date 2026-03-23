@@ -20,6 +20,9 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded-md">
+        Zum Inhalt springen
+      </a>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between py-2 md:py-3">
           <Link to="/" className="flex items-center group" aria-label="FokusDemenz – Zur Startseite">

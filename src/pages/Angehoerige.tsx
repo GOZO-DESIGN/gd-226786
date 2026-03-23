@@ -92,7 +92,7 @@ const Angehoerige = () => {
         faqData={faqs}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary/60 via-background to-background relative overflow-hidden animate-fade-in">
           <div className="container-narrow mx-auto relative z-10">
