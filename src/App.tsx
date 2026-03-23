@@ -13,6 +13,8 @@ const Schulungen = lazy(() => import("./pages/Schulungen"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
+const Impressum = lazy(() => import("./pages/Impressum"));
+const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
