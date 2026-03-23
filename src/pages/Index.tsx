@@ -320,7 +320,7 @@ const Index = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                      <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
+                      <a href="#leseprobe">
                         <Download className="h-4 w-4 mr-2" />
                         Leseprobe herunterladen
                       </a>
