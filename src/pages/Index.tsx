@@ -363,6 +363,8 @@ const Index = () => {
                   alt="Radka Eder bei der Online-Beratung"
                   className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square"
                   loading="lazy"
+                  width={384}
+                  height={384}
                 />
               </div>
             </div>
