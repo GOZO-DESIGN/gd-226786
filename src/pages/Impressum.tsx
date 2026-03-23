@@ -16,7 +16,7 @@ const Impressum = () => {
           <div className="container-narrow mx-auto max-w-3xl">
             <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">Impressum</h1>
 
-            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+            <div className="max-w-none text-muted-foreground space-y-6">
               <div>
                 <p className="font-semibold text-foreground">Radka Eder</p>
                 <p>Mühlbachgasse 25/3<br />4840 Vöcklabruck</p>
