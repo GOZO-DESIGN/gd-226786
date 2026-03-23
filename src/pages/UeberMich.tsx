@@ -75,6 +75,9 @@ const UeberMich = () => {
                 alt="Radka Eder – Demenzexpertin und Trainerin"
                 className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-lg"
                 loading="eager"
+                fetchPriority="high"
+                width={320}
+                height={384}
               />
             </div>
           </div>
@@ -157,9 +160,11 @@ const UeberMich = () => {
               <div className="md:col-span-2 flex justify-center">
                 <img
                   src={buchCover}
-                  alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren, mit liebevollen Illustrationen für Familie, Kita und Schule'
+                  alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren'
                   className="w-48 md:w-56 h-auto rounded-xl shadow-lg"
                   loading="lazy"
+                  width={224}
+                  height={320}
                 />
               </div>
               <div className="md:col-span-3">
@@ -181,7 +186,7 @@ const UeberMich = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
+                    <a href="#leseprobe">
                       <Download className="h-4 w-4 mr-2" />
                       Leseprobe herunterladen
                     </a>

@@ -21,7 +21,7 @@ export const FreeResource = () => {
                   Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
                 </p>
                 <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
-                  <a href="#aktivierungs-kompass" target="_blank" rel="noopener noreferrer">
+                  <a href="#aktivierungs-kompass">
                     <Download className="mr-2 h-5 w-5" />
                     Jetzt kostenlos herunterladen
                   </a>

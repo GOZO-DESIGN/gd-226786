@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Font loaded via index.html preload for performance */
 
 @tailwind base;
 @tailwind components;
@@ -71,6 +71,11 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
+  }
+
+  /* Visible focus for keyboard navigation */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
   }
 }
 

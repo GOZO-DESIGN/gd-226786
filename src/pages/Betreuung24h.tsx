@@ -97,6 +97,9 @@ const Betreuung24h = () => {
                 alt="Begleitung von Senioren bei der 24-Stunden-Betreuung"
                 className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
                 loading="eager"
+                fetchPriority="high"
+                width={448}
+                height={336}
               />
             </div>
           </div>

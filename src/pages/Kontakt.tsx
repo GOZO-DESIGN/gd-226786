@@ -99,9 +99,10 @@ const Kontakt = () => {
         title="Kontakt – Kostenlose Erstberatung"
         description="Kontaktieren Sie Radka Eder für eine kostenlose Erstberatung zu Demenzbegleitung, 24h-Betreuung oder Schulungen. E-Mail: info@fokusdemenz.at"
         canonical="https://www.fokusdemenz.at/kontakt"
+        faqData={faqs}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-secondary/60 via-background to-background animate-fade-in">
           <div className="container-narrow mx-auto px-4 md:px-8 text-center">

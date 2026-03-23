@@ -89,9 +89,10 @@ const Angehoerige = () => {
         title="Demenzbegleitung für Angehörige"
         description="Sie pflegen einen Menschen mit Demenz? Ich helfe Ihnen mit Verständnis, praktischen Strategien und echter Unterstützung den Alltag zu meistern."
         canonical="https://www.fokusdemenz.at/fuer-angehoerige"
+        faqData={faqs}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary/60 via-background to-background relative overflow-hidden animate-fade-in">
           <div className="container-narrow mx-auto relative z-10">
@@ -125,6 +126,9 @@ const Angehoerige = () => {
                   alt="Einfühlsame Begleitung für Angehörige von Menschen mit Demenz"
                   className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[3/4]"
                   loading="eager"
+                  fetchPriority="high"
+                  width={448}
+                  height={597}
                 />
               </div>
             </div>

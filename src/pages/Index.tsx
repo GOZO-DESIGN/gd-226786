@@ -83,7 +83,7 @@ const Index = () => {
         canonical="https://www.fokusdemenz.at/"
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero Section */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-secondary/60 via-background to-background relative overflow-hidden animate-fade-in">
           <div className="container-narrow mx-auto relative z-10">
@@ -120,6 +120,9 @@ const Index = () => {
                   alt="Radka Eder bei der Demenzbegleitung mit Senioren"
                   className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
                   loading="eager"
+                  fetchPriority="high"
+                  width={448}
+                  height={336}
                 />
               </div>
             </div>
@@ -254,6 +257,8 @@ const Index = () => {
                   alt="Radka Eder – Demenzexpertin und Trainerin"
                   className="w-64 h-80 md:w-80 md:h-96 rounded-3xl object-cover object-top shadow-lg"
                   loading="lazy"
+                  width={320}
+                  height={384}
                 />
               </div>
             </div>
@@ -289,9 +294,11 @@ const Index = () => {
                 <div className="md:col-span-2 flex justify-center">
                   <img
                     src={buchCover}
-                    alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren, mit liebevollen Illustrationen für Familie, Kita und Schule'
+                    alt='Kinderbuch "Oma hat den Montag vergessen" – zehn Geschichten über Demenz für Kinder ab 5 Jahren'
                     className="w-48 md:w-56 h-auto rounded-xl shadow-lg"
                     loading="lazy"
+                    width={224}
+                    height={320}
                   />
                 </div>
                 <div className="md:col-span-3">
@@ -313,7 +320,7 @@ const Index = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                      <a href="#leseprobe" target="_blank" rel="noopener noreferrer">
+                      <a href="#leseprobe">
                         <Download className="h-4 w-4 mr-2" />
                         Leseprobe herunterladen
                       </a>
@@ -344,7 +351,7 @@ const Index = () => {
                   Sieben Tage, sieben erprobte Aktivierungsideen – kompakt, verständlich und sofort umsetzbar. Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
                 </p>
                 <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="#aktivierungs-kompass" target="_blank" rel="noopener noreferrer">
+                  <a href="#aktivierungs-kompass">
                     <Download className="h-4 w-4 mr-2" />
                     Jetzt kostenlos herunterladen
                   </a>
@@ -356,6 +363,8 @@ const Index = () => {
                   alt="Radka Eder bei der Online-Beratung"
                   className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square"
                   loading="lazy"
+                  width={384}
+                  height={384}
                 />
               </div>
             </div>
