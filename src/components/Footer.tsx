@@ -11,7 +11,6 @@ const quickLinks = [
 const legalLinks = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
-  { label: "AGB", href: "/agb" },
 ];
 
 export const Footer = () => {

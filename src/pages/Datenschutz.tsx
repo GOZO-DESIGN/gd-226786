@@ -16,7 +16,7 @@ const Datenschutz = () => {
           <div className="container-narrow mx-auto max-w-3xl">
             <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">Datenschutzerklärung</h1>
 
-            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+            <div className="max-w-none text-muted-foreground space-y-6 leading-relaxed">
               {/* 1. Datenschutz auf einen Blick */}
               <h2 className="text-xl font-display font-semibold text-foreground mt-8 mb-3">1. Datenschutz auf einen Blick</h2>
 
