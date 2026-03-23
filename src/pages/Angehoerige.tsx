@@ -125,6 +125,9 @@ const Angehoerige = () => {
                   alt="Einfühlsame Begleitung für Angehörige von Menschen mit Demenz"
                   className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[3/4]"
                   loading="eager"
+                  fetchPriority="high"
+                  width={448}
+                  height={597}
                 />
               </div>
             </div>

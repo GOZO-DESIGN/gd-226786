@@ -351,7 +351,7 @@ const Index = () => {
                   Sieben Tage, sieben erprobte Aktivierungsideen – kompakt, verständlich und sofort umsetzbar. Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
                 </p>
                 <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="#aktivierungs-kompass" target="_blank" rel="noopener noreferrer">
+                  <a href="#aktivierungs-kompass">
                     <Download className="h-4 w-4 mr-2" />
                     Jetzt kostenlos herunterladen
                   </a>
