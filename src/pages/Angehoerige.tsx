@@ -89,6 +89,7 @@ const Angehoerige = () => {
         title="Demenzbegleitung für Angehörige"
         description="Sie pflegen einen Menschen mit Demenz? Ich helfe Ihnen mit Verständnis, praktischen Strategien und echter Unterstützung den Alltag zu meistern."
         canonical="https://www.fokusdemenz.at/fuer-angehoerige"
+        faqData={faqs}
       />
       <Header />
       <main>

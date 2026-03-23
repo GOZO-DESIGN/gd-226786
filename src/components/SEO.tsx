@@ -5,10 +5,26 @@ interface SEOProps {
   description: string;
   canonical?: string;
   noindex?: boolean;
+  faqData?: Array<{ question: string; answer: string }>;
 }
 
-export const SEO = ({ title, description, canonical, noindex }: SEOProps) => {
+export const SEO = ({ title, description, canonical, noindex, faqData }: SEOProps) => {
   const fullTitle = title.includes("FokusDemenz") ? title : `${title} | FokusDemenz`;
+
+  const faqSchema = faqData?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqData.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+    : null;
 
   return (
     <Helmet>
@@ -18,6 +34,9 @@ export const SEO = ({ title, description, canonical, noindex }: SEOProps) => {
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
+      {faqSchema && (
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      )}
     </Helmet>
   );
 };
