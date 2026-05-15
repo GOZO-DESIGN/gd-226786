@@ -1,6 +1,5 @@
 import { Moon, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import radkaLaptop from "@/assets/radka-laptop.webp";
 
 interface Props {
   /** Optional: variant without the photo (e.g. inside FreeResource gradient block). */
