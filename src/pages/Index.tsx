@@ -1,13 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, Users, BookOpen, GraduationCap, CheckCircle2, Quote, Download, ExternalLink, ShoppingCart } from "lucide-react";
+import { PressLogos } from "@/components/PressLogos";
+import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
+import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, GraduationCap, CheckCircle2, Quote, Download, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import homepageEinleitung from "@/assets/homepage-einleitung.webp";
 import radkaPortrait from "@/assets/radka-portrait.webp";
-import radkaLaptop from "@/assets/radka-laptop.webp";
 import buchCover from "@/assets/buch-cover.webp";
 
 const stats = [
@@ -101,10 +102,10 @@ const Index = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "300ms" }}>
                   <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="mailto:info@fokusdemenz.at">
+                    <Link to="/kontakt">
                       <Mail className="h-4 w-4 mr-2" />
-                      Per E-Mail anfragen
-                    </a>
+                      Per Kontaktformular
+                    </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
@@ -338,38 +339,11 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Gratis PDF */}
-        <section className="section-padding bg-background animate-fade-in" id="ressourcen">
-          <div className="container-narrow mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-              <div>
-                <span className="eyebrow text-accent">Kostenloser Download</span>
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-4">
-                  Der 7-Tage-Aktivierungs-Kompass
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  Sieben Tage, sieben erprobte Aktivierungsideen – kompakt, verständlich und sofort umsetzbar. Ihr kostenloser Einstieg in eine strukturierte Demenzbegleitung.
-                </p>
-                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="#aktivierungs-kompass">
-                    <Download className="h-4 w-4 mr-2" />
-                    Jetzt kostenlos herunterladen
-                  </a>
-                </Button>
-              </div>
-              <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
-                <img
-                  src={radkaLaptop}
-                  alt="Radka Eder bei der Online-Beratung"
-                  className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-square"
-                  loading="lazy"
-                  width={384}
-                  height={384}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Lead Magnet: Nachtunruhe */}
+        <NachtunruheLeadMagnet />
+
+        {/* Presse */}
+        <PressLogos />
 
         {/* CTA */}
         <section className="section-padding bg-section-soft animate-fade-in" id="kontakt">
@@ -382,10 +356,10 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                <a href="mailto:info@fokusdemenz.at">
+                <Link to="/kontakt">
                   <Mail className="h-4 w-4 mr-2" />
-                  Per E-Mail anfragen
-                </a>
+                  Per Kontaktformular
+                </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                 <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">

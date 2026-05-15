@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navItems = [
+  { label: "Home", href: "/" },
   { label: "Für Angehörige", href: "/fuer-angehoerige" },
   { label: "24h-Betreuung", href: "/24h-betreuung" },
   { label: "Schulungen", href: "/demenz-schulungen" },
@@ -45,10 +46,10 @@ export const Header = () => {
 
           <div className="hidden lg:flex items-center">
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <a href="mailto:info@fokusdemenz.at">
+              <Link to="/kontakt">
                 <Mail className="h-4 w-4 mr-2" />
                 Kontakt aufnehmen
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -80,10 +81,10 @@ export const Header = () => {
             ))}
             <div className="pt-4 border-t border-border">
               <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px]">
-                <a href="mailto:info@fokusdemenz.at">
+                <Link to="/kontakt">
                   <Mail className="h-4 w-4 mr-2" />
                   Kontakt aufnehmen
-                </a>
+                </Link>
               </Button>
             </div>
           </nav>

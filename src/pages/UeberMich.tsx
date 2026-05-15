@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -20,6 +21,7 @@ const qualifications = [
   { icon: ShieldCheck, title: "Demenztrainerin", description: "Spezialisierung auf Demenzaufklärung und -begleitung" },
   { icon: Users, title: "Seniorentrainerin", description: "Aktivierung und Betreuung von älteren Menschen" },
   { icon: Building, title: "Ehemalige Leiterin des Betreuungs- und Pflegedienstes", description: "Langjährige Führungserfahrung in der Altenpflege" },
+  { icon: ShieldCheck, title: "Expertin für Pflegegeldbegleitung im Gesundheits- und Sozialbereich", description: "Beratung und Unterstützung rund um Einstufung und Pflegegeld-Antrag" },
 ];
 
 const approach = [
@@ -56,10 +58,10 @@ const UeberMich = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 animate-fade-in" style={{ animationDelay: "300ms" }}>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="mailto:info@fokusdemenz.at">
+                  <Link to="/kontakt">
                     <Mail className="mr-2 h-4 w-4" />
-                    Per E-Mail anfragen
-                  </a>
+                    Per Kontaktformular
+                  </Link>
                 </Button>
                 <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
@@ -138,7 +140,7 @@ const UeberMich = () => {
               </Card>
             ))}
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mt-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-6">
             {qualifications.slice(3).map((q, index) => (
               <Card key={q.title} className="group bg-background border-border card-hover animate-fade-in" style={{ animationDelay: `${(index + 3) * 80}ms` }}>
                 <CardContent className="p-6">
@@ -233,10 +235,10 @@ const UeberMich = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <a href="mailto:info@fokusdemenz.at">
+              <Link to="/kontakt">
                 <Mail className="mr-2 h-5 w-5" />
-                Per E-Mail anfragen
-              </a>
+                Per Kontaktformular
+              </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">

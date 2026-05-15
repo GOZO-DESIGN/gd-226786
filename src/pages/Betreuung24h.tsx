@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MessageCircle, AlertTriangle, Tv, MessageSquareWarning, GraduationCap, Users, ClipboardList, CheckCircle, ArrowRight, Quote } from "lucide-react";
@@ -78,10 +80,10 @@ const Betreuung24h = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="mailto:info@fokusdemenz.at">
+                  <Link to="/kontakt">
                     <Mail className="h-4 w-4 mr-2" />
-                    Per E-Mail anfragen
-                  </a>
+                    Per Kontaktformular
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
@@ -206,13 +208,16 @@ const Betreuung24h = () => {
               <div>
                 <h3 className="font-display text-lg font-semibold text-primary mb-2">Ergebnis:</h3>
                 <p className="text-foreground leading-relaxed font-medium">
-                  Die Betreuungsperson blieb, die Mutter wurde aktiver und die Familie hatte endlich Ruhe. Die Betreuung läuft seit 18 Monaten stabil.
+                  Die Betreuungsperson blieb, die Mutter wurde aktiver und die Familie hatte endlich Ruhe. Die Betreuung läuft seit 8 Monaten stabil.
                 </p>
               </div>
             </CardContent>
           </Card>
         </div>
       </section>
+
+      {/* Lead Magnet */}
+      <NachtunruheLeadMagnet />
 
       {/* CTA */}
       <section className="section-padding animate-fade-in">
@@ -225,10 +230,10 @@ const Betreuung24h = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <a href="mailto:info@fokusdemenz.at">
+              <Link to="/kontakt">
                 <Mail className="mr-2 h-5 w-5" />
-                Per E-Mail anfragen
-              </a>
+                Per Kontaktformular
+              </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
