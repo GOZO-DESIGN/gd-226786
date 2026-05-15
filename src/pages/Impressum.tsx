@@ -58,6 +58,15 @@ const Impressum = () => {
                   Verbraucherschlichtungsstelle teilzunehmen.
                 </p>
               </div>
+
+              <div>
+                <h2 className="text-xl font-display font-semibold text-foreground mt-8 mb-3">Bildnachweis</h2>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Farbfotos mit Seniorinnen und Senioren: © Peter Echt</li>
+                  <li>Porträtfotos von Radka Eder mit weißer Bluse: © Anja Schnell</li>
+                  <li>Foto „Radka Eder am Laptop": © Radka Eder (privat)</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
