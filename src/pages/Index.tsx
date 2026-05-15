@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { PressLogos } from "@/components/PressLogos";
 import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
-import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, Users, BookOpen, GraduationCap, CheckCircle2, Quote, Download, ExternalLink, ShoppingCart } from "lucide-react";
+import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, GraduationCap, CheckCircle2, Quote, Download, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
