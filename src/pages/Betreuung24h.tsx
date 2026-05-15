@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -79,10 +80,10 @@ const Betreuung24h = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="/kontakt">
+                  <Link to="/kontakt">
                     <Mail className="h-4 w-4 mr-2" />
                     Per Kontaktformular
-                  </a>
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                   <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
@@ -229,10 +230,10 @@ const Betreuung24h = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <a href="/kontakt">
+              <Link to="/kontakt">
                 <Mail className="mr-2 h-5 w-5" />
                 Per Kontaktformular
-              </a>
+              </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
               <a href="https://wa.me/436645477490" target="_blank" rel="noopener noreferrer">
