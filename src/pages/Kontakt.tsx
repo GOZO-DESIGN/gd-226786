@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import radkaLaptop from "@/assets/radka-laptop.webp";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -105,17 +106,32 @@ const Kontakt = () => {
       <main id="main-content">
         {/* Hero */}
         <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-secondary/60 via-background to-background animate-fade-in">
-          <div className="container-narrow mx-auto px-4 md:px-8 text-center">
-            <span className="eyebrow">Kontakt</span>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
-              Sprechen wir darüber
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-              Ob Fragen, Erstberatung oder ein konkretes Anliegen – ich freue mich auf Ihre Nachricht.
-            </p>
-            <p className="text-base text-primary font-medium max-w-xl mx-auto">
-              Der Erstkontakt erfolgt bitte per E-Mail oder WhatsApp-Nachricht. Ich melde mich in der Regel innerhalb von 24 Stunden zurück.
-            </p>
+          <div className="container-narrow mx-auto px-4 md:px-8">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="text-center md:text-left">
+                <span className="eyebrow">Kontakt</span>
+                <h1 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
+                  Sprechen wir darüber
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground mb-4">
+                  Ob Fragen, Erstberatung oder ein konkretes Anliegen – ich freue mich auf Ihre Nachricht.
+                </p>
+                <p className="text-base text-primary font-medium">
+                  Der Erstkontakt erfolgt bitte per Kontaktformular oder WhatsApp-Nachricht. Ich melde mich in der Regel innerhalb von 24 Stunden zurück.
+                </p>
+              </div>
+              <div className="flex justify-center animate-scale-in" style={{ animationDelay: "200ms" }}>
+                <img
+                  src={radkaLaptop}
+                  alt="Radka Eder bei der Online-Beratung am Laptop"
+                  className="rounded-3xl shadow-xl w-full max-w-md object-cover aspect-[4/3]"
+                  loading="eager"
+                  fetchPriority="high"
+                  width={448}
+                  height={336}
+                />
+              </div>
+            </div>
           </div>
         </section>
 
