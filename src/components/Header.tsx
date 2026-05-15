@@ -49,7 +49,7 @@ export const Header = () => {
               <Link to="/kontakt">
                 <Mail className="h-4 w-4 mr-2" />
                 Kontakt aufnehmen
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -84,7 +84,7 @@ export const Header = () => {
                 <Link to="/kontakt">
                   <Mail className="h-4 w-4 mr-2" />
                   Kontakt aufnehmen
-                </a>
+                </Link>
               </Button>
             </div>
           </nav>
