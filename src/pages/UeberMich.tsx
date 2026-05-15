@@ -57,9 +57,9 @@ const UeberMich = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 animate-fade-in" style={{ animationDelay: "300ms" }}>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                  <a href="mailto:info@fokusdemenz.at">
+                  <a href="/kontakt">
                     <Mail className="mr-2 h-4 w-4" />
-                    Per E-Mail anfragen
+                    Per Kontaktformular
                   </a>
                 </Button>
                 <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
@@ -234,9 +234,9 @@ const UeberMich = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              <a href="mailto:info@fokusdemenz.at">
+              <a href="/kontakt">
                 <Mail className="mr-2 h-5 w-5" />
-                Per E-Mail anfragen
+                Per Kontaktformular
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">

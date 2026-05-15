@@ -107,9 +107,9 @@ const Angehoerige = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
                   <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="mailto:info@fokusdemenz.at">
+                    <a href="/kontakt">
                       <Mail className="h-4 w-4 mr-2" />
-                      Per E-Mail anfragen
+                      Per Kontaktformular
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
@@ -204,7 +204,7 @@ const Angehoerige = () => {
                     ))}
                   </ul>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                    <a href="mailto:info@fokusdemenz.at">
+                    <a href="/kontakt">
                       Mehr erfahren
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </a>
@@ -277,9 +277,9 @@ const Angehoerige = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                <a href="mailto:info@fokusdemenz.at">
+                <a href="/kontakt">
                   <Mail className="h-4 w-4 mr-2" />
-                  Per E-Mail anfragen
+                  Per Kontaktformular
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="px-8 py-6 text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
