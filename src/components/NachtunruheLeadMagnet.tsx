@@ -104,7 +104,7 @@ export const NachtunruheLeadMagnet = ({ compact = false }: Props) => {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/15 to-accent/15 rounded-3xl blur-2xl" />
               <img
                 src={leadmagnetMockup}
-                alt="Leitfaden „Nachtunruhe bei Demenz stoppen" – PDF von Radka Eder, FokusDemenz"
+                alt='Leitfaden „Nachtunruhe bei Demenz stoppen" – PDF von Radka Eder, FokusDemenz'
                 className="relative w-full h-auto drop-shadow-xl"
                 loading="lazy"
               />
