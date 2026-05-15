@@ -139,7 +139,7 @@ const UeberMich = () => {
               </Card>
             ))}
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mt-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-6">
             {qualifications.slice(3).map((q, index) => (
               <Card key={q.title} className="group bg-background border-border card-hover animate-fade-in" style={{ animationDelay: `${(index + 3) * 80}ms` }}>
                 <CardContent className="p-6">
