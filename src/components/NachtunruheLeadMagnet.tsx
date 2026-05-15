@@ -1,5 +1,6 @@
 import { Moon, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import leadmagnetMockup from "@/assets/leadmagnet-nachtunruhe.png";
 
 interface Props {
   /** Optional: variant without the photo (e.g. inside FreeResource gradient block). */
@@ -99,23 +100,14 @@ export const NachtunruheLeadMagnet = ({ compact = false }: Props) => {
             </Button>
           </div>
           <div className="flex justify-center animate-scale-in">
-            <div className="relative w-full max-w-sm">
-              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-2xl" />
-              <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 shadow-xl aspect-[3/4] flex flex-col justify-between text-white">
-                <div>
-                  <Moon className="h-10 w-10 text-accent mb-6" />
-                  <p className="text-sm uppercase tracking-wider text-white/70 mb-2">Kostenloser Leitfaden</p>
-                  <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight">
-                    Nachtunruhe bei Demenz stoppen
-                  </h3>
-                </div>
-                <div>
-                  <p className="text-white/80 text-sm mb-4">
-                    Sofortmaßnahmen, beruhigende Sätze und Abendstruktur – kompakt für Angehörige & Betreuungskräfte.
-                  </p>
-                  <p className="text-accent font-semibold text-sm">FokusDemenz · Radka Eder</p>
-                </div>
-              </div>
+            <div className="relative w-full max-w-md">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/15 to-accent/15 rounded-3xl blur-2xl" />
+              <img
+                src={leadmagnetMockup}
+                alt='Leitfaden „Nachtunruhe bei Demenz stoppen" – PDF von Radka Eder, FokusDemenz'
+                className="relative w-full h-auto drop-shadow-xl"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
