@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MessageCircle, AlertTriangle, Tv, MessageSquareWarning, GraduationCap, Users, ClipboardList, CheckCircle, ArrowRight, Quote } from "lucide-react";
@@ -213,6 +214,9 @@ const Betreuung24h = () => {
           </Card>
         </div>
       </section>
+
+      {/* Lead Magnet */}
+      <NachtunruheLeadMagnet />
 
       {/* CTA */}
       <section className="section-padding animate-fade-in">
