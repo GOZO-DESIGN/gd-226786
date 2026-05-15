@@ -8,11 +8,19 @@ import salzburg24 from "@/assets/press/salzburg24.png";
 import kleineZeitung from "@/assets/press/kleine-zeitung.png";
 import kronenZeitung from "@/assets/press/kronen-zeitung.png";
 import kurier from "@/assets/press/kurier.png";
+import profil from "@/assets/press/profil.svg";
+import wirtschaftsjournal from "@/assets/press/wirtschaftsjournal.webp";
+import ooen from "@/assets/press/ooen.png";
+import thekey from "@/assets/press/thekey.webp";
+import tips from "@/assets/press/tips.png";
 
 const logos = [
   { src: kronenZeitung, alt: "Kronen Zeitung" },
   { src: kurier, alt: "Kurier" },
   { src: kleineZeitung, alt: "Kleine Zeitung" },
+  { src: ooen, alt: "OÖNachrichten" },
+  { src: profil, alt: "profil Magazin" },
+  { src: tips, alt: "Tips" },
   { src: meinbezirk, alt: "MeinBezirk.at" },
   { src: salzburg24, alt: "Salzburg24" },
   { src: head, alt: "HEAD Magazin" },
@@ -20,6 +28,8 @@ const logos = [
   { src: erfolg, alt: "ERFOLG.com" },
   { src: expertentesten, alt: "ExpertenTesten" },
   { src: wirtschaftsmacher, alt: "Wirtschaftsmacher" },
+  { src: wirtschaftsjournal, alt: "Wirtschaftsjournal" },
+  { src: thekey, alt: "TheKey Greator" },
 ];
 
 export const PressLogos = () => {
