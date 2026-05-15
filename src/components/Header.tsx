@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navItems = [
+  { label: "Home", href: "/" },
   { label: "Für Angehörige", href: "/fuer-angehoerige" },
   { label: "24h-Betreuung", href: "/24h-betreuung" },
   { label: "Schulungen", href: "/demenz-schulungen" },

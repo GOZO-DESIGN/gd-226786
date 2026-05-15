@@ -206,7 +206,7 @@ const Betreuung24h = () => {
               <div>
                 <h3 className="font-display text-lg font-semibold text-primary mb-2">Ergebnis:</h3>
                 <p className="text-foreground leading-relaxed font-medium">
-                  Die Betreuungsperson blieb, die Mutter wurde aktiver und die Familie hatte endlich Ruhe. Die Betreuung läuft seit 18 Monaten stabil.
+                  Die Betreuungsperson blieb, die Mutter wurde aktiver und die Familie hatte endlich Ruhe. Die Betreuung läuft seit 8 Monaten stabil.
                 </p>
               </div>
             </CardContent>

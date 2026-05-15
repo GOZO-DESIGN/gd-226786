@@ -20,6 +20,7 @@ const qualifications = [
   { icon: ShieldCheck, title: "Demenztrainerin", description: "Spezialisierung auf Demenzaufklärung und -begleitung" },
   { icon: Users, title: "Seniorentrainerin", description: "Aktivierung und Betreuung von älteren Menschen" },
   { icon: Building, title: "Ehemalige Leiterin des Betreuungs- und Pflegedienstes", description: "Langjährige Führungserfahrung in der Altenpflege" },
+  { icon: ShieldCheck, title: "Expertin für Pflegegeldbegleitung im Gesundheits- und Sozialbereich", description: "Beratung und Unterstützung rund um Einstufung und Pflegegeld-Antrag" },
 ];
 
 const approach = [
