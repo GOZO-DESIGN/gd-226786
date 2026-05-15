@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { Mail, MessageCircle, Building2, Users, Heart, Landmark, BookOpen, MessageCircle as MessageIcon, ShieldAlert, Activity, Scale, UserCheck, Globe, MapPin, CheckCircle2, Quote } from "lucide-react";
+import { Mail, MessageCircle, Building2, Users, Heart, Landmark, Globe, MapPin, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import schulungenStage from "@/assets/schulungen-stage.webp";
 
@@ -29,14 +29,14 @@ const targetGroups = [
 ];
 
 const schulungsinhalte = [
-  { icon: BookOpen, text: "Demenz verstehen: Formen, Verlauf, Symptome" },
-  { icon: MessageIcon, text: "Kommunikation mit Menschen mit Demenz" },
-  { icon: ShieldAlert, text: "Umgang mit herausforderndem Verhalten" },
-  { icon: Activity, text: "Aktivierung und Beschäftigung" },
-  { icon: UserCheck, text: "Validation und Biografiearbeit" },
-  { icon: Heart, text: "Selbstfürsorge für Betreuende" },
-  { icon: Scale, text: "Rechtliche Grundlagen" },
-  { icon: Users, text: "Angehörigenarbeit" },
+  "Demenz verstehen: Formen, Verlauf, Symptome",
+  "Kommunikation mit Menschen mit Demenz",
+  "Umgang mit herausforderndem Verhalten",
+  "Aktivierung und Beschäftigung",
+  "Validation und Biografiearbeit",
+  "Selbstfürsorge für Betreuende",
+  "Rechtliche Grundlagen",
+  "Angehörigenarbeit",
 ];
 
 const onlineFeatures = ["Keine Reisekosten", "Mehr Teilnehmer möglich", "Aufzeichnung optional", "Flexible Termine"];
@@ -135,14 +135,14 @@ const Schulungen = () => {
             <p className="text-muted-foreground text-center mb-12">
               Alle Themen werden praxisnah und interaktiv vermittelt.
             </p>
-            <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 max-w-3xl mx-auto">
-              {schulungsinhalte.map((item, index) => (
-                <div key={item.text} className="group flex items-center gap-3 animate-fade-in" style={{ animationDelay: `${index * 60}ms` }}>
-                  <item.icon className="h-5 w-5 text-primary/60 flex-shrink-0" />
-                  <span className="text-foreground font-medium">{item.text}</span>
-                </div>
+            <ul className="grid sm:grid-cols-2 gap-x-12 gap-y-4 max-w-3xl mx-auto list-none">
+              {schulungsinhalte.map((text, index) => (
+                <li key={text} className="flex items-start gap-3 animate-fade-in" style={{ animationDelay: `${index * 60}ms` }}>
+                  <span aria-hidden="true" className="mt-2 h-2 w-2 rounded-full bg-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">{text}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 
