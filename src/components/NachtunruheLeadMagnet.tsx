@@ -1,6 +1,6 @@
 import { Moon, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import leadmagnetMockup from "@/assets/leadmagnet-nachtunruhe.png";
+import leadmagnetMockup from "@/assets/leadmagnet-nachtunruhe.webp";
 
 interface Props {
   /** Optional: variant without the photo (e.g. inside FreeResource gradient block). */
@@ -106,6 +106,8 @@ export const NachtunruheLeadMagnet = ({ compact = false }: Props) => {
                 src={leadmagnetMockup}
                 alt='Leitfaden „Nachtunruhe bei Demenz stoppen" – PDF von Radka Eder, FokusDemenz'
                 className="relative w-full h-auto drop-shadow-xl"
+                width={1200}
+                height={947}
                 loading="lazy"
               />
             </div>
