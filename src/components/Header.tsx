@@ -35,6 +35,7 @@ export const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
+                aria-current={isActive(item.href) ? "page" : undefined}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   isActive(item.href) ? "text-primary font-semibold" : "text-foreground/70"
                 }`}
@@ -72,6 +73,7 @@ export const Header = () => {
                 key={item.href}
                 to={item.href}
                 onClick={() => setIsMenuOpen(false)}
+                aria-current={isActive(item.href) ? "page" : undefined}
                 className={`text-lg font-medium transition-colors py-3 min-h-[44px] flex items-center ${
                   isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-primary"
                 }`}
