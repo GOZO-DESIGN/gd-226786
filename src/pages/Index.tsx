@@ -327,7 +327,7 @@ const Index = () => {
                       </a>
                     </Button>
                     <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-6 py-5 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-                      <a href="https://www.amazon.de/dp/B0DZ2Q19VG" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.amazon.de/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z" target="_blank" rel="noopener noreferrer">
                         <ShoppingCart className="h-4 w-4 mr-2" />
                         Jetzt auf Amazon bestellen
                       </a>
