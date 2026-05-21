@@ -35,7 +35,7 @@ export const NachtunruheLeadMagnet = ({ compact = false }: Props) => {
                     className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
                   >
                     <a
-                      href="https://radka-eder.alfima.at/"
+                      href="https://alfima.com/radka/nachtunruhe-bei-demenz-stoppen"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
