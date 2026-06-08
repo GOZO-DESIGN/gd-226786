@@ -6,12 +6,12 @@
     <title>FokusDemenz – Demenzbegleitung von Radka Eder</title>
     <meta name="description" content="Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum. Online &amp; vor Ort in Österreich.">
     <meta name="author" content="Radka Eder" />
-    <link rel="canonical" href="https://www.fokusdemenz.at/" />
+    <link rel="canonical" href="https://fokusdemenz.at/" />
 
     
     
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.fokusdemenz.at/" />
+    <meta property="og:url" content="https://fokusdemenz.at/" />
     <meta property="og:locale" content="de_AT" />
     <meta property="og:site_name" content="FokusDemenz" />
 
@@ -32,38 +32,162 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "FokusDemenz",
-      "description": "Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum.",
-      "url": "https://www.fokusdemenz.at",
-      "telephone": "+436645477490",
-      "email": "info@fokusdemenz.at",
-      "founder": {
-        "@type": "Person",
-        "name": "Radka Eder",
-        "jobTitle": "Demenztrainerin"
-      },
-      "areaServed": [
-        { "@type": "Country", "name": "Österreich" },
-        { "@type": "Country", "name": "Deutschland" },
-        { "@type": "Country", "name": "Schweiz" }
-      ],
-      "serviceType": ["Demenzbegleitung", "Demenzschulung", "24h-Betreuung Beratung"],
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceType": "Online und vor Ort"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://fokusdemenz.at/#organization",
+          "name": "FokusDEMENZ",
+          "url": "https://fokusdemenz.at",
+          "description": "FokusDEMENZ ist eine österreichische Plattform für Demenzaufklärung, Angehörigenbegleitung, Bildung, Kommunikation bei Demenz, Aktivierung und Lebensqualität.",
+          "slogan": "Demenz verstehen – Leben bereichern.",
+          "founder": {
+            "@id": "https://radkaeder.com/#person"
+          },
+          "sameAs": [
+            "https://radkaeder.com",
+            "https://www.linkedin.com/in/radkaeder",
+            "https://www.facebook.com/radka.eder",
+            "https://www.instagram.com/radkaeder.official"
+          ],
+          "knowsAbout": [
+            "Demenz",
+            "Demenzaufklärung",
+            "Demenzberatung",
+            "Angehörigenbegleitung",
+            "Kommunikation bei Demenz",
+            "Aktivierung bei Demenz",
+            "Lebensqualität bei Demenz",
+            "24-Stunden-Betreuung",
+            "Betreuung zuhause",
+            "Gesundheitsbildung"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://radkaeder.com/#person",
+          "name": "Radka Eder",
+          "alternateName": "Die Frau, die Demenz übersetzt",
+          "url": "https://radkaeder.com",
+          "description": "Radka Eder ist österreichische Demenzaufklärerin, Speakerin, Autorin, diplomierte Gesundheits- und Krankenpflegerin, akademische Gesundheits- und Pflegemanagerin sowie Gründerin von FokusDEMENZ.",
+          "jobTitle": [
+            "Demenzaufklärerin",
+            "Speakerin",
+            "Autorin",
+            "Demenzberaterin",
+            "Akademische Gesundheits- und Pflegemanagerin",
+            "Diplomierte Gesundheits- und Krankenpflegerin"
+          ],
+          "worksFor": {
+            "@id": "https://fokusdemenz.at/#organization"
+          },
+          "founder": {
+            "@id": "https://fokusdemenz.at/#organization"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/radkaeder",
+            "https://www.facebook.com/radka.eder",
+            "https://www.instagram.com/radkaeder.official"
+          ],
+          "knowsAbout": [
+            "Demenz",
+            "Demenzaufklärung",
+            "Demenzberatung",
+            "Kommunikation bei Demenz",
+            "Angehörigenbegleitung",
+            "24-Stunden-Betreuung",
+            "Aktivierung bei Demenz",
+            "Pflege",
+            "Seniorenbetreuung",
+            "Gesundheitsbildung",
+            "Lebensqualität bei Demenz"
+          ],
+          "award": [
+            "Excellence Award International Speaker Slam Wiesbaden 2025",
+            "Inspiration Stage Award Founder Summit Wiesbaden 2025"
+          ]
+        },
+        {
+          "@type": "Book",
+          "@id": "https://www.amazon.de/-/en/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z/#book",
+          "name": "Oma hat den Montag vergessen",
+          "url": "https://www.amazon.de/-/en/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z",
+          "author": {
+            "@id": "https://radkaeder.com/#person"
+          },
+          "description": "Buch von Radka Eder für Kinder, Familien und Angehörige, das Demenz verständlich erklärt und Gespräche innerhalb der Familie erleichtert.",
+          "about": [
+            "Demenz",
+            "Familie",
+            "Angehörige",
+            "Kinder",
+            "Demenz verstehen"
+          ]
+        },
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://fokusdemenz.at/#akademie",
+          "name": "Demenz und 24-Stunden-Betreuung",
+          "url": "https://fokusdemenz.at",
+          "description": "Online-Akademie von FokusDEMENZ für Familien, die Menschen mit Demenz zuhause mit Unterstützung einer 24-Stunden-Betreuung begleiten.",
+          "founder": {
+            "@id": "https://radkaeder.com/#person"
+          },
+          "parentOrganization": {
+            "@id": "https://fokusdemenz.at/#organization"
+          },
+          "teaches": [
+            "Demenz verstehen",
+            "Kommunikation bei Demenz",
+            "Angehörigenbegleitung",
+            "24-Stunden-Betreuung",
+            "Aktivierung bei Demenz",
+            "Betreuung zuhause"
+          ]
+        },
+        {
+          "@type": "Course",
+          "@id": "https://fokusdemenz.at/#demenzbruecke",
+          "name": "Demenzbrücke",
+          "url": "https://fokusdemenz.at",
+          "description": "Online-Familienseminar von FokusDEMENZ zur Aufklärung über Demenz, Kommunikation und den besseren Umgang mit Menschen mit Demenz.",
+          "provider": {
+            "@id": "https://fokusdemenz.at/#organization"
+          },
+          "creator": {
+            "@id": "https://radkaeder.com/#person"
+          },
+          "about": [
+            "Demenz",
+            "Angehörigenbegleitung",
+            "Kommunikation bei Demenz",
+            "Familienseminar",
+            "Demenz verstehen"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://fokusdemenz.at/#website",
+          "url": "https://fokusdemenz.at",
+          "name": "FokusDEMENZ",
+          "publisher": {
+            "@id": "https://fokusdemenz.at/#organization"
+          },
+          "about": {
+            "@id": "https://fokusdemenz.at/#organization"
+          }
+        }
+      ]
     }
     </script>
     <meta property="og:title" content="FokusDemenz – Demenzbegleitung von Radka Eder">
   <meta name="twitter:title" content="FokusDemenz – Demenzbegleitung von Radka Eder">
   <meta property="og:description" content="Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum. Online &amp; vor Ort in Österreich.">
   <meta name="twitter:description" content="Professionelle Demenzbegleitung für Angehörige, 24h-Betreuung und Pflegeteams im DACH-Raum. Online &amp; vor Ort in Österreich.">
-  <meta property="og:image" content="https://www.fokusdemenz.at/og-image.png">
+  <meta property="og:image" content="https://fokusdemenz.at/og-image.png">
   <meta property="og:image:alt" content="FokusDemenz – Demenzbegleitung von Radka Eder">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="https://www.fokusdemenz.at/og-image.png">
+  <meta name="twitter:image" content="https://fokusdemenz.at/og-image.png">
   <meta name="twitter:image:alt" content="FokusDemenz – Demenzbegleitung von Radka Eder">
 </head>
 
