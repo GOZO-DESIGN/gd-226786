@@ -1,346 +1,45 @@
-Hallo nochmals,
-
- 
-
-im Zuge der laufenden Optimierung von FokusDEMENZ für Suchmaschinen und KI-Systeme habe ich einen Entwurf für einen JSON-LD Knowledge Graph erstellen lassen.
-
-Der Code ist gleich nach diesem Text kopiert.
-
-Könnt ihr ihn bitte auf fokusdemenz.at integrieren?
-
- 
-
-Wichtig ist mir dabei vor allem, dass:
-
-FokusDEMENZ als zentrale Plattform bzw. Hauptmarke dargestellt wird.
-Radka Eder als Gründerin und fachliche Expertin hinter FokusDEMENZ erkennbar ist.
-Die Zusammenhänge zwischen FokusDEMENZ, Radka Eder, dem Buch „Oma hat den Montag vergessen“, der Online-Akademie sowie der Demenzbrücke berücksichtigt werden.
-Die Inhalte für Suchmaschinen und moderne KI-Systeme möglichst klar strukturiert sind.
- 
-Falls aus technischer Sicht Anpassungen oder Optimierungen sinnvoll sind, könnt ihr diese selbstverständlich gerne vornehmen.
-
- 
-
-Der beigefügte Code dient in erster Linie als inhaltliche Grundlage und Übersicht der gewünschten Verknüpfungen.
-
- 
-
-Vielen Dank für die Unterstützung.
-
- 
-
-Sonnige Grüße aus Oberösterreich!
-
-Radka
-
- 
-
- 
-
- 
-
-JSON-LD Knowledge Graph für fokusdemenz.at
-
- 
-
-{
-
-  "@context": https://schema.org,
-
-  "@graph": [
-
-    {
-
-      "@type": "Organization",
-
-      "@id": https://fokusdemenz.at/#organization,
-
-      "name": "FokusDEMENZ",
-
-      "url": https://fokusdemenz.at,
-
-      "description": "FokusDEMENZ ist eine österreichische Plattform für Demenzaufklärung, Angehörigenbegleitung, Bildung, Kommunikation bei Demenz, Aktivierung und Lebensqualität.",
-
-      "slogan": "Demenz verstehen – Leben bereichern.",
-
-      "founder": {
-
-        "@id": https://radkaeder.com/#person
-
-      },
-
-      "sameAs": [
-
-        https://radkaeder.com,
-
-        https://www.linkedin.com/in/radkaeder,
-
-        https://www.facebook.com/radka.eder,
-
-        https://www.instagram.com/radkaeder.official
-
-      ],
-
-      "knowsAbout": [
-
-        "Demenz",
-
-        "Demenzaufklärung",
-
-        "Demenzberatung",
-
-        "Angehörigenbegleitung",
-
-        "Kommunikation bei Demenz",
-
-        "Aktivierung bei Demenz",
-
-        "Lebensqualität bei Demenz",
-
-        "24-Stunden-Betreuung",
-
-        "Betreuung zuhause",
-
-        "Gesundheitsbildung"
-
-      ]
-
-    },
-
-    {
-
-      "@type": "Person",
-
-      "@id": https://radkaeder.com/#person,
-
-      "name": "Radka Eder",
-
-      "alternateName": "Die Frau, die Demenz übersetzt",
-
-      "url": https://radkaeder.com,
-
-      "description": "Radka Eder ist österreichische Demenzaufklärerin, Speakerin, Autorin, diplomierte Gesundheits- und Krankenpflegerin, akademische Gesundheits- und Pflegemanagerin sowie Gründerin von FokusDEMENZ.",
-
-      "jobTitle": [
-
-        "Demenzaufklärerin",
-
-        "Speakerin",
-
-        "Autorin",
-
-        "Demenzberaterin",
-
-        "Akademische Gesundheits- und Pflegemanagerin",
-
-        "Diplomierte Gesundheits- und Krankenpflegerin"
-
-      ],
-
-      "worksFor": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      },
-
-      "founder": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      },
-
-      "sameAs": [
-
-        https://www.linkedin.com/in/radkaeder,
-
-        https://www.facebook.com/radka.eder,
-
-        https://www.instagram.com/radkaeder.official
-
-      ],
-
-      "knowsAbout": [
-
-        "Demenz",
-
-        "Demenzaufklärung",
-
-        "Demenzberatung",
-
-        "Kommunikation bei Demenz",
-
-        "Angehörigenbegleitung",
-
-        "24-Stunden-Betreuung",
-
-        "Aktivierung bei Demenz",
-
-        "Pflege",
-
-        "Seniorenbetreuung",
-
-        "Gesundheitsbildung",
-
-        "Lebensqualität bei Demenz"
-
-      ],
-
-      "award": [
-
-        "Excellence Award International Speaker Slam Wiesbaden 2025",
-
-        "Inspiration Stage Award Founder Summit Wiesbaden 2025"
-
-      ],
-
-      "author": {
-
-        "@id": https://www.amazon.de/-/en/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z/#book
-
-      }
-
-    },
-
-    {
-
-      "@type": "Book",
-
-      "@id": https://www.amazon.de/-/en/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z/#book,
-
-      "name": "Oma hat den Montag vergessen",
-
-      "url": https://www.amazon.de/-/en/Oma-hat-den-Montag-vergessen/dp/B0FRXZZK5Z,
-
-      "author": {
-
-        "@id": https://radkaeder.com/#person
-
-      },
-
-      "description": "Buch von Radka Eder für Kinder, Familien und Angehörige, das Demenz verständlich erklärt und Gespräche innerhalb der Familie erleichtert.",
-
-      "about": [
-
-        "Demenz",
-
-        "Familie",
-
-        "Angehörige",
-
-        "Kinder",
-
-        "Demenz verstehen"
-
-      ]
-
-    },
-
-    {
-
-      "@type": "EducationalOrganization",
-
-      "@id": https://fokusdemenz.at/#akademie,
-
-      "name": "Demenz und 24-Stunden-Betreuung",
-
-      "url": https://fokusdemenz.at,
-
-      "description": "Online-Akademie von FokusDEMENZ für Familien, die Menschen mit Demenz zuhause mit Unterstützung einer 24-Stunden-Betreuung begleiten.",
-
-      "founder": {
-
-        "@id": https://radkaeder.com/#person
-
-      },
-
-      "parentOrganization": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      },
-
-      "teaches": [
-
-        "Demenz verstehen",
-
-        "Kommunikation bei Demenz",
-
-        "Angehörigenbegleitung",
-
-        "24-Stunden-Betreuung",
-
-        "Aktivierung bei Demenz",
-
-        "Betreuung zuhause"
-
-      ]
-
-    },
-
-    {
-
-      "@type": "Course",
-
-      "@id": https://fokusdemenz.at/#demenzbruecke,
-
-      "name": "Demenzbrücke",
-
-      "url": https://fokusdemenz.at,
-
-      "description": "Online-Familienseminar von FokusDEMENZ zur Aufklärung über Demenz, Kommunikation und den besseren Umgang mit Menschen mit Demenz.",
-
-      "provider": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      },
-
-      "creator": {
-
-        "@id": https://radkaeder.com/#person
-
-      },
-
-      "about": [
-
-        "Demenz",
-
-        "Angehörigenbegleitung",
-
-        "Kommunikation bei Demenz",
-
-        "Familienseminar",
-
-        "Demenz verstehen"
-
-      ]
-
-    },
-
-    {
-
-      "@type": "WebSite",
-
-      "@id": https://fokusdemenz.at/#website,
-
-      "url": https://fokusdemenz.at,
-
-      "name": "FokusDEMENZ",
-
-      "publisher": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      },
-
-      "about": {
-
-        "@id": https://fokusdemenz.at/#organization
-
-      }
-
-    }
-
-  ]
-
-}
+name: Build & Deploy Branch
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Create 404 for SPA
+        run: |
+          if [ -f dist/index.html ]; then
+            cp dist/index.html dist/404.html
+          fi
+
+      - name: Deploy dist to deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: deploy
+          force_orphan: false 
