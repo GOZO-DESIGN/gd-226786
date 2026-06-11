@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: https://gd-226786.lovable.app/sitemap.xml
+Sitemap: https://fokusdemenz.at/sitemap.xml
