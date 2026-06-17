@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 
 const Angehoerige = lazy(() => import("./pages/Angehoerige"));
 const Schulungen = lazy(() => import("./pages/Schulungen"));
+const ProgrammDetail = lazy(() => import("./pages/ProgrammDetail"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
