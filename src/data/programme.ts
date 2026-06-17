@@ -34,7 +34,7 @@ export const programme: Programm[] = [
       "Validation und Biografiearbeit in der Praxis",
       "Umgang mit herausforderndem Verhalten",
       "Kommunikationswerkzeuge für den Pflegealltag",
-      "Arbeitsheft „Fließend Demenz" für jede:n Teilnehmer:in",
+      "Arbeitsheft „Fließend Demenz“ für jede:n Teilnehmer:in",
     ],
   },
   {
@@ -55,7 +55,7 @@ export const programme: Programm[] = [
       "Sichere Begegnung im Flur, in der Küche, beim Putzen",
       "Was sage ich? Was sage ich besser nicht?",
       "Praktische Übungen mit Alltagsbeispielen",
-      "Arbeitsheft „Wenn Verhalten eine Sprache ist"",
+      "Arbeitsheft „Wenn Verhalten eine Sprache ist“",
     ],
   },
   {
@@ -71,7 +71,7 @@ export const programme: Programm[] = [
     zielgruppe: "Gemeinden, Städte und Regionen, die demenzfreundlich werden wollen – Bürgermeisterämter, Sozialreferate, Pfarrgemeinderäte.",
     ergebnis: "Eine demenzfreundliche Gemeinde, in der Bürger:innen wissen, was Demenz ist und wie sie helfen können.",
     highlights: [
-      "Modul A: Bürgervortrag „Demenz verstehen"",
+      "Modul A: Bürgervortrag „Demenz verstehen“",
       "Modul B: Aktionstag mit Infoständen und Begegnung",
       "Modul C: Schulung für Gemeindemitarbeiter:innen",
       "Modul D: Schulung für Einzelhandel, Banken, Post",
@@ -95,7 +95,7 @@ export const programme: Programm[] = [
       "Impulsvortrag (60–90 Min) für große Runden",
       "Workshop (halb- oder ganztägig) zum Vertiefen",
       "Bühnenformat für Firmenveranstaltungen",
-      "Modul „Pflegende Angehörige am Arbeitsplatz"",
+      "Modul „Pflegende Angehörige am Arbeitsplatz“",
       "Branchenspezifische Beispiele",
       "BGM-fähig (Betriebliches Gesundheitsmanagement)",
     ],
@@ -139,7 +139,7 @@ export const programme: Programm[] = [
       "Block 2: Verhalten lesen lernen",
       "Block 3: Kommunikation & Validation",
       "Block 4: Krisen, Selbstfürsorge, Praxistransfer",
-      "Anerkanntes Zertifikat „Fließend Demenz Online"",
+      "Anerkanntes Zertifikat „Fließend Demenz Online“",
     ],
   },
 ];
