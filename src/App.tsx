@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 
 const Angehoerige = lazy(() => import("./pages/Angehoerige"));
 const Schulungen = lazy(() => import("./pages/Schulungen"));
+const ProgrammDetail = lazy(() => import("./pages/ProgrammDetail"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
@@ -36,6 +37,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/fuer-angehoerige" element={<Angehoerige />} />
               <Route path="/demenz-schulungen" element={<Schulungen />} />
+              <Route path="/demenz-schulungen/:slug" element={<ProgrammDetail />} />
               <Route path="/24h-betreuung" element={<Betreuung24h />} />
               <Route path="/ueber-mich" element={<UeberMich />} />
               <Route path="/kontakt" element={<Kontakt />} />
