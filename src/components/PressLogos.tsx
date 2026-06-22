@@ -1,35 +1,21 @@
-import aufdecker from "@/assets/press/aufdecker.png";
-import meinbezirk from "@/assets/press/meinbezirk.png";
-import erfolg from "@/assets/press/erfolg.webp";
-import expertentesten from "@/assets/press/expertentesten.svg";
-import head from "@/assets/press/head.svg";
-import wirtschaftsmacher from "@/assets/press/wirtschaftsmacher.png";
-import salzburg24 from "@/assets/press/salzburg24.png";
-import kleineZeitung from "@/assets/press/kleine-zeitung.png";
-import kronenZeitung from "@/assets/press/kronen-zeitung.png";
-import kurier from "@/assets/press/kurier.png";
-import profil from "@/assets/press/profil.svg";
-import wirtschaftsjournal from "@/assets/press/wirtschaftsjournal.webp";
-import ooen from "@/assets/press/ooen.png";
-import thekey from "@/assets/press/thekey.webp";
-import tips from "@/assets/press/tips.png";
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 const logos = [
-  { src: kronenZeitung, alt: "Kronen Zeitung" },
-  { src: kurier, alt: "Kurier" },
-  { src: kleineZeitung, alt: "Kleine Zeitung" },
-  { src: ooen, alt: "OÖNachrichten" },
-  { src: profil, alt: "profil Magazin" },
-  { src: tips, alt: "Tips" },
-  { src: meinbezirk, alt: "MeinBezirk.at" },
-  { src: salzburg24, alt: "Salzburg24" },
-  { src: head, alt: "HEAD Magazin" },
-  { src: aufdecker, alt: "aufdecker.at" },
-  { src: erfolg, alt: "ERFOLG.com" },
-  { src: expertentesten, alt: "ExpertenTesten" },
-  { src: wirtschaftsmacher, alt: "Wirtschaftsmacher" },
-  { src: wirtschaftsjournal, alt: "Wirtschaftsjournal" },
-  { src: thekey, alt: "TheKey Greator" },
+  { src: publicAsset("assets/press/kronen-zeitung.png"), alt: "Kronen Zeitung" },
+  { src: publicAsset("assets/press/kurier.png"), alt: "Kurier" },
+  { src: publicAsset("assets/press/kleine-zeitung.png"), alt: "Kleine Zeitung" },
+  { src: publicAsset("assets/press/ooen.png"), alt: "OÖNachrichten" },
+  { src: publicAsset("assets/press/profil.svg"), alt: "profil Magazin" },
+  { src: publicAsset("assets/press/tips.png"), alt: "Tips" },
+  { src: publicAsset("assets/press/meinbezirk.png"), alt: "MeinBezirk.at" },
+  { src: publicAsset("assets/press/salzburg24.png"), alt: "Salzburg24" },
+  { src: publicAsset("assets/press/head.svg"), alt: "HEAD Magazin" },
+  { src: publicAsset("assets/press/aufdecker.png"), alt: "aufdecker.at" },
+  { src: publicAsset("assets/press/erfolg.webp"), alt: "ERFOLG.com" },
+  { src: publicAsset("assets/press/expertentesten.svg"), alt: "ExpertenTesten" },
+  { src: publicAsset("assets/press/wirtschaftsmacher.png"), alt: "Wirtschaftsmacher" },
+  { src: publicAsset("assets/press/wirtschaftsjournal.webp"), alt: "Wirtschaftsjournal" },
+  { src: publicAsset("assets/press/thekey.webp"), alt: "TheKey Greator" },
 ];
 
 export const PressLogos = () => {
