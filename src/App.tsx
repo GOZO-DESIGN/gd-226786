@@ -42,6 +42,7 @@ const App = () => (
               <Route path="/24h-betreuung" element={<Betreuung24h />} />
               <Route path="/ueber-mich" element={<UeberMich />} />
               <Route path="/kontakt" element={<Kontakt />} />
+              <Route path="/faq" element={<Faq />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="*" element={<NotFound />} />
