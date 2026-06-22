@@ -150,6 +150,8 @@ export const programme: Programm[] = [
       "Block 4: Krisen, Selbstfürsorge, Praxistransfer",
       "Anerkanntes Zertifikat „Fließend Demenz Online“",
     ],
+    gukg: true,
+    altText: "Online-Demenzschulung „Fließend Demenz online“ für Personalagenturen und Betreuungskräfte von Radka Eder.",
   },
 ];
 
