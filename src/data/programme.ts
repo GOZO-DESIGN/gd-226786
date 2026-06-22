@@ -13,6 +13,8 @@ export type Programm = {
   highlights: string[];
   zielgruppe: string;
   ergebnis: string;
+  gukg?: boolean;
+  altText?: string;
 };
 
 export const programme: Programm[] = [
