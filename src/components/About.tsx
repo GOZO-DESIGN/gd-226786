@@ -2,7 +2,8 @@ import { Award, BookOpen, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import radkaBrainModels from "@/assets/radka-brain-models.webp";
+
+const radkaBrainModels = `${import.meta.env.BASE_URL}assets/radka-brain-models.webp`;
 
 export const About = () => {
   return (
