@@ -38,6 +38,8 @@ export const programme: Programm[] = [
       "Kommunikationswerkzeuge für den Pflegealltag",
       "Arbeitsheft „Fließend Demenz“ für jede:n Teilnehmer:in",
     ],
+    gukg: true,
+    altText: "Demenzschulung „Fließend Demenz“ für Pflege- und Betreuungsberufe als Buchmockup von Radka Eder.",
   },
   {
     slug: "wenn-verhalten-eine-sprache-ist",
