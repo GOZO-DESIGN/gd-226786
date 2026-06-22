@@ -5,8 +5,10 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MessageCircle, Heart, Wrench, Handshake, GraduationCap, BookOpen, Award, Users, Building, ShieldCheck, Download, ShoppingCart } from "lucide-react";
-import radkaGlasses from "@/assets/radka-glasses.webp";
-import buchCover from "@/assets/buch-cover.webp";
+
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+const radkaGlasses = publicAsset("assets/radka-glasses.webp");
+const buchCover = publicAsset("assets/buch-cover.webp");
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },

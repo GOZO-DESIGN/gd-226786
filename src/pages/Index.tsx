@@ -7,9 +7,11 @@ import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, GraduationCap, 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import homepageEinleitung from "@/assets/homepage-einleitung.webp";
-import radkaPortrait from "@/assets/radka-portrait.webp";
-import buchCover from "@/assets/buch-cover.webp";
+
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+const homepageEinleitung = publicAsset("assets/homepage-einleitung.webp");
+const radkaPortrait = publicAsset("assets/radka-portrait.webp");
+const buchCover = publicAsset("assets/buch-cover.webp");
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },

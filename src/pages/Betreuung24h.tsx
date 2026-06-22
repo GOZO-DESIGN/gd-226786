@@ -6,7 +6,8 @@ import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MessageCircle, AlertTriangle, Tv, MessageSquareWarning, GraduationCap, Users, ClipboardList, CheckCircle, ArrowRight, Quote } from "lucide-react";
-import seniorenbetreuung from "@/assets/seniorenbetreuung.webp";
+
+const seniorenbetreuung = `${import.meta.env.BASE_URL}assets/seniorenbetreuung.webp`;
 
 const problems = [
   {

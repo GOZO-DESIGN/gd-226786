@@ -5,7 +5,8 @@ import { SEO } from "@/components/SEO";
 import { Mail, MessageCircle, Heart, Brain, ShieldAlert, Users, ArrowRight, CheckCircle2, Quote, ChevronDown, Zap, Target, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import homepageAlternative from "@/assets/homepage-alternative.webp";
+
+const homepageAlternative = `${import.meta.env.BASE_URL}assets/homepage-alternative.webp`;
 
 const challenges = [
   {

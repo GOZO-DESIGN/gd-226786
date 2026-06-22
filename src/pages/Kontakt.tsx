@@ -9,8 +9,9 @@ import { useToast } from "@/hooks/use-toast";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import radkaLaptop from "@/assets/radka-laptop.webp";
 import { z } from "zod";
+
+const radkaLaptop = `${import.meta.env.BASE_URL}assets/radka-laptop.webp`;
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Bitte geben Sie Ihren Namen ein.").max(100, "Name darf maximal 100 Zeichen haben."),
