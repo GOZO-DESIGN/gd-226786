@@ -1,4 +1,10 @@
 import { BookOpen, BookMarked, Library, Presentation, Headphones, Laptop, LucideIcon } from "lucide-react";
+import imgFliessend from "@/assets/programme/fliesend-demenz.webp.asset.json";
+import imgVerhalten from "@/assets/programme/wenn-verhalten-eine-sprache-ist.webp.asset.json";
+import imgWoerterbuch from "@/assets/programme/demenz-woerterbuch.webp.asset.json";
+import imgSprachkurs from "@/assets/programme/sprachkurs-demenz.webp.asset.json";
+import imgZuhause from "@/assets/programme/fliesend-demenz-zuhause.webp.asset.json";
+import imgOnline from "@/assets/programme/fliesend-demenz-online.webp.asset.json";
 
 export type Programm = {
   slug: string;
