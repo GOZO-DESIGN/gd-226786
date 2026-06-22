@@ -127,6 +127,8 @@ export const programme: Programm[] = [
       "Mehrsprachige Begleitmaterialien (DE/SK/HU auf Anfrage)",
       "Skalierbar für die ganze Agentur",
     ],
+    gukg: true,
+    altText: "Demenzschulung „Fließend Demenz Zuhause“ für 24-Stunden-Betreuerinnen, Betreuer und Angehörige.",
   },
   {
     slug: "fliessend-demenz-online",
