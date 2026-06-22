@@ -10,6 +10,7 @@ const navItems = [
   { label: "24h-Betreuung", href: "/24h-betreuung" },
   { label: "Angebot", href: "/demenz-schulungen" },
   { label: "Über mich", href: "/ueber-mich" },
+  { label: "FAQ", href: "/faq" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 

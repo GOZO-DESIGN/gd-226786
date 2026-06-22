@@ -13,6 +13,8 @@ export type Programm = {
   highlights: string[];
   zielgruppe: string;
   ergebnis: string;
+  gukg?: boolean;
+  altText?: string;
 };
 
 export const programme: Programm[] = [
@@ -36,6 +38,8 @@ export const programme: Programm[] = [
       "Kommunikationswerkzeuge für den Pflegealltag",
       "Arbeitsheft „Fließend Demenz“ für jede:n Teilnehmer:in",
     ],
+    gukg: true,
+    altText: "Demenzschulung „Fließend Demenz“ für Pflege- und Betreuungsberufe als Buchmockup von Radka Eder.",
   },
   {
     slug: "wenn-verhalten-eine-sprache-ist",
@@ -57,6 +61,7 @@ export const programme: Programm[] = [
       "Praktische Übungen mit Alltagsbeispielen",
       "Arbeitsheft „Wenn Verhalten eine Sprache ist“",
     ],
+    altText: "Demenzfortbildung „Wenn Verhalten eine Sprache ist“ für pflegeferne Berufe in Alten- und Pflegeheimen.",
   },
   {
     slug: "demenz-woerterbuch-gemeinden",
@@ -78,6 +83,7 @@ export const programme: Programm[] = [
       "Modul E: Angehörigenabend",
       "Frei kombinierbar nach Bedarf Ihrer Gemeinde",
     ],
+    altText: "Demenzaufklärung für Gemeinden mit dem Schulungsprogramm „Das Demenz-Wörterbuch“ von Radka Eder.",
   },
   {
     slug: "sprachkurs-demenz",
@@ -99,6 +105,7 @@ export const programme: Programm[] = [
       "Branchenspezifische Beispiele",
       "BGM-fähig (Betriebliches Gesundheitsmanagement)",
     ],
+    altText: "Demenzschulung für Unternehmen mit dem Programm „Sprachkurs Demenz“ von Radka Eder.",
   },
   {
     slug: "fliessend-demenz-zuhause",
@@ -120,6 +127,8 @@ export const programme: Programm[] = [
       "Mehrsprachige Begleitmaterialien (DE/SK/HU auf Anfrage)",
       "Skalierbar für die ganze Agentur",
     ],
+    gukg: true,
+    altText: "Demenzschulung „Fließend Demenz Zuhause“ für 24-Stunden-Betreuerinnen, Betreuer und Angehörige.",
   },
   {
     slug: "fliessend-demenz-online",
@@ -141,6 +150,8 @@ export const programme: Programm[] = [
       "Block 4: Krisen, Selbstfürsorge, Praxistransfer",
       "Anerkanntes Zertifikat „Fließend Demenz Online“",
     ],
+    gukg: true,
+    altText: "Online-Demenzschulung „Fließend Demenz online“ für Personalagenturen und Betreuungskräfte von Radka Eder.",
   },
 ];
 

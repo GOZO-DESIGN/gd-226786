@@ -15,6 +15,7 @@ const ProgrammDetail = lazy(() => import("./pages/ProgrammDetail"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
+const Faq = lazy(() => import("./pages/Faq"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -41,6 +42,7 @@ const App = () => (
               <Route path="/24h-betreuung" element={<Betreuung24h />} />
               <Route path="/ueber-mich" element={<UeberMich />} />
               <Route path="/kontakt" element={<Kontakt />} />
+              <Route path="/faq" element={<Faq />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="*" element={<NotFound />} />

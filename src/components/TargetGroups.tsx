@@ -25,7 +25,7 @@ const groups = [
 
 export const TargetGroups = () => {
   return (
-    <section className="section-padding bg-section-soft animate-fade-in">
+    <section className="section-padding bg-background animate-fade-in">
       <div className="container-narrow mx-auto">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">

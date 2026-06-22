@@ -6,6 +6,7 @@ const quickLinks = [
   { label: "24h-Betreuung", href: "/24h-betreuung", isRoute: true },
   { label: "Angebot", href: "/demenz-schulungen", isRoute: true },
   { label: "Über mich", href: "/ueber-mich", isRoute: true },
+  { label: "FAQ", href: "/faq", isRoute: true },
 ];
 
 const legalLinks = [
