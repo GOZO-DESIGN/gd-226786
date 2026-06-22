@@ -164,6 +164,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Online-Demenzschulung „Fließend Demenz online“ für Personalagenturen und Betreuungskräfte von Radka Eder.",
+    image: imgOnline.url,
   },
 ];
 
