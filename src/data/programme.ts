@@ -47,6 +47,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Demenzschulung „Fließend Demenz“ für Pflege- und Betreuungsberufe als Buchmockup von Radka Eder.",
+    image: imgFliessend.url,
   },
   {
     slug: "wenn-verhalten-eine-sprache-ist",
