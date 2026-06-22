@@ -83,6 +83,7 @@ export const programme: Programm[] = [
       "Modul E: Angehörigenabend",
       "Frei kombinierbar nach Bedarf Ihrer Gemeinde",
     ],
+    altText: "Demenzaufklärung für Gemeinden mit dem Schulungsprogramm „Das Demenz-Wörterbuch“ von Radka Eder.",
   },
   {
     slug: "sprachkurs-demenz",
