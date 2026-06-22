@@ -6,7 +6,8 @@ import { SEO } from "@/components/SEO";
 import { Mail, MessageCircle, ArrowRight, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { programme, groupLabels } from "@/data/programme";
-import schulungenStage from "@/assets/schulungen-stage.webp";
+
+const schulungenStage = `${import.meta.env.BASE_URL}assets/schulungen-stage.webp`;
 
 const principle = [
   { n: "01", t: "Verhalten ist die Sprache." },
