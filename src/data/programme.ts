@@ -21,6 +21,7 @@ export type Programm = {
   ergebnis: string;
   gukg?: boolean;
   altText?: string;
+  image: string;
 };
 
 export const programme: Programm[] = [
