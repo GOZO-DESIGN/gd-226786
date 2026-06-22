@@ -30,11 +30,24 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Create 404 for SPA
+      - name: Add SPA Fallback
         run: |
           if [ -f dist/index.html ]; then
             cp dist/index.html dist/404.html
-          fi
+
+            cat > dist/.htaccess <<'EOF'
+            <IfModule mod_rewrite.c>
+              RewriteEngine On
+              RewriteBase /
+            
+              RewriteCond %{REQUEST_FILENAME} -f [OR]
+              RewriteCond %{REQUEST_FILENAME} -d
+              RewriteRule ^ - [L]
+            
+              RewriteRule ^ index.html [L]
+            </IfModule>
+            EOF
+                      fi
 
       - name: Deploy dist to deploy branch
         uses: peaceiris/actions-gh-pages@v4
@@ -42,4 +55,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: deploy
-          force_orphan: false 
+          force_orphan: false
