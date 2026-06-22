@@ -1,4 +1,10 @@
 import { BookOpen, BookMarked, Library, Presentation, Headphones, Laptop, LucideIcon } from "lucide-react";
+import imgFliessend from "@/assets/programme/fliesend-demenz.webp.asset.json";
+import imgVerhalten from "@/assets/programme/wenn-verhalten-eine-sprache-ist.webp.asset.json";
+import imgWoerterbuch from "@/assets/programme/demenz-woerterbuch.webp.asset.json";
+import imgSprachkurs from "@/assets/programme/sprachkurs-demenz.webp.asset.json";
+import imgZuhause from "@/assets/programme/fliesend-demenz-zuhause.webp.asset.json";
+import imgOnline from "@/assets/programme/fliesend-demenz-online.webp.asset.json";
 
 export type Programm = {
   slug: string;
@@ -15,6 +21,7 @@ export type Programm = {
   ergebnis: string;
   gukg?: boolean;
   altText?: string;
+  image: string;
 };
 
 export const programme: Programm[] = [
@@ -40,6 +47,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Demenzschulung „Fließend Demenz“ für Pflege- und Betreuungsberufe als Buchmockup von Radka Eder.",
+    image: imgFliessend.url,
   },
   {
     slug: "wenn-verhalten-eine-sprache-ist",
@@ -62,6 +70,7 @@ export const programme: Programm[] = [
       "Arbeitsheft „Wenn Verhalten eine Sprache ist“",
     ],
     altText: "Demenzfortbildung „Wenn Verhalten eine Sprache ist“ für pflegeferne Berufe in Alten- und Pflegeheimen.",
+    image: imgVerhalten.url,
   },
   {
     slug: "demenz-woerterbuch-gemeinden",
@@ -84,6 +93,7 @@ export const programme: Programm[] = [
       "Frei kombinierbar nach Bedarf Ihrer Gemeinde",
     ],
     altText: "Demenzaufklärung für Gemeinden mit dem Schulungsprogramm „Das Demenz-Wörterbuch“ von Radka Eder.",
+    image: imgWoerterbuch.url,
   },
   {
     slug: "sprachkurs-demenz",
@@ -106,6 +116,7 @@ export const programme: Programm[] = [
       "BGM-fähig (Betriebliches Gesundheitsmanagement)",
     ],
     altText: "Demenzschulung für Unternehmen mit dem Programm „Sprachkurs Demenz“ von Radka Eder.",
+    image: imgSprachkurs.url,
   },
   {
     slug: "fliessend-demenz-zuhause",
@@ -129,6 +140,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Demenzschulung „Fließend Demenz Zuhause“ für 24-Stunden-Betreuerinnen, Betreuer und Angehörige.",
+    image: imgZuhause.url,
   },
   {
     slug: "fliessend-demenz-online",
@@ -152,6 +164,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Online-Demenzschulung „Fließend Demenz online“ für Personalagenturen und Betreuungskräfte von Radka Eder.",
+    image: imgOnline.url,
   },
 ];
 

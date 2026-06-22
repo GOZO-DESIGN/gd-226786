@@ -171,19 +171,19 @@ const Schulungen = () => {
                     aria-label={p.altText || p.name}
                   >
                     <div className={`grid md:grid-cols-[260px_1fr] ${reverse ? "md:grid-flow-col-dense" : ""}`}>
-                      {/* Buch-Platzhalter (gold/lavendel) */}
+                      {/* Buchcover */}
                       <div
-                        className={`relative flex items-center justify-center p-8 bg-gradient-to-br from-secondary/60 via-background to-accent/10 ${reverse ? "md:col-start-2" : ""}`}
-                        role="img"
-                        aria-label={p.altText || `${p.name} – Buchmockup`}
+                        className={`relative flex items-center justify-center p-6 bg-gradient-to-br from-secondary/60 via-background to-accent/10 ${reverse ? "md:col-start-2" : ""}`}
                       >
-                        <div className="absolute top-4 left-4 font-display text-5xl font-bold text-accent/30">{p.n}</div>
-                        <div className="w-32 h-44 md:w-36 md:h-52 rounded-md bg-gradient-to-br from-primary via-primary to-purple-dark shadow-2xl flex flex-col items-center justify-center text-primary-foreground p-3 transform group-hover:-rotate-2 transition-transform duration-500">
-                          <Icon className="h-10 w-10 mb-3 text-accent" />
-                          <div className="text-xs uppercase tracking-widest opacity-70 text-center mb-1">FokusDemenz</div>
-                          <div className="font-display text-sm font-bold text-center leading-tight">{p.shortName}</div>
-                          <div className="mt-3 text-[10px] opacity-50 italic">Bild folgt</div>
-                        </div>
+                        <div className="absolute top-4 left-4 font-display text-5xl font-bold text-accent/30 pointer-events-none">{p.n}</div>
+                        <img
+                          src={p.image}
+                          alt={p.altText || `${p.name} – Buchcover`}
+                          loading="lazy"
+                          width={220}
+                          height={300}
+                          className="w-40 md:w-48 h-auto object-contain drop-shadow-xl transform group-hover:-rotate-2 group-hover:scale-105 transition-transform duration-500"
+                        />
                       </div>
 
                       {/* Content */}
