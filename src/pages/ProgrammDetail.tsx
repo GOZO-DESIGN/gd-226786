@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { Mail, MessageCircle, ArrowLeft, ArrowRight, CheckCircle2, Users, Target, Clock } from "lucide-react";
+import { Mail, MessageCircle, ArrowLeft, ArrowRight, CheckCircle2, Users, Target, Clock, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getProgramm, programme } from "@/data/programme";
 
@@ -26,11 +26,11 @@ const ProgrammDetail = () => {
       <Header />
       <main id="main-content">
         {/* Hero */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-secondary/60 via-background to-background animate-fade-in">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-secondary/40 via-background to-background animate-fade-in">
           <div className="container-narrow mx-auto">
             <Link
               to="/demenz-schulungen"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors mb-8"
             >
               <ArrowLeft className="h-4 w-4" />
               Zurück zum Angebot
@@ -39,7 +39,7 @@ const ProgrammDetail = () => {
             <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-start">
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-2xl bg-accent text-accent-foreground flex items-center justify-center shadow-md">
                     <Icon className="h-8 w-8" />
                   </div>
                   <div>
@@ -50,11 +50,17 @@ const ProgrammDetail = () => {
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
                   {p.name}
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-8">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
                   {p.desc}
                 </p>
+                {p.gukg && (
+                  <div className="inline-flex items-center gap-2 bg-accent/15 text-accent font-semibold text-sm px-4 py-2 rounded-full mb-8">
+                    <BadgeCheck className="h-4 w-4" />
+                    GuKG-Fortbildung · Teilnahmebestätigung inklusive
+                  </div>
+                )}
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                     <Link to="/kontakt">
                       <Mail className="h-4 w-4 mr-2" />
                       Erstgespräch vereinbaren
@@ -69,13 +75,18 @@ const ProgrammDetail = () => {
                 </div>
               </div>
 
-              {/* Placeholder Visual */}
-              <div className="w-full lg:w-80 aspect-[4/5] rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary flex items-center justify-center shadow-xl">
-                <div className="text-center text-primary-foreground p-8">
-                  <Icon className="h-20 w-20 mx-auto mb-4 opacity-60" />
-                  <div className="font-display text-5xl font-bold mb-2">{p.n}</div>
-                  <div className="text-sm uppercase tracking-widest opacity-80">{p.shortName}</div>
-                  <div className="text-xs opacity-50 mt-6 italic">Bild folgt</div>
+              {/* Buch-Platzhalter */}
+              <div
+                className="w-full lg:w-80 aspect-[4/5] rounded-3xl bg-gradient-to-br from-secondary/60 via-background to-accent/15 flex items-center justify-center shadow-xl p-6"
+                role="img"
+                aria-label={p.altText || `${p.name} – Buchmockup`}
+              >
+                <div className="w-44 h-60 rounded-md bg-gradient-to-br from-primary via-primary to-purple-dark shadow-2xl flex flex-col items-center justify-center text-primary-foreground p-4">
+                  <Icon className="h-12 w-12 mb-4 text-accent" />
+                  <div className="text-xs uppercase tracking-widest opacity-70 text-center mb-2">FokusDemenz</div>
+                  <div className="font-display text-base font-bold text-center leading-tight">{p.shortName}</div>
+                  <div className="font-display text-4xl font-bold mt-4 text-accent">{p.n}</div>
+                  <div className="mt-3 text-[10px] opacity-50 italic">Bild folgt</div>
                 </div>
               </div>
             </div>
@@ -92,7 +103,7 @@ const ProgrammDetail = () => {
                 { icon: Target, title: "Ergebnis", text: p.ergebnis },
               ].map((b) => (
                 <div key={b.title} className="bg-card border border-border rounded-2xl p-6 card-hover">
-                  <b.icon className="h-7 w-7 text-primary mb-4" />
+                  <b.icon className="h-7 w-7 text-accent mb-4" />
                   <h3 className="font-display text-lg font-semibold text-primary mb-2">{b.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{b.text}</p>
                 </div>
@@ -115,7 +126,7 @@ const ProgrammDetail = () => {
                   className="flex items-start gap-4 bg-card border border-border rounded-xl p-5 animate-fade-in"
                   style={{ animationDelay: `${i * 50}ms` }}
                 >
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
                   <span className="text-foreground leading-relaxed">{h}</span>
                 </li>
               ))}
@@ -123,10 +134,37 @@ const ProgrammDetail = () => {
           </div>
         </section>
 
+        {/* GuKG-Hinweis nur für Pflegekräfte-Programme */}
+        {p.gukg && (
+          <section className="section-padding bg-background animate-fade-in">
+            <div className="container-narrow mx-auto max-w-3xl">
+              <div className="bg-accent/10 border-l-4 border-accent rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <BadgeCheck className="h-8 w-8 text-accent" />
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-primary">
+                    Anrechenbar für die GuKG-Fortbildungspflicht
+                  </h2>
+                </div>
+                <div className="space-y-4 text-foreground leading-relaxed">
+                  <p>
+                    Diese Fortbildung kann im Rahmen der gesetzlich vorgesehenen <strong>Fortbildungspflicht gemäß GuKG</strong> dokumentiert werden.
+                  </p>
+                  <p>
+                    Für Angehörige des <strong>gehobenen Dienstes für Gesundheits- und Krankenpflege</strong> ist <strong className="text-accent">§ 63 GuKG</strong> relevant. Für <strong>Pflegeassistenz und Pflegefachassistenz</strong> ist <strong className="text-accent">§ 104c GuKG</strong> relevant.
+                  </p>
+                  <p>
+                    Nach Abschluss erhalten die Teilnehmer eine <strong>Teilnahmebestätigung</strong> mit Thema, Datum, Dauer und Inhalt der Fortbildung.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA + nächstes Programm */}
-        <section className="section-padding bg-background animate-fade-in">
+        <section className="section-padding bg-section-soft animate-fade-in">
           <div className="container-narrow mx-auto">
-            <div className="bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-10 md:p-14 text-center text-primary-foreground mb-12">
+            <div className="bg-gradient-to-br from-primary to-purple-dark rounded-3xl p-10 md:p-14 text-center text-primary-foreground mb-12">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
                 Passt {p.shortName} zu Ihnen?
               </h2>
@@ -134,7 +172,7 @@ const ProgrammDetail = () => {
                 Im unverbindlichen Erstgespräch klären wir Inhalte, Format und Termin.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button size="lg" asChild variant="secondary" className="rounded-full px-8 py-6 font-semibold">
+                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 py-6 font-semibold">
                   <Link to="/kontakt">
                     <Mail className="h-4 w-4 mr-2" />
                     Erstgespräch vereinbaren
@@ -157,7 +195,7 @@ const ProgrammDetail = () => {
                 <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Nächstes Programm</div>
                 <div className="font-display text-xl font-semibold text-primary">{next.name}</div>
               </div>
-              <ArrowRight className="h-6 w-6 text-primary group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <ArrowRight className="h-6 w-6 text-accent group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Link>
           </div>
         </section>
