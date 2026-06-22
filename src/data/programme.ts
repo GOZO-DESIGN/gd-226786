@@ -70,6 +70,7 @@ export const programme: Programm[] = [
       "Arbeitsheft „Wenn Verhalten eine Sprache ist“",
     ],
     altText: "Demenzfortbildung „Wenn Verhalten eine Sprache ist“ für pflegeferne Berufe in Alten- und Pflegeheimen.",
+    image: imgVerhalten.url,
   },
   {
     slug: "demenz-woerterbuch-gemeinden",
