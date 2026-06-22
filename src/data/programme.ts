@@ -105,6 +105,7 @@ export const programme: Programm[] = [
       "Branchenspezifische Beispiele",
       "BGM-fähig (Betriebliches Gesundheitsmanagement)",
     ],
+    altText: "Demenzschulung für Unternehmen mit dem Programm „Sprachkurs Demenz“ von Radka Eder.",
   },
   {
     slug: "fliessend-demenz-zuhause",
