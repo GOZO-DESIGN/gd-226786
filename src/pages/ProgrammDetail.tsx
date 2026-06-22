@@ -75,19 +75,16 @@ const ProgrammDetail = () => {
                 </div>
               </div>
 
-              {/* Buch-Platzhalter */}
-              <div
-                className="w-full lg:w-80 aspect-[4/5] rounded-3xl bg-gradient-to-br from-secondary/60 via-background to-accent/15 flex items-center justify-center shadow-xl p-6"
-                role="img"
-                aria-label={p.altText || `${p.name} – Buchmockup`}
-              >
-                <div className="w-44 h-60 rounded-md bg-gradient-to-br from-primary via-primary to-purple-dark shadow-2xl flex flex-col items-center justify-center text-primary-foreground p-4">
-                  <Icon className="h-12 w-12 mb-4 text-accent" />
-                  <div className="text-xs uppercase tracking-widest opacity-70 text-center mb-2">FokusDemenz</div>
-                  <div className="font-display text-base font-bold text-center leading-tight">{p.shortName}</div>
-                  <div className="font-display text-4xl font-bold mt-4 text-accent">{p.n}</div>
-                  <div className="mt-3 text-[10px] opacity-50 italic">Bild folgt</div>
-                </div>
+              {/* Buchcover */}
+              <div className="w-full lg:w-80 flex items-center justify-center rounded-3xl bg-gradient-to-br from-secondary/60 via-background to-accent/15 shadow-xl p-6">
+                <img
+                  src={p.image}
+                  alt={p.altText || `${p.name} – Buchcover`}
+                  loading="eager"
+                  width={280}
+                  height={380}
+                  className="w-full max-w-[260px] h-auto object-contain drop-shadow-2xl"
+                />
               </div>
             </div>
           </div>
