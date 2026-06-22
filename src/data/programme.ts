@@ -140,6 +140,7 @@ export const programme: Programm[] = [
     ],
     gukg: true,
     altText: "Demenzschulung „Fließend Demenz Zuhause“ für 24-Stunden-Betreuerinnen, Betreuer und Angehörige.",
+    image: imgZuhause.url,
   },
   {
     slug: "fliessend-demenz-online",
