@@ -93,6 +93,7 @@ export const programme: Programm[] = [
       "Frei kombinierbar nach Bedarf Ihrer Gemeinde",
     ],
     altText: "Demenzaufklärung für Gemeinden mit dem Schulungsprogramm „Das Demenz-Wörterbuch“ von Radka Eder.",
+    image: imgWoerterbuch.url,
   },
   {
     slug: "sprachkurs-demenz",
