@@ -15,6 +15,7 @@ const ProgrammDetail = lazy(() => import("./pages/ProgrammDetail"));
 const Betreuung24h = lazy(() => import("./pages/Betreuung24h"));
 const UeberMich = lazy(() => import("./pages/UeberMich"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
+const Faq = lazy(() => import("./pages/Faq"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
