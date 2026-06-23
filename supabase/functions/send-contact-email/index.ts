@@ -10,7 +10,7 @@ interface ContactPayload {
 
 const RESEND_API_KEY = Deno.env.get('RESEND_KEY');
 const TO_EMAIL = 'info@fokusdemenz.at';
-const FROM_EMAIL = 'FokusDemenz Kontakt <onboarding@resend.dev>';
+const FROM_EMAIL = 'FokusDemenz <info@fokusdemenz.at>';
 
 function escapeHtml(str: string): string {
   return str
