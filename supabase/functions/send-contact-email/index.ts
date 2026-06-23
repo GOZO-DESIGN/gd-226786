@@ -8,7 +8,7 @@ interface ContactPayload {
   message: string;
 }
 
-const RESEND_API_KEY = Deno.env.get('RESEND_KEY');
+const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
 const TO_EMAIL = 'info@fokusdemenz.at';
 const FROM_EMAIL = 'FokusDemenz <info@fokusdemenz.at>';
 
@@ -32,7 +32,7 @@ Deno.serve(async (req) => {
 
   try {
     if (!RESEND_API_KEY) {
-      console.error('RESEND_KEY is not configured');
+      console.error('RESEND_API_KEY is not configured');
       return new Response(JSON.stringify({ error: 'Email service not configured' }), {
         status: 500,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
