@@ -86,13 +86,28 @@ const Kontakt = () => {
     }
 
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Nachricht gesendet!",
-      description: "Vielen Dank. Ich melde mich innerhalb von 24 Stunden bei Ihnen.",
-    });
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+      if (error || (data && (data as any).error)) {
+        throw new Error(error?.message || (data as any)?.error || "Unbekannter Fehler");
+      }
+      setIsSubmitted(true);
+      toast({
+        title: "Nachricht gesendet!",
+        description: "Vielen Dank. Ich melde mich innerhalb von 24 Stunden bei Ihnen.",
+      });
+    } catch (err) {
+      console.error("Kontaktformular Fehler:", err);
+      toast({
+        title: "Senden fehlgeschlagen",
+        description: "Bitte versuchen Sie es erneut oder schreiben Sie direkt an info@fokusdemenz.at.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
