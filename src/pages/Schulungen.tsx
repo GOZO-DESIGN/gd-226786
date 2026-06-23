@@ -174,16 +174,16 @@ const Schulungen = () => {
                     <div className={`grid md:grid-cols-[260px_1fr] ${reverse ? "md:grid-flow-col-dense" : ""}`}>
                       {/* Buchcover */}
                       <div
-                        className={`relative flex items-center justify-center p-6 bg-gradient-to-br from-secondary/60 via-background to-accent/10 ${reverse ? "md:col-start-2" : ""}`}
+                        className={`relative overflow-hidden bg-gradient-to-br from-secondary/60 via-background to-accent/10 min-h-[220px] md:min-h-full ${reverse ? "md:col-start-2" : ""}`}
                       >
-                        <div className="absolute top-4 left-4 font-display text-5xl font-bold text-accent/30 pointer-events-none">{p.n}</div>
+                        <div className="absolute top-4 left-4 z-10 font-display text-5xl font-bold text-accent/40 pointer-events-none drop-shadow-md">{p.n}</div>
                         <img
                           src={p.image}
                           alt={p.altText || `${p.name} – Buchcover`}
                           loading="lazy"
-                          width={220}
+                          width={260}
                           height={300}
-                          className="w-40 md:w-48 h-auto object-contain drop-shadow-xl transform group-hover:-rotate-2 group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
 
