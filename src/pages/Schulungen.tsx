@@ -171,7 +171,7 @@ const Schulungen = () => {
                     style={{ animationDelay: `${i * 60}ms` }}
                     aria-label={p.altText || p.name}
                   >
-                    <div className={`grid md:grid-cols-[260px_1fr] ${reverse ? "md:grid-flow-col-dense" : ""}`}>
+                    <div className={`grid md:grid-cols-2 ${reverse ? "md:grid-flow-col-dense" : ""}`}>
                       {/* Buchcover */}
                       <div
                         className={`relative overflow-hidden bg-gradient-to-br from-secondary/60 via-background to-accent/10 min-h-[220px] md:min-h-full ${reverse ? "md:col-start-2" : ""}`}
