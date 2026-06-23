@@ -76,14 +76,14 @@ const ProgrammDetail = () => {
               </div>
 
               {/* Buchcover */}
-              <div className="w-full lg:w-80 flex items-center justify-center rounded-3xl bg-gradient-to-br from-secondary/60 via-background to-accent/15 shadow-xl p-6">
+              <div className="w-full lg:w-80 aspect-square overflow-hidden rounded-3xl bg-gradient-to-br from-secondary/60 via-background to-accent/15 shadow-xl">
                 <img
                   src={p.image}
                   alt={p.altText || `${p.name} – Buchcover`}
                   loading="eager"
-                  width={280}
-                  height={380}
-                  className="w-full max-w-[260px] h-auto object-contain drop-shadow-2xl"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
