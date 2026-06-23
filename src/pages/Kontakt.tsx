@@ -10,6 +10,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
 
 const radkaLaptop = `${import.meta.env.BASE_URL}assets/radka-laptop.webp`;
 
