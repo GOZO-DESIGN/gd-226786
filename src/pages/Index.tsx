@@ -335,6 +335,14 @@ const Index = () => {
                       </a>
                     </Button>
                   </div>
+
+                  {/* Video: Die Geschichte von Alzheimer und Auguste Deter */}
+                  <div className="mt-8 max-w-xl">
+                    <YouTubeEmbed
+                      videoId="QOlQwOHs8Tg"
+                      title="Die Geschichte von Alzheimer und Auguste Deter 1901: „Ich habe mich sozusagen verloren“"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
