@@ -3,7 +3,6 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { PressLogos } from "@/components/PressLogos";
 import { NachtunruheLeadMagnet } from "@/components/NachtunruheLeadMagnet";
-import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { Mail, MessageCircle, Heart, Home, Building, ArrowRight, GraduationCap, CheckCircle2, Quote, Download, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -337,13 +336,6 @@ const Index = () => {
                     </Button>
                   </div>
 
-                  {/* Video: Die Geschichte von Alzheimer und Auguste Deter */}
-                  <div className="mt-8 max-w-xl">
-                    <YouTubeEmbed
-                      videoId="QOlQwOHs8Tg"
-                      title="Die Geschichte von Alzheimer und Auguste Deter 1901: „Ich habe mich sozusagen verloren“"
-                    />
-                  </div>
                 </div>
               </div>
             </div>
