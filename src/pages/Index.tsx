@@ -12,6 +12,7 @@ const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 const homepageEinleitung = publicAsset("assets/homepage-einleitung.webp");
 const radkaPortrait = publicAsset("assets/radka-portrait.webp");
 const buchCover = publicAsset("assets/buch-cover.webp");
+const seniorenbetreuung = publicAsset("assets/seniorenbetreuung.webp");
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung" },
@@ -28,8 +29,8 @@ const targetGroups = [
   },
   {
     icon: Home,
-    title: "Familien mit 24h-Betreuung",
-    description: "Ihre Betreuungsperson hat wenig Demenz-Expertise? Ich schule und berate.",
+    title: "Begleitprogramm bei 24h-Betreuung",
+    description: "Die Betreuung zuhause wird immer schwieriger? Ich begleite Töchter und Söhne zu mehr Sicherheit und Stabilität.",
     href: "/24h-betreuung",
   },
   {
@@ -50,9 +51,9 @@ const services = [
   },
   {
     icon: Home,
-    title: "24h-Betreuung",
-    description: "Schulung und Beratung für 24-Stunden-Betreuung bei Menschen mit Demenz.",
-    features: ["Schulung der Betreuungsperson", "Aktivierungskonzept", "Qualitätssicherung"],
+    title: "Begleitprogramm bei 24h-Betreuung",
+    description: "Begleitung für Töchter und Söhne, wenn Demenz und die Betreuung zuhause zur Belastung werden.",
+    features: ["6 bis 8 Wochen Begleitung", "Konkrete Fallbesprechungen", "Mehr Sicherheit im Alltag"],
     href: "/24h-betreuung",
   },
   {
@@ -218,6 +219,39 @@ const Index = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Begleitprogramm bei Demenz und 24h-Betreuung */}
+        <section className="section-padding bg-section-soft animate-fade-in">
+          <div className="container-narrow mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+              <div>
+                <span className="eyebrow">Neu im Fokus</span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-5">
+                  Begleitprogramm bei Demenz und 24h-Betreuung
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                  Wenn die Betreuung eines Elternteils zuhause mit 24h-Betreuung immer schwieriger wird, begleite ich Töchter und Söhne dabei, wieder mehr Sicherheit, Orientierung und Zusammenarbeit in den Alltag zu bringen.
+                </p>
+                <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full px-8 py-6 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                  <Link to="/24h-betreuung">
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src={seniorenbetreuung}
+                  alt="Begleitung bei Demenz und 24h-Betreuung zuhause"
+                  className="rounded-3xl shadow-lg w-full max-w-md object-cover aspect-[4/3]"
+                  loading="lazy"
+                  width={448}
+                  height={336}
+                />
+              </div>
             </div>
           </div>
         </section>
