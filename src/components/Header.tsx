@@ -8,7 +8,7 @@ const logo = `${import.meta.env.BASE_URL}assets/logo-mark.png`;
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Für Angehörige", href: "/fuer-angehoerige" },
-  { label: "24h-Betreuung", href: "/24h-betreuung" },
+  { label: "Begleitprogramm", href: "/24h-betreuung" },
   { label: "Angebot", href: "/demenz-schulungen" },
   { label: "Über mich", href: "/ueber-mich" },
   { label: "Videos", href: "/videos" },

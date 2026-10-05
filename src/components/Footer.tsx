@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const quickLinks = [
   { label: "Für Angehörige", href: "/fuer-angehoerige", isRoute: true },
-  { label: "24h-Betreuung", href: "/24h-betreuung", isRoute: true },
+  { label: "Begleitprogramm", href: "/24h-betreuung", isRoute: true },
   { label: "Angebot", href: "/demenz-schulungen", isRoute: true },
   { label: "Über mich", href: "/ueber-mich", isRoute: true },
   { label: "Videos", href: "/videos", isRoute: true },
