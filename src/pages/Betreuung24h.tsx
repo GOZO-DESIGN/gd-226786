@@ -79,7 +79,7 @@ const Betreuung24h = () => (
               <span className="eyebrow">Begleitprogramm bei Demenz und 24h-Betreuung</span>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-primary leading-[1.15] max-w-2xl">
                 Wenn die Betreuung zuhause immer schwieriger wird, musst du das{" "}
-                <span className="text-purple-dark">nicht allein tragen</span>
+                <span className="text-accent">nicht allein tragen</span>
               </h1>
               <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-xl">
                 <p>Du hast für deine Mutter oder deinen Vater eine 24h-Betreuung organisiert – und trotzdem wird es nicht ruhiger.</p>
