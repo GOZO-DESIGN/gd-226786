@@ -57,7 +57,9 @@ export default function ProgrammePopups() {
       // Touch devices have no cursor exit: use a deliberate upward scroll after reading.
       if (window.matchMedia("(pointer: coarse)").matches &&
         isMobileExitGesture(Date.now() - started.current, deepestScroll, previousY, y)) show("exit");
-      previousY = y;
+      // Accumulate upward movement across smooth-scroll frames instead of requiring
+      // a single scroll event to move 80 pixels.
+      if (y > previousY || previousY - y >= 80) previousY = y;
     };
     document.addEventListener("mouseout", onLeave);
     window.addEventListener("scroll", onScroll, { passive: true });
