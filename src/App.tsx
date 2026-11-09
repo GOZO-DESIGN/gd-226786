@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import CookieBanner from "./components/CookieBanner";
+import ProgrammePopups from "./components/ProgrammePopups";
 import Index from "./pages/Index";
 
 const Angehoerige = lazy(() => import("./pages/Angehoerige"));
@@ -51,6 +52,7 @@ const App = () => (
             </Routes>
           </Suspense>
           <CookieBanner />
+          <ProgrammePopups />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
