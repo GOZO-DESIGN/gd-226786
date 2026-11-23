@@ -1,3 +1,2 @@
-# Programme pop-ups
-- [x] Implement welcome and exit promotions with session frequency limits and mobile fallback.
-- [x] Verify timing, suppression, links, dismissal, and mobile layout.
+# Roadmap
+- [x] Programme pop-ups removed on user request (2026-11-23).
